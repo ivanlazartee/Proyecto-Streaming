@@ -12,25 +12,61 @@
 
 <body class="text-white">
     <header>
-        <nav class="navbarCustom">
-            <h1 class="logoNav">
-                OnDev <span>+</span>
-            </h1>
-            <ul class="listaNav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Mi Lista</a></li>
-                <li><a href="#">Películas</a></li>
-                <li><a href="#">Series</a></li>
-                <li><a href="#">Documentales</a></li>
-            </ul>
-            <div class="usuarioNav">
-                <p class="txtBienvenida">
-                    Bienvenido Mariano
-                </p>
-                <div class="perfilUsuario">
-                    <img src="../assets/img/perfilMariano.jpeg" alt="Usuario">
+        <nav class="navbar navbar-expand-lg navbarCustom">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand logoNav" href="#">
+                    OnDev <span>+</span>
+                </a>
+
+                <button class="navbar-toggler btnHamburguesa" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarOnDev" aria-controls="navbarOnDev" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarOnDev">
+
+                    <ul class="navbar-nav mx-auto listaNav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mi Lista</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Películas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Series</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Documentales</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="usuarioNav">
+
+                        <p class="txtBienvenida">
+                            Bienvenido Mariano
+                        </p>
+
+                        <div class="perfilUsuario">
+                            <img src="../assets/img/perfilMariano.jpeg" alt="">
+                        </div>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </nav>
     </header>
     <main>

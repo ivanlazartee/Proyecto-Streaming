@@ -18,27 +18,23 @@
   --color-border: rgba(255, 255, 255, 0.08);
 }
 
+body {
+  background-color: var(--color-bg);
+}
+
 .navbarCustom {
   width: 100%;
-  height: 90px;
-  padding: 0 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  min-height: 90px;
+  padding: 0 50px;
   background: var(--color-bg-nav);
   border-bottom: 1px solid var(--color-border);
 }
 
 .logoNav {
-  font-size: 2.3rem;
+  font-size: 2.3rem !important;
   font-weight: 800;
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
   letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.logoNav:hover {
-  color: var(--color-primary-hover);
 }
 
 .logoNav span {
@@ -46,22 +42,18 @@
 }
 
 .listaNav {
-  display: flex;
-  align-items: center;
   gap: 35px;
-  list-style: none;
 }
 
-.listaNav li a {
-  text-decoration: none;
-  color: var(--color-text-muted);
+.listaNav .nav-link {
+  color: var(--color-text-muted) !important;
   font-size: 1rem;
   font-weight: 500;
   transition: 0.3s;
 }
 
-.listaNav li a:hover {
-  color: var(--color-primary);
+.listaNav .nav-link:hover {
+  color: var(--color-primary) !important;
 }
 
 .usuarioNav {
@@ -83,61 +75,66 @@
   border-radius: 12px;
   overflow: hidden;
   border: 2px solid var(--color-primary);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.perfilUsuario:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 15px var(--color-primary);
 }
 
 .perfilUsuario img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-@media (max-width: 992px) {
+.btnHamburguesa {
+  background: var(--color-primary) !important;
+  border: none !important;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.btnHamburguesa:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (max-width: 991px) {
   .navbarCustom {
-    padding: 20px;
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
+    padding: 15px 20px;
+  }
+
+  .navbar-collapse {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
   }
 
   .listaNav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    gap: 0;
+    text-align: center;
+  }
+
+  .listaNav .nav-link {
+    padding: 14px 0 !important;
   }
 
   .usuarioNav {
-    justify-content: center;
+    display: none;
+  }
+
+  .logoNav {
+    font-size: 2rem !important;
   }
 }
 
 @media (max-width: 576px) {
   .logoNav {
-    font-size: 1.8rem;
+    font-size: 1.7rem !important;
   }
 
-  .listaNav {
-    gap: 15px;
-  }
-
-  .listaNav li a {
-    font-size: 0.9rem;
-  }
-
-  .usuarioNav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .txtBienvenida {
-    font-size: 0.9rem;
+  .navbarCustom {
+    padding: 12px 15px;
   }
 }
 .heroCarousel {
