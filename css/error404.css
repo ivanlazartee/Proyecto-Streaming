@@ -42,12 +42,21 @@ body {
   inset: 0;
   z-index: 0;
 }
+.gif-desktop{display: block;}
+.gif-mobile{display: none;}
 
 .fondo-gif img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.capa-oscura {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.52);
+  z-index: 1;
 }
 
 .caja-texto {
@@ -66,14 +75,82 @@ body {
   margin-top: 12px;
   color: var(--color-text-primary);
   overflow: hidden;
+  white-space: nowrap;
   width: 0;
-  animation:;
+  animation:
+    escribir 2.8s steps(52, end) 0.5s forwards,
+    cursor 0.75s step-end 0.5s infinite;
 }
 
-.texto-error{
-    color: #f9fafb;
-    margin-top: 14px;
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: var(--color-primary-hover);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+.texto-error {
+  color: #f9fafb;
+  margin-top: 14px;
+  opacity: 0;
+  animation: aparecer 1s ease-out 3.5s forwards;
+}
+
+@keyframes aparecer {
+  from {
     opacity: 0;
-    animation: aparecer 1s ease-out 3.5s forwards;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+.boton-inicio {
+  display: inline-block;
+  margin-top: 36px;
+  padding: 14px 36px;
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.2s;
+  opacity: 0;
+  animation: aparecer 1s ease-out 4s forwards;
+}
+
+.boton-inicio:hover {
+  background-color: var(--color-primary-hover);
+  color: var(--color-bg-nav);
+  box-shadow: 0 0 24px var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gif-desktop {
+    display: none;
+  }
+  .gif-mobile {
+    display: block;
+  }
+}
