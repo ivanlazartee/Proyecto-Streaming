@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary:        #FBBF24;
+  --color-primary-hover:  #FCD34D;
+  --color-primary-subtle: rgba(251,191,36,0.12);
+  --color-bg:             #0F1117;
+  --color-bg-nav:         #0A0D12;
+  --color-surface:        #1A2030;
+  --color-surface-mid:    #1F2937;
+  --color-surface-high:   #374151;
+  --color-text-primary:   #F9FAFB;
+  --color-text-muted:     #9CA3AF;
+  --color-border:         rgba(255,255,255,0.08);
+}
+
+.navbarCustom {
+  width: 100%;
+  height: 90px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-bg-nav);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.logoNav {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.logoNav:hover {
+  color: var(--color-primary-hover);
+}
+
+.logoNav span {
+  color: var(--color-primary);
+}
+
+.listaNav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+}
+
+.listaNav li a {
+  text-decoration: none;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.listaNav li a:hover {
+  color: var(--color-primary);
+}
+
+.usuarioNav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.txtBienvenida {
+  color: var(--color-text-primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.perfilUsuario {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.perfilUsuario:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 15px var(--color-primary);
+}
+
+.perfilUsuario img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .navbarCustom {
+    padding: 20px;
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .listaNav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .usuarioNav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .logoNav {
+    font-size: 1.8rem;
+  }
+
+  .listaNav {
+    gap: 15px;
+  }
+
+  .listaNav li a {
+    font-size: 0.9rem;
+  }
+
+  .usuarioNav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .txtBienvenida {
+    font-size: 0.9rem;
+  }
+}
