@@ -23,12 +23,14 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text-primary);
+  background-image: url(../assets/img/breakingBad.suscripcion.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: var(--color-bg);
+  background-color: #f5d42d;
 }
 
 .seccion-portada {
-  text-align: center;
   padding: 80px 16px 64px;
 }
 
@@ -36,28 +38,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(56px, 10vw, 112px);
   font-weight: 700;
-  letter-spacing: 4px;
-  margin-bottom: 30px;
+  letter-spacing: 3px;
+  margin: 40px 30px;
 }
 
 .seccion-portada h2 span {
-  color: var(--color-primary);
-  display: block;
+  color: var(--color-text-primary);
+  display: flex;
 }
 
 .seccion-portada p {
-  color: var(--color-text-muted);
+  color: var(--color-bg-nav);
   font-size: small;
   max-width: 420px;
-  margin: 0 auto 2rem;
+  margin: 0 40px;
 }
 
 .boton-borde {
   display: inline-block;
+  margin: 50px 150px;
   padding: 10px 32px;
-  border: 1px solid var(--color-primary-hover);
+  border: 1px solid var(--color-bg-nav);
   border-radius: 50px;
-  color: var(--color-primary);
+  color: var(--color-bg);
   text-decoration: none;
   transition:
     background 0.2s,
@@ -65,13 +68,13 @@ body {
 }
 
 .boton-borde:hover {
-  background-color: var(--color-primary);
-  color: var(--color-bg);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
 }
 
 .titulo-seccion {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 200px;
 }
 
 .titulo-seccion h3 {
@@ -81,16 +84,119 @@ body {
   font-weight: 600;
 }
 
-.titulo-seccion h3 span{
-    color: var(--color-primary);
+.titulo-seccion h3 span {
+  color: var(--color-text-primary);
 }
 
-.titulo-seccion p{
-    color: var(--color-text-muted);
-    font-size: small;
+.titulo-seccion p {
+  color: var(--color-bg-nav);
+  font-size: small;
 }
 
-.seccion-planes{
-    
+.seccion-planes {
+  padding: 0 24px 80px;
 }
 
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.tarjeta-plan {
+  background: var(--color-text-primary);
+  border: 1px solid var(--color-surface-high);
+  border-top: 5px solid var(--color-bg-nav);
+  border-radius: 12px;
+  padding: 32px 24px;
+  width: 230px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.tarjeta-plan:hover {
+  transform: scale(1.06);
+  border-color: var(--color-bg-nav);
+}
+
+.tarjeta-plan--destacada {
+  border-color: var(--color-primary-hover);
+  background-color: var(--color-surface-high);
+}
+
+.etiqueta-popular {
+  display: inline-block;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.nombre-plan {
+  font-family: "bebas neue", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--color-surface);
+  margin-bottom: 7px;
+}
+
+.precio {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 52px;
+  margin-bottom: 4px;
+}
+
+.precio small {
+  font-family: "DM sans" sans-serif;
+  font-size: 10px;
+  color: var(--color-surface-high);
+  font-weight: normal;
+}
+
+.tarjeta-plan p {
+  font-size: 14px;
+  color: var(--color-bg-nav);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.tarjeta-plan hr {
+  border: none;
+  border-top: 1px solid var(--color-bg-nav);
+  margin-bottom: 1rem;
+}
+
+.lista-beneficios {
+  list-style: none;
+}
+
+.lista-beneficios li {
+  font-size: 0.83rem;
+  padding: 4px 0;
+  color: var(--color-texto-principal);
+}
+
+.lista-beneficios li::before {
+  content: "✓  ";
+  color: var(--color-amarillo);
+  font-weight: bold;
+}
+
+.beneficio-no-incluido {
+  color: var(--color-bg-nav);
+}
+
+.beneficio-no-incluido::before {
+  content: "✗  ";
+  color: var(--color-bg-nav);
+}
+
+    .seccion-registro {
+      padding: 0 1.5rem 5rem;
+    }
