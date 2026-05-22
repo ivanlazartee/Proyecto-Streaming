@@ -16,26 +16,16 @@
   --color-text-primary: #f9fafb;
   --color-text-muted: #9ca3af;
   --color-border: rgba(255, 255, 255, 0.08);
-
-  /* Transiciones globales reutilizables */
   --transition-base: 0.3s ease;
   --transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-  /* Sombras reutilizables */
   --shadow-card:
     0 10px 25px rgba(0, 0, 0, 0.35), 0 0 20px rgba(251, 191, 36, 0.08);
   --shadow-card-hover:
     0 15px 35px rgba(0, 0, 0, 0.45), 0 0 30px rgba(251, 191, 36, 0.35);
 }
-
 body {
   background-color: var(--color-bg);
 }
-
-/* ─────────────────────────────────────────
-   NAVBAR
-───────────────────────────────────────── */
-
 .navbarCustom {
   width: 100%;
   min-height: 90px;
@@ -43,46 +33,38 @@ body {
   background: var(--color-bg-nav);
   border-bottom: 1px solid var(--color-border);
 }
-
 .logoNav {
   font-size: 2.3rem !important;
   font-weight: 800;
   color: var(--color-primary) !important;
   letter-spacing: 1px;
 }
-
 .logoNav span {
   color: var(--color-primary);
 }
-
 .listaNav {
   gap: 35px;
 }
-
 .listaNav .nav-link {
   color: var(--color-text-muted) !important;
   font-size: 1rem;
   font-weight: 500;
   transition: color var(--transition-base);
 }
-
 .listaNav .nav-link:hover {
   color: var(--color-primary) !important;
 }
-
 .usuarioNav {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .txtBienvenida {
   color: var(--color-text-primary);
   font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
 }
-
 .perfilUsuario {
   width: 48px;
   height: 48px;
@@ -90,13 +72,11 @@ body {
   overflow: hidden;
   border: 2px solid var(--color-primary);
 }
-
 .perfilUsuario img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .btnHamburguesa {
   background: var(--color-primary) !important;
   border: none !important;
@@ -104,63 +84,47 @@ body {
   height: 48px;
   border-radius: 12px;
 }
-
 .btnHamburguesa:focus {
   box-shadow: none !important;
 }
-
 .navbar-toggler {
   padding: 0 !important;
   border: none !important;
 }
-
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
-
 @media (max-width: 991px) {
   .navbarCustom {
     padding: 15px 20px;
   }
-
   .navbar-collapse {
     margin-top: 20px;
     padding-top: 20px;
     border-top: 1px solid var(--color-border);
   }
-
   .listaNav {
     gap: 0;
     text-align: center;
   }
-
   .listaNav .nav-link {
     padding: 14px 0 !important;
   }
-
   .usuarioNav {
     display: none;
   }
-
   .logoNav {
     font-size: 2rem !important;
   }
 }
-
 @media (max-width: 576px) {
   .logoNav {
     font-size: 1.7rem !important;
   }
-
   .navbarCustom {
     padding: 12px 15px;
   }
 }
-
-/* ─────────────────────────────────────────
-   HERO CAROUSEL
-───────────────────────────────────────── */
-
 .heroCarousel {
   width: 100%;
   height: 90vh;
@@ -168,13 +132,11 @@ body {
   position: relative;
   background: var(--color-bg);
 }
-
 .carousel,
 .carousel-inner,
 .carousel-item {
   height: 100%;
 }
-
 .heroSlide {
   width: 100%;
   height: 100%;
@@ -183,7 +145,6 @@ body {
   align-items: center;
   padding: 0 80px;
 }
-
 .imgHero {
   position: absolute;
   inset: 0;
@@ -192,38 +153,28 @@ body {
   object-fit: cover;
   object-position: center;
 }
-
-/*
-  Imágenes desktop/mobile del hero:
-  Todos los pares comparten el mismo patrón show/hide.
-  Se consolidan en un único bloque base + media query.
-*/
 .desktopHero,
 .desktopHeroBatman,
 .desktopHeroInterstellar {
   display: block;
 }
-
 .mobileHero,
 .mobileHeroBatman,
 .mobileHeroInterstellar {
   display: none;
 }
-
 @media (max-width: 576px) {
   .desktopHero,
   .desktopHeroBatman,
   .desktopHeroInterstellar {
     display: none;
   }
-
   .mobileHero,
   .mobileHeroBatman,
   .mobileHeroInterstellar {
     display: block;
   }
 }
-
 .overlayHero {
   position: absolute;
   inset: 0;
@@ -236,13 +187,11 @@ body {
   );
   z-index: 1;
 }
-
 .contenidoHero {
   position: relative;
   z-index: 2;
   max-width: 650px;
 }
-
 .tagHero {
   display: inline-block;
   padding: 8px 16px;
@@ -255,7 +204,6 @@ body {
   margin-bottom: 20px;
   backdrop-filter: blur(10px);
 }
-
 .tituloHero {
   font-size: 5rem;
   font-weight: 800;
@@ -263,7 +211,6 @@ body {
   margin-bottom: 20px;
   color: var(--color-text-primary);
 }
-
 .descripcionHero {
   font-size: 1.15rem;
   line-height: 1.7;
@@ -271,7 +218,6 @@ body {
   margin-bottom: 25px;
   max-width: 550px;
 }
-
 .infoHero {
   display: flex;
   align-items: center;
@@ -281,7 +227,6 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
 }
-
 .btnHero {
   padding: 14px 30px;
   border: none;
@@ -297,18 +242,15 @@ body {
     box-shadow var(--transition-base);
   will-change: transform;
 }
-
 .btnHero:hover {
   background: var(--color-primary-hover);
   transform: translateY(-3px);
   box-shadow: 0 10px 25px var(--color-primary);
 }
-
 .carousel-indicators {
   margin-bottom: 40px;
   gap: 12px;
 }
-
 .carousel-indicators button {
   width: 80px !important;
   height: 4px !important;
@@ -320,81 +262,63 @@ body {
     background-color var(--transition-base),
     opacity var(--transition-base);
 }
-
 .carousel-indicators .active {
   background-color: var(--color-primary) !important;
   opacity: 1 !important;
 }
-
 @media (max-width: 992px) {
   .heroSlide {
     padding: 0 40px;
   }
-
   .tituloHero {
     font-size: 3.5rem;
   }
-
   .descripcionHero {
     font-size: 1rem;
     max-width: 100%;
   }
 }
-
 @media (max-width: 576px) {
   .heroSlide {
     padding: 0 20px;
     justify-content: center;
     text-align: center;
   }
-
   .contenidoHero {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .tituloHero {
     font-size: 2.5rem;
   }
-
   .descripcionHero {
     font-size: 0.95rem;
   }
-
   .infoHero {
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .carousel-indicators button {
     width: 45px !important;
   }
 }
-
-/* ─────────────────────────────────────────
-   CATEGORÍAS
-───────────────────────────────────────── */
-
 .categoriasSection {
   width: 100%;
   padding: 80px 60px;
   background: var(--color-bg);
 }
-
 .tituloCategorias {
   font-size: 2.2rem;
   font-weight: 800;
   color: var(--color-text-primary);
   margin-bottom: 40px;
 }
-
 .gridCategorias {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 25px;
 }
-
 .cardCategoria {
   height: 180px;
   border-radius: 22px;
@@ -415,7 +339,6 @@ body {
   box-shadow: var(--shadow-card);
   will-change: transform;
 }
-
 .cardCategoria::before {
   content: "";
   position: absolute;
@@ -423,16 +346,13 @@ body {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 .cardCategoria:hover::before {
   opacity: 1;
 }
-
 .cardCategoria:hover {
   transform: scale(1.08);
   border-color: var(--color-primary);
 }
-
 .cardCategoria i {
   font-size: 3rem;
   color: var(--color-primary);
@@ -442,7 +362,6 @@ body {
     opacity var(--transition-base),
     transform var(--transition-base);
 }
-
 .cardCategoria h3 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -453,13 +372,11 @@ body {
     opacity var(--transition-base),
     transform var(--transition-base);
 }
-
 .cardCategoria:hover i,
 .cardCategoria:hover h3 {
   opacity: 0;
   transform: translateY(-18px);
 }
-
 .personajeCategoria {
   position: absolute;
   bottom: -80px;
@@ -475,33 +392,27 @@ body {
   line-height: 1;
   pointer-events: none;
 }
-
 .personajeCategoria img {
   width: 100px;
   height: 80px;
   object-fit: cover;
 }
-
 .cardCategoria:hover .personajeCategoria {
   bottom: 45px;
   opacity: 1;
 }
-
 @media (max-width: 1200px) {
   .gridCategorias {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .categoriasSection {
     padding: 60px 20px;
   }
-
   .tituloCategorias {
     font-size: 1.8rem;
   }
-
   .gridCategorias {
     display: flex;
     gap: 16px;
@@ -511,59 +422,45 @@ body {
     padding-top: 8px;
     grid-template-columns: unset;
   }
-
   .cardCategoria {
     min-width: 140px;
     width: 140px;
     height: 150px;
     flex-shrink: 0;
   }
-
   .personajeCategoria img {
     width: 60px;
     height: 60px;
     object-fit: contain;
   }
-
   .cardCategoria:hover .personajeCategoria {
     bottom: 42px;
   }
 }
-
-/* ─────────────────────────────────────────
-   TOP 10
-───────────────────────────────────────── */
-
 .top10Section {
   width: 100%;
   padding: 20px 60px;
   background: var(--color-bg);
 }
-
 .top10Titulo {
   font-size: 2.3rem;
   font-weight: 800;
   color: var(--color-text-primary);
   margin-bottom: 35px;
 }
-
 .top10Titulo span {
   color: var(--color-primary);
 }
-
-/* Scrollbar compartido entre secciones con scroll horizontal */
 .top10Scroll,
 .gridCategorias {
   scroll-behavior: smooth;
 }
-
 .top10Scroll {
   display: flex;
   gap: 24px;
   overflow-x: auto;
   padding-block: 16px;
 }
-
 .cardTop {
   width: 320px;
   max-width: 320px;
@@ -585,7 +482,6 @@ body {
     0 0 20px rgba(251, 191, 36, 0.08);
   will-change: transform;
 }
-
 .cardTop:hover {
   transform: translateY(-8px);
   border-color: var(--color-primary);
@@ -593,14 +489,12 @@ body {
     0 20px 40px rgba(0, 0, 0, 0.6),
     0 0 25px rgba(251, 191, 36, 0.25);
 }
-
 .imgContainer {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-
 .imgTop {
   width: 100%;
   height: 100%;
@@ -609,11 +503,9 @@ body {
   transition: transform 0.45s ease;
   will-change: transform;
 }
-
 .cardTop:hover .imgTop {
   transform: scale(1.12);
 }
-
 .overlayTop {
   position: absolute;
   inset: 0;
@@ -624,7 +516,6 @@ body {
     rgba(0, 0, 0, 0.1) 100%
   );
 }
-
 .numeroTop {
   position: absolute;
   top: 15px;
@@ -636,7 +527,6 @@ body {
   line-height: 1;
   text-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
 }
-
 .infoTop {
   position: absolute;
   bottom: 25px;
@@ -644,14 +534,12 @@ body {
   right: 22px;
   z-index: 3;
 }
-
 .tituloTop {
   font-size: 2rem;
   font-weight: 800;
   color: var(--color-text-primary);
   margin-bottom: 10px;
 }
-
 .metaTop {
   display: flex;
   flex-wrap: wrap;
@@ -659,7 +547,6 @@ body {
   color: var(--color-text-muted);
   font-size: 0.92rem;
 }
-
 .badgeEdad {
   background: rgba(255, 255, 255, 0.15);
   padding: 4px 8px;
@@ -667,44 +554,36 @@ body {
   color: var(--color-text-primary);
   font-weight: 600;
 }
-
 @media (max-width: 768px) {
   .top10Section {
     padding: 60px 20px;
   }
-
   .cardTop {
     width: 260px;
     max-width: 260px;
     height: 430px;
   }
-
   .tituloTop {
     font-size: 1.6rem;
   }
-
   .numeroTop {
     font-size: 3.2rem;
   }
 }
-
 .categoriaRowSection {
   width: 100%;
   padding: 20px 60px;
   background: var(--color-bg);
 }
-
 .categoriaRowTitulo {
   font-size: 2.3rem;
   font-weight: 800;
   color: var(--color-text-primary);
   margin-bottom: 35px;
 }
-
 .categoriaRowTitulo span {
   color: var(--color-primary);
 }
-
 .categoriaRowScroll {
   display: flex;
   gap: 14px;
@@ -712,7 +591,6 @@ body {
   padding-block: 10px;
   scroll-behavior: smooth;
 }
-
 .top10Scroll,
 .categoriaRowScroll,
 .gridCategorias {
@@ -720,14 +598,11 @@ body {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
-
 .top10Scroll::-webkit-scrollbar,
 .categoriaRowScroll::-webkit-scrollbar,
 .gridCategorias::-webkit-scrollbar {
   display: none;
 }
-
-/* Card estilo Netflix */
 .categoriaCard {
   width: 450px;
   height: 260px;
@@ -744,7 +619,6 @@ body {
     box-shadow 0.35s ease;
   will-change: transform;
 }
-
 .categoriaCard:hover {
   transform: scale(1);
   border-color: var(--color-primary);
@@ -752,13 +626,11 @@ body {
     0 15px 35px rgba(0, 0, 0, 0.55),
     0 0 20px rgba(251, 191, 36, 0.25);
 }
-
 .categoriaCardImgContainer {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
-
 .categoriaCardImg {
   width: 100%;
   height: 100%;
@@ -767,11 +639,9 @@ body {
   transition: transform 0.45s ease;
   will-change: transform;
 }
-
 .categoriaCard:hover .categoriaCardImg {
   transform: scale(1.1);
 }
-
 .categoriaCardOverlay {
   position: absolute;
   inset: 0;
@@ -782,7 +652,6 @@ body {
     rgba(0, 0, 0, 0.05) 100%
   );
 }
-
 .categoriaCardInfo {
   position: absolute;
   bottom: 14px;
@@ -790,7 +659,6 @@ body {
   right: 14px;
   z-index: 3;
 }
-
 .categoriaCardTitulo {
   font-size: 1rem;
   font-weight: 700;
@@ -798,7 +666,6 @@ body {
   margin-bottom: 6px;
   line-height: 1.2;
 }
-
 .categoriaCardMeta {
   display: flex;
   flex-wrap: wrap;
@@ -806,7 +673,6 @@ body {
   color: var(--color-text-muted);
   font-size: 0.78rem;
 }
-
 .categoriaCardBadge {
   background: rgba(255, 255, 255, 0.15);
   padding: 2px 6px;
@@ -815,17 +681,14 @@ body {
   font-weight: 600;
   font-size: 0.75rem;
 }
-
 @media (max-width: 768px) {
   .categoriaRowSection {
     padding: 40px 20px;
   }
-
   .categoriaCard {
     width: 140px;
     height: 200px;
   }
-
   .categoriaCardTitulo {
     font-size: 0.88rem;
   }
