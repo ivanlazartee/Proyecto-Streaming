@@ -322,8 +322,8 @@ body {
 .cardCategoria {
   height: 180px;
   border-radius: 22px;
-  background: linear-gradient(145deg, #000, #daa30c98);
-  border: 1px solid rgba(225, 240, 24, 0.31);
+  background: linear-gradient(145deg, #000, #a38e5c98);
+  border: 1px solid rgba(223, 183, 7, 0.31);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -556,7 +556,7 @@ body {
 }
 @media (max-width: 768px) {
   .top10Section {
-    padding: 60px 20px;
+    padding: 10px 20px;
   }
   .cardTop {
     width: 260px;
@@ -683,7 +683,10 @@ body {
 }
 @media (max-width: 768px) {
   .categoriaRowSection {
-    padding: 40px 20px;
+    padding: 10px 20px;
+  }
+  .categoriaRowTitulo{
+    color: var(--color-primary);
   }
   .categoriaCard {
     width: 140px;
