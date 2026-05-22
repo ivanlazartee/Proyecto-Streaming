@@ -9,110 +9,101 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Netflix</title>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>OnDev+</title>
   </head>
-  <body class="bg-black text-light">
+  <body class="text-white">
     <header>
-      <div class="hero-section">
-        <nav class="navbar navbar-expand-lg bg-body-dark mx-5">
-          <div class="container-fluid">
-            <a class="navbar-brand text-light" href="./index.html">Netflix</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="ms-auto d-flex align-items-center gap-2">
-              <li class="nav-item dropdown list-unstyled">
-                <button type="button" class="btn btn-outline-danger">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Idioma
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Español</a></li>
-                    <li><a class="dropdown-item" href="#">Portugués</a></li>
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                    <li><a class="dropdown-item" href="#">Français</a></li>
-                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                  </ul>
-                </button>
-              </li>
-              <button type="button" class="btn btn-danger">
-                Iniciar sesión
-              </button>
-            </div>
-          </div>
-        </nav>
-
-        <div class="container text-center mt-5">
-          <h1>Películas y series ilimitadas y mucho más</h1>
-          <p>A partir de $ 8.999. Cancela cuando quieras.</p>
-          <p>
-            ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
-            reiniciar tu membresía de Netflix.
-          </p>
-          <form class="row g-3 justify-content-center">
-            <div class="col-auto">
-              <label for="staticEmail2" class="visually-hidden">Email</label>
-            </div>
-            <div class="col-auto">
-              <label for="inputPassword2" class="visually-hidden"
-                >Password</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleFormControlInput1"
-                placeholder="Email"
-              />
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-danger mb-3">
-                Comenzar >
-              </button>
-            </div>
-          </form>
-        </div>
+      <nav class="navbar navbar-expand-lg py-3">
         <div class="container">
-          <ul>
-            <li><a href="./pages/administrarPerfiles.html">Administrar Perfiles</a></li>
-            <li><a href="./pages/centroDeAyuda.html">Centro de Ayuda</a></li>
-            <li><a href="./pages/cerrarSesion.html">Cerrar Sesión</a></li>
-            <li><a href="./pages/cuenta.html">Mi Cuenta</a></li>
-            <li><a href="./pages/explorarPorIdiomas.html">Explorar por Idiomas</a></li>
-            <li><a href="./pages/iniciarSesion.html">Iniciar Sesión</a></li>
-            <li><a href="./pages/inicio.html">Inicio</a></li>
-            <li><a href="./pages/juegos.html">Juegos</a></li>
-            <li><a href="./pages/miLista.html">Mi Lista</a></li>
-            <li><a href="./pages/novedades.html">Novedades</a></li>
-            <li><a href="./pages/peliculas.html">Películas</a></li>
-            <li><a href="./pages/series.html">Series</a></li>
-            <li><a href="./pages/transferirPerfil.html">Transferir Perfil</a></li>
-            <li><a href="./pages/ivan.html">Ivan</a></li>
-            <li><a href="./pages/mariano.html">Mariano</a></li>
-            <li><a href="./pages/pilar.html">Pilar</a></li>
-          </ul>
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/img/fondo-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              style="width: 50px; height: 50px; object-fit: contain"
+            />
+          </a>
+          <div class="d-flex ms-auto gap-2 align-items-center">
+            <li class="nav-item dropdown list-unstyled">
+              <button type="button" class="btn btn-outline-amarillo">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Idioma
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">Portugués</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Français</a></li>
+                  <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                </ul>
+              </button>
+            </li>
+            <a
+              href="./pages/suscripcion.html"
+              class="btn"
+              style="
+                background-color: #fbbf24;
+                border: 2px solid #fbbf24;
+                color: #fff;
+                font-weight: 600;
+              "
+            >
+              Suscribirse
+            </a>
+            <button
+              class="btn btn-amarillo"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              style="
+                background-color: transparent;
+                border: 2px solid #fbbf24;
+                color: #fbbf24;
+              "
+            >
+              Iniciar Sesión
+            </button>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
+
     <main>
+      <!-- Sección principal -->
+      <div class="container text-white text-center mt-5">
+        <h1>Películas y series ilimitadas, y mucho más.</h1>
+        <p>Desde $9.999. Cancela cuando quieras.</p>
+        <h2>¿Listo para ver OnDev+?</h2>
+        <p>Ingresa tu email para crear tu cuenta o reiniciar tu membresía.</p>
+        <form
+          class="row g-3 justify-content-center"
+          action="./pages/perfiles.html"
+          method="get"
+        >
+          <div class="col-auto">
+            <label for="inputEmail" class="visually-hidden">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-amarillo mb-3">
+              Comenzar >
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- Sección de tendencias -->
       <div class="container row mt-2 g-4 mx-auto">
         <h2 class="me-5">Tendencias</h2>
         <div class="col-4">
@@ -218,57 +209,53 @@
           </div>
         </div>
       </div>
-
+      <!-- Sección de motivos para unirte -->
       <div class="container row mt-2 g-4 mx-auto">
         <h2 class="me-5">Más motivos para unirte</h2>
-        <div class="col-6 mt-2">
-          <div class="card">
-            <div class="card-header">Disfruta en tu TV</div>
-            <div class="card-body">
-              <p class="card-text">
-                Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV,
-                reproductores de Blu-ray y más.
-              </p>
-            </div>
+        <div class="col-6 mt-2 d-flex flex-column">
+          <div class="card-motivos h-100">
+            <p class="card-motivos__header">Entretenimiento en todas partes.</p>
+            <p class="card-motivos__body">
+              Accede desde televisores inteligentes, consolas, dispositivos de
+              streaming y mucho más, cuando quieras.
+            </p>
           </div>
         </div>
-        <div class="col-6 mt-2">
-          <div class="card">
-            <div class="card-header">
-              Descarga tus series para verlas offline
-            </div>
-            <div class="card-body">
-              <p class="card-text">
-                Guarda tu contenido favorito y siempre tendrás algo para ver.
-              </p>
-            </div>
+        <div class="col-6 mt-2 d-flex flex-column">
+          <div class="card-motivos h-100">
+            <p class="card-motivos__header">
+              Descarga y disfruta sin conexión.
+            </p>
+            <p class="card-motivos__body">
+              Lleva tus películas y series favoritas contigo para verlas en
+              cualquier momento, incluso sin internet.
+            </p>
           </div>
         </div>
-        <div class="col-6 mt-2">
-          <div class="card">
-            <div class="card-header">Disfruta donde quieras</div>
-            <div class="card-body">
-              <p class="card-text">
-                Películas y series ilimitadas en tu teléfono, tablet, laptop y
-                TV.
-              </p>
-            </div>
+        <div class="col-6 mt-2 d-flex flex-column">
+          <div class="card-motivos h-100">
+            <p class="card-motivos__header">
+              Mira contenido en cualquier dispositivo.
+            </p>
+            <p class="card-motivos__body">
+              Disfruta de tus películas y series favoritas sin límites desde tu
+              celular, tablet, computadora o televisor.
+            </p>
           </div>
         </div>
-        <div class="col-6 mt-2">
-          <div class="card">
-            <div class="card-header">Crea perfiles para niños</div>
-            <div class="card-body">
-              <p class="card-text">
-                Los niños vivirán aventuras con sus personajes favoritos en un
-                espacio diseñado exclusivamente para ellos, gratis con tu
-                membresía.
-              </p>
-            </div>
+        <div class="col-6 mt-2 d-flex flex-column">
+          <div class="card-motivos h-100">
+            <p class="card-motivos__header">
+              Perfiles infantiles personalizados.
+            </p>
+            <p class="card-motivos__body">
+              Ofrece a los más pequeños un espacio seguro y divertido, con
+              contenido pensado especialmente para su entretenimiento.
+            </p>
           </div>
         </div>
       </div>
-
+      <!-- Sección de preguntas frecuentes -->
       <div class="container accordion mb-5" id="accordionExample">
         <h2 class="mt-5">Preguntas frecuentes</h2>
         <div class="accordion-item">
@@ -281,7 +268,7 @@
               aria-expanded="false"
               aria-controls="collapseOne"
             >
-              ¿Qué es Netflix?
+              ¿Qué es OnDev+?
             </button>
           </h2>
           <div
@@ -291,15 +278,15 @@
           >
             <div class="accordion-body">
               <p>
-                Netflix es un servicio de streaming que ofrece una gran variedad
-                de películas, series y documentales premiados en casi cualquier
-                pantalla conectada a internet.
+                OnDev+ es una plataforma de streaming que te brinda acceso a una
+                amplia selección de películas, series y contenido exclusivo,
+                disponible en múltiples dispositivos conectados a internet.
               </p>
               <br />
               <p>
-                Todo lo que quieras ver, sin límites ni comerciales, a un costo
-                muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas
-                las semanas se agregan más películas y series!
+                Disfruta de entretenimiento sin interrupciones, con acceso
+                ilimitado y nuevos estrenos agregados constantemente para que
+                siempre encuentres algo emocionante para ver.
               </p>
             </div>
           </div>
@@ -314,7 +301,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              ¿Cuánto cuesta Netflix?
+              ¿Cuánto cuesta OnDev+?
             </button>
           </h2>
           <div
@@ -324,10 +311,11 @@
           >
             <div class="accordion-body">
               <p>
-                Disfruta de Netflix en tu smartphone, tablet, smart TV, laptop o
-                dispositivo de streaming, todo por una tarifa plana mensual.
-                Planes desde $ 8.999 hasta $ 19.999/mes (sin impuestos
-                incluidos).
+                Disfruta de OnDev+ en tu celular, tablet, smart TV, computadora
+                o dispositivo de streaming mediante una suscripción mensual
+                accesible. Contamos con diferentes planes pensados para
+                adaptarse a tus necesidades, brindándote acceso ilimitado a
+                películas, series y contenido exclusivo, sin interrupciones.
               </p>
             </div>
           </div>
@@ -342,7 +330,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              ¿Dónde puedo ver Netflix?
+              ¿Dónde puedo ver OnDev+?
             </button>
           </h2>
           <div
@@ -352,19 +340,16 @@
           >
             <div class="accordion-body">
               <p>
-                Disfruta donde quieras, cuando quieras. Inicia sesión en tu
-                cuenta de Netflix para ver contenido al instante a través de
-                netflix.com desde tu computadora personal o en cualquier
-                dispositivo con conexión a internet que cuente con la app de
-                Netflix, como smart TV, smartphones, tablets, reproductores
-                multimedia y consolas de juegos.
+                Disfruta de OnDev+ donde quieras y cuando quieras. Accede
+                fácilmente desde tu computadora, smartphone, tablet, smart TV o
+                cualquier dispositivo con conexión a internet mediante nuestra
+                plataforma o aplicación.
               </p>
               <br />
               <p>
-                Además, puedes descargar tus series favoritas con la app para
-                iOS o Android. Con la función de descarga, puedes ver contenido
-                donde vayas y sin conexión a internet. Lleva Netflix contigo
-                adonde sea.
+                Además, puedes descargar tus películas y series favoritas para
+                verlas sin conexión desde dispositivos compatibles, para que tu
+                entretenimiento te acompañe en todo momento.
               </p>
             </div>
           </div>
@@ -379,7 +364,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              ¿Cómo cancelo?
+              ¿Cómo cancelo mi suscripción?
             </button>
           </h2>
           <div
@@ -389,9 +374,10 @@
           >
             <div class="accordion-body">
               <p>
-                Netflix es flexible. Cancela la membresía online con solo dos
-                clics. No hay cargos por cancelación. Inicia o cancela tu cuenta
-                cuando quieras.
+                OnDev+ es totalmente flexible. Puedes cancelar tu suscripción en
+                cualquier momento de forma rápida y sencilla, sin cargos
+                adicionales. Activa, pausa o cancela tu suscripción cuando
+                quieras, con total libertad.
               </p>
             </div>
           </div>
@@ -406,7 +392,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              ¿Qué puedo ver en Netflix?
+              ¿Qué puedo ver en OnDev+?
             </button>
           </h2>
           <div
@@ -416,9 +402,10 @@
           >
             <div class="accordion-body">
               <p>
-                Netflix tiene un amplio catálogo de películas, series,
-                documentales, animes, originales premiados y más. Todo lo que
-                quieras ver, cuando quieras.
+                OnDev+ ofrece un amplio catálogo de películas, series,
+                documentales, contenido exclusivo y mucho más. Descubre
+                estrenos, clásicos y producciones originales para disfrutar
+                cuando quieras, con entretenimiento para todos los gustos.
               </p>
             </div>
           </div>
@@ -433,7 +420,7 @@
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              ¿Es bueno Netflix para los niños?
+              ¿OnDev+ es ideal para niños?
             </button>
           </h2>
           <div
@@ -443,10 +430,11 @@
           >
             <div class="accordion-body">
               <p>
-                La experiencia de Netflix para niños está incluida en la
-                membresía para que los padres tengan el control mientras los
-                peques disfrutan series y películas familiares en su propio
-                espacio.
+                Sí, OnDev+ incluye perfiles infantiles dentro de tu membresía,
+                ofreciendo un espacio seguro y entretenido para que los más
+                pequeños disfruten de series, películas y contenido familiar.
+                Además, los padres pueden gestionar el acceso y elegir una
+                experiencia adecuada para cada edad.
               </p>
               <br />
               <p>
@@ -462,37 +450,158 @@
 
       <div class="container text-center mt-5">
         <p>
-          ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
-          reiniciar tu membresía de Netflix.
+          ¿Quieres disfrutar de OnDev+ ahora? Ingresa tu email para crear una
+          cuenta o reactivar tu membresía y comienza a ver tus películas y
+          series favoritas.
         </p>
-        <form class="row g-3 justify-content-center">
+        <form
+          class="row g-3 justify-content-center"
+          action="./pages/perfiles.html"
+          method="get"
+        >
           <div class="col-auto">
-            <label for="staticEmail2" class="visually-hidden">Email</label>
-          </div>
-          <div class="col-auto">
-            <label for="inputPassword2" class="visually-hidden">Password</label>
+            <label for="inputEmail" class="visually-hidden">Email</label>
             <input
               type="email"
               class="form-control"
-              id="exampleFormControlInput1"
+              id="inputEmail"
               placeholder="Email"
+              required
             />
           </div>
           <div class="col-auto">
-            <button type="submit" class="btn btn-danger mb-3">
+            <button type="submit" class="btn btn-amarillo mb-3">
               Comenzar >
             </button>
           </div>
         </form>
       </div>
-    </main>
 
+      <!-- Modal Iniciar Sesión -->
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+        style="background-color: transparent; color: #fbbf24"
+      >
+        <div class="modal-dialog">
+          <div
+            class="modal-content"
+            style="
+              background-color: #1a2030;
+              border: 2px solid #374151;
+              color: #fbbf24;
+            "
+          >
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">
+                Iniciar Sesión
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="./pages/error404.html" method="get">
+                <div class="mb-3">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label"
+                    style="color: #fcd34d"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    minlength="10"
+                    maxlength="50"
+                    required
+                  />
+                  <div id="emailHelp" class="" style="color: #9ca3af">
+                    <p>
+                      Nunca compartiremos tu correo electrónico con nadie más.
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label"
+                    style="color: #fcd34d"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    minlength="6"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="exampleCheck1"
+                    style="color: #fcd34d"
+                    >¿Quieres recibir notificaciones de nuestras futuras
+                    novedades?</label
+                  >
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                    required
+                  />
+                  <label
+                    class="form-check-label"
+                    for="exampleCheck1"
+                    style="color: #fcd34d"
+                    >¿Aceptas nuestros términos y condiciones?</label
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-amarillo"
+                  style="background-color: #fbbf24"
+                >
+                  Iniciar Sesión
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
     <footer class="container-fluid mt-5">
       <div class="pt-5 pb-5 bg-black text-white">
         <div class="row mx-5">
           <div class="col-12 ms-5 mb-4">
-            <a href="./index.html" class="text-decoration-none text-reset">
-              <h4>¿Preguntas? Llama al 0800 345 2095</h4>
+            <a class="text-decoration-none text-reset">
+              <h4>
+                <!-- Logo agregado aquí -->
+                <img
+                  src="./assets/img/Fondo-de-logo-OnDev+.png"
+                  alt="Logo OnDev+"
+                  style="width: 80px; height: 80px; object-fit: contain"
+                  class="mt-3"
+                />¿Preguntas? Llama al 0800 000 0000
+              </h4>
             </a>
           </div>
           <div class="col-12 col-sm-6 col-md-3 ms-5">
@@ -505,11 +614,13 @@
               href="./pages/precios.html"
               class="text-decoration-none text-reset"
               >Prensa</a
-            ><br /><a
+            ><br />
+            <a
               href="./pages/seguridad.html"
               class="text-decoration-none text-reset"
               >Formas de ver</a
-            ><br /><a
+            ><br />
+            <a
               href="./pages/roboExtravio.html"
               class="text-decoration-none text-reset"
               >Preferencias de cookies</a
@@ -530,11 +641,13 @@
               href="./pages/precios.html"
               class="text-decoration-none text-reset"
               >Relaciones con inversionistas</a
-            ><br /><a
+            ><br />
+            <a
               href="./pages/seguridad.html"
               class="text-decoration-none text-reset"
               >Términos de uso</a
-            ><br /><a
+            ><br />
+            <a
               href="./pages/roboExtravio.html"
               class="text-decoration-none text-reset"
               >Información corporativa</a
@@ -555,11 +668,13 @@
               href="./pages/precios.html"
               class="text-decoration-none text-reset"
               >Empleo</a
-            ><br /><a
+            ><br />
+            <a
               href="./pages/seguridad.html"
               class="text-decoration-none text-reset"
               >Privacidad</a
-            ><br /><a
+            ><br />
+            <a
               href="./pages/roboExtravio.html"
               class="text-decoration-none text-reset"
               >Contáctanos</a
@@ -567,7 +682,7 @@
             <a
               href="./pages/roboExtravio.html"
               class="text-decoration-none text-reset"
-              >Solo en Netflix</a
+              >Solo en OnDev+</a
             >
           </div>
         </div>
@@ -593,7 +708,7 @@
         </button>
       </li>
       <div class="container">
-        <h4 class="mt-3">Netflix Argentina</h4>
+        <h4 class="mt-2">OnDev+ Argentina</h4>
         <p>
           Esta página está protegida por Google reCAPTCHA para comprobar que no
           eres un robot.

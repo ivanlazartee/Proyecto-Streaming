@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary:        #FBBF24;
+  --color-primary-hover:  #FCD34D;
+  --color-primary-subtle: rgba(251,191,36,0.12);
+  --color-bg:             #0F1117;
+  --color-bg-nav:         #0A0D12;
+  --color-surface:        #1A2030;
+  --color-surface-mid:    #1F2937;
+  --color-surface-high:   #374151;
+  --color-text-primary:   #F9FAFB;
+  --color-text-muted:     #9CA3AF;
+  --color-border:         rgba(255,255,255,0.08);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAV */
+nav {
+  background: var(--color-bg-nav);
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.5px solid var(--color-border);
+}
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-primary);
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 48px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* GRILLA */
+.profiles-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* CADA PERFIL */
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+.profile-item:hover {
+  transform: scale(1.05);
+}
+.profile-item:hover .avatar {
+  border-color: var(--color-primary);
+}
+.profile-item:hover .profile-name {
+  color: var(--color-text-primary);
+}
+
+/* AVATAR */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease;
+  overflow: hidden;
+  background: var(--color-surface);
+  position: relative;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatar-1 { background: #1e2d3d; }
+.avatar-2 { background: #2a1e1e; }
+.avatar-3 { background: #1e2a1e; }
+.avatar-4 { background: #241a2e; }
+
+.crop-1 img { object-position: 20% center; }
+.crop-2 img { object-position: 75% center; }
+.crop-3 img { object-position: 20% center; transform: scale(1.3); transform-origin: 30% center; }
+.crop-4 img { object-position: 75% center; transform: scale(1.3); transform-origin: 70% center; }
+
+/* BADGE NIÑOS */
+.kids-badge {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  background: var(--color-primary);
+  color: #412402;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* NOMBRE */
+.profile-name {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+/* AGREGAR PERFIL */
+.add-profile .avatar {
+  border: 2px dashed var(--color-surface-high);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.add-profile:hover .avatar {
+  border-color: var(--color-primary);
+  border-style: solid;
+}
+.add-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-surface-mid);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: var(--color-text-muted);
+  transition: background 0.2s, color 0.2s;
+}
+.add-profile:hover .add-icon {
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+}
+
+/* BOTÓN ADMINISTRAR */
+.manage-btn {
+  background: transparent;
+  border: 1.5px solid var(--color-text-muted);
+  color: var(--color-text-muted);
+  padding: 10px 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  font-family: inherit;
+}
+.manage-btn:hover {
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
