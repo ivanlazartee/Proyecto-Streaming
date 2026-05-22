@@ -23,11 +23,10 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  background-image: url(../assets/img/breakingBad.suscripcion.png);
+  background-image: url(../assets/img/breakingBad.suscripcion.png), linear-gradient(to bottom, #f5d42d 0%, #c8a020 15%, #3d2800 40%, #000 100%);
   background-size: contain;
   background-repeat: no-repeat;
   color: var(--color-bg);
-  background-color: #f5d42d;
 }
 
 .seccion-portada {
@@ -82,19 +81,16 @@ body {
   font-size: clamp(2rem, 5vw, 3rem); /* tamaño fluido */
   letter-spacing: 3px;
   font-weight: 600;
+  color:var(--color-text-primary)
 }
 
 .titulo-seccion h3 span {
-  color: var(--color-text-primary);
+  color: var(--color-primary);
 }
 
 .titulo-seccion p {
-  color: var(--color-bg-nav);
+  color: var(--color-text-primary);
   font-size: small;
-}
-
-.seccion-planes {
-  padding: 0 24px 80px;
 }
 
 .contenedor-tarjetas {
@@ -105,9 +101,9 @@ body {
 }
 
 .tarjeta-plan {
-  background: var(--color-text-primary);
-  border: 1px solid var(--color-surface-high);
-  border-top: 5px solid var(--color-bg-nav);
+  background: var(--color-bg-nav);
+  border: 1px solid var(--color-primary);
+  border-top: 5px solid var(--color-primary-hover);
   border-radius: 12px;
   padding: 32px 24px;
   width: 230px;
@@ -118,7 +114,7 @@ body {
 
 .tarjeta-plan:hover {
   transform: scale(1.06);
-  border-color: var(--color-bg-nav);
+  border-color: var(--color-primary);
 }
 
 .tarjeta-plan--destacada {
@@ -128,8 +124,8 @@ body {
 
 .etiqueta-popular {
   display: inline-block;
-  background: var(--color-surface);
-  color: var(--color-text-primary);
+  background: var(--color-primary);
+  color: var(--color-bg);
   font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -142,7 +138,7 @@ body {
   font-family: "bebas neue", sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
-  color: var(--color-surface);
+  color: var(--color-primary);
   margin-bottom: 7px;
 }
 
@@ -150,25 +146,26 @@ body {
   font-family: "Bebas Neue", sans-serif;
   font-size: 52px;
   margin-bottom: 4px;
+  color:var(--color-text-primary)
 }
 
 .precio small {
   font-family: "DM sans" sans-serif;
   font-size: 10px;
-  color: var(--color-surface-high);
+  color: var(--color-text-muted);
   font-weight: normal;
 }
 
 .tarjeta-plan p {
   font-size: 14px;
-  color: var(--color-bg-nav);
+  color: var(--color-text-muted);
   margin-bottom: 16px;
   line-height: 1.5;
 }
 
 .tarjeta-plan hr {
   border: none;
-  border-top: 1px solid var(--color-bg-nav);
+  border-top: 1px solid var(--color-text-muted);
   margin-bottom: 1rem;
 }
 
@@ -179,7 +176,7 @@ body {
 .lista-beneficios li {
   font-size: 0.83rem;
   padding: 4px 0;
-  color: var(--color-texto-principal);
+  color: var(--color-text-primary);
 }
 
 .lista-beneficios li::before {
@@ -193,10 +190,89 @@ body {
 }
 
 .beneficio-no-incluido::before {
-  content: "✗  ";
+  content: "✗";
   color: var(--color-bg-nav);
 }
 
-    .seccion-registro {
-      padding: 0 1.5rem 5rem;
+.seccion-registro {
+  padding: 0 24px 5rem;
+}
+
+.tarjeta-formulario {
+  background-color: var(--color-bg-nav);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--color-surface-high);
+}
+
+.fila-dos-columnas {
+  display: flex;
+  gap: 16px;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+.label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="password"] {
+  background-color: var(--color-surface);
+  border: 3px solid var(--color-surface);
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  padding: 11px 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus{
+  border-color: var(--color-primary-hover);
+}
+
+.boton-enviar-formulario{
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  background-color: var(--color-primary);
+color:var(--color-bg-nav);
+border:none;
+border-radius: 8px;
+font-family: 'DM Sans', Sans-serif;
+font-size: 16px;
+font-weight: 600;
+letter-spacing: 2px;
+text-transform: uppercase;
+cursor: pointer;
+transition: background 0.2s, transform 0.15s;
+}
+
+.boton-enviar-formulario:hover{
+  background:var(--color-primary-hover);
+}
+
+.boton-enviar-formulario:active{
+  transform: scale(0.98);
+}
+
+   @media (max-width: 520px) {
+ 
+      .fila-dos-columnas {
+        flex-direction: column;
+      }
     }

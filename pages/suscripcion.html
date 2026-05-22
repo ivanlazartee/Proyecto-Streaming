@@ -15,15 +15,15 @@
   <body>
     <header></header>
     <main>
-      <seccion class="seccion-portada">
+      <section class="seccion-portada">
         <h2>ELEGI <br />TU PLAN<span>PERFECTO</span></h2>
         <p>
           Miles de peliculas y series sin interrupciones. Cancela cuando
           quieras.
         </p>
         <a href="#seccion-planes" class="boton-borde">VER PLANES</a>
-      </seccion>
-      <seccion class="seccion-planes" id="seccion-planes">
+      </section>
+      <section class="seccion-planes" id="seccion-planes">
         <div class="titulo-seccion">
           <h3>NUESTROS <span>PLANES</span></h3>
           <p>Todos incluyen acceso inmediato.</p>
@@ -34,6 +34,7 @@
             <div class="precio">
               $5500<small>/mes</small>
               <p>Ideal para empezar.</p>
+              </div>
               <hr />
               <ul class="lista-beneficios">
                 <li>1 pantalla</li>
@@ -41,15 +42,16 @@
                 <li>+3.000 titulos</li>
                 <li class="beneficio-no-incluido">Sin descargas</li>
                 <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
+              <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN BÁSICO</a>
               </ul>
             </div>
-          </div>
           <div class="tarjeta-plan">
             <span class="etiqueta-popular">MAS POPULAR</span>
             <h4 class="nombre-plan">ESTANDAR</h4>
             <div class="precio">
               $6999<small>/mes</small>
               <p>La opcion mas elegida.</p>
+              </div>
               <hr />
               <ul class="lista-beneficios">
                 <li>2 pantallas</li>
@@ -57,14 +59,15 @@
                 <li>+7.000 titulos</li>
                 <li>10 descargas offline</li>
                 <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
+                <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN ESTÁNDAR</a>
               </ul>
-            </div>
           </div>
           <div class="tarjeta-plan">
             <h4 class="nombre-plan">PLUS</h4>
             <div class="precio">
               $11999<small>/mes</small>
               <p>Un escalon mas arriba.</p>
+              </div>
               <hr />
               <ul class="lista-beneficios">
                 <li>3 pantallas</li>
@@ -72,14 +75,15 @@
                 <li>+10.000 titulos</li>
                 <li>25 descargas offline</li>
                 <li>Estrenos exclusivos</li>
+                <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN PLUS</a>
               </ul>
-            </div>
           </div>
           <div class="tarjeta-plan">
             <h4 class="nombre-plan">PREMIUM</h4>
             <div class="precio">
               $17100<small>/mes</small>
               <p>La experiencia total.</p>
+              </div>
               <hr />
               <ul class="lista-beneficios">
                 <li>4 pantallas</li>
@@ -88,14 +92,14 @@
                 <li>25 descargas offline</li>
                 <li>Descargas ilimitadas</li>
                 <li>Estrenos exclusivos</li>
+                <a href="#seccion-registro" class="boton-plan">OBTENÉ PREMIUM</a>
               </ul>
-            </div>
           </div>
         </div>
-      </seccion>
-      <seccion class="seccion-registro" id="seccion-registro">
+      </section>
+      <section class="seccion-registro" id="seccion-registro">
         <div class="titulo-seccion">
-          <h3>CREÁ TU<span>CUENTA</span></h3>
+          <h3>CREÁ TU <span>CUENTA</span></h3>
           <p>Completá tus datos y empezá hoy mismo.</p>
         </div>
         <div class="tarjeta-formulario">
@@ -114,19 +118,20 @@
                 />
               </div>
               <div class="grupo-campo">
-                <label for="apellido">Apellido</label>
+                <label for="apellido">APELLIDO</label>
                 <input
                   type="text"
                   id="apellido"
                   name="apellido"
-                  placeholder="Di filippo"
+                  placeholder="De filippo"
                   minlength="2"
                   maxlength="50"
                   required
                 />
               </div>
+              </div>
               <div class="grupo-campo">
-                <label for="email">Email</label>
+                <label for="email">EMAIL</label>
                 <input
                   type="email"
                   id="email"
@@ -138,7 +143,7 @@
                 />
               </div>
               <div class="grupo-campo">
-                <label for="contrasena">Contraseña</label>
+                <label for="contrasena">CONTRASEÑA</label>
                 <input
                   type="password"
                   id="contrasena"
@@ -152,10 +157,9 @@
               <button type="submit" class="boton-enviar-formulario">
                 Crear cuenta
               </button>
-            </div>
           </form>
         </div>
-      </seccion>
+      </section>
     </main>
     <footer></footer>
   </body>
