@@ -78,7 +78,7 @@ body {
 
 .titulo-seccion h3 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: clamp(2rem, 5vw, 3rem); /* tamaño fluido */
+  font-size: clamp(2rem, 5vw, 3rem); 
   letter-spacing: 3px;
   font-weight: 600;
   color:var(--color-text-primary)
@@ -191,6 +191,26 @@ body {
 
 .beneficio-no-incluido::before {
   content: "✗";
+  color: var(--color-bg-nav);
+}
+
+.boton-plan {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 8px;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+
+.boton-plan:hover {
+  background-color: var(--color-primary);
   color: var(--color-bg-nav);
 }
 
