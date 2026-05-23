@@ -758,3 +758,68 @@ body {
     font-size: 0.88rem;
   }
 }
+
+footer {
+  background-color: var(--color-bg-nav) !important;
+  border-top: 3px solid var(--color-primary);
+}
+
+footer .pt-5.pb-5 {
+  background-color: var(--color-bg-nav) !important;
+}
+
+footer h4 {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer a {
+  color: var(--color-text-muted) !important;
+  font-size: 14px;
+  line-height: 2.2;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Boton idioma */
+footer .btn-outline-danger {
+  background: transparent !important;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 500;
+}
+
+footer .btn-outline-danger:hover {
+  background: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+footer .nav-link {
+  color: var(--color-text-primary) !important;
+  font-size: 14px;
+}
+
+/* dropdown oscuro */
+.dropdown-menu {
+  background-color: var(--color-surface) !important;
+  border: 0.5px solid var(--color-surface-high) !important;
+}
+
+.dropdown-item {
+  color: var(--color-text-primary) !important;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-surface-mid) !important;
+  color: var(--color-primary) !important;
+}
+
+footer p {
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
