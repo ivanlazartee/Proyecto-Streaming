@@ -204,3 +204,127 @@ footer p {
   color: var(--color-text-muted);
   font-size: 13px;
 }
+
+.categoriaRowSection {
+  width: 100%;
+  padding: 20px 60px;
+  background: var(--color-bg);
+}
+.categoriaRowTitulo {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--color-text-primary);
+  margin-bottom: 35px;
+}
+.categoriaRowTitulo span {
+  color: var(--color-primary);
+}
+.categoriaRowScroll {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  padding-block: 10px;
+  scroll-behavior: smooth;
+}
+.top10Scroll,
+.categoriaRowScroll,
+.gridCategorias {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.top10Scroll::-webkit-scrollbar,
+.categoriaRowScroll::-webkit-scrollbar,
+.gridCategorias::-webkit-scrollbar {
+  display: none;
+}
+.categoriaCard {
+  width: 450px;
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+  will-change: transform;
+}
+.categoriaCard:hover {
+  transform: scale(1);
+  border-color: var(--color-primary);
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.55),
+    0 0 20px rgba(251, 191, 36, 0.25);
+}
+.categoriaCardImgContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.categoriaCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+.categoriaCard:hover .categoriaCardImg {
+  transform: scale(1.1);
+}
+.categoriaCardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}
+.categoriaCardInfo {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  right: 14px;
+  z-index: 3;
+}
+.categoriaCardTitulo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+.categoriaCardMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+}
+.categoriaCardBadge {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: 5px;
+  color: var(--color-text-primary);
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+@media (max-width: 768px) {
+  .categoriaRowSection {
+    padding: 40px 20px;
+  }
+  .categoriaCard {
+    width: 140px;
+    height: 200px;
+  }
+  .categoriaCardTitulo {
+    font-size: 0.88rem;
+  }
+}
