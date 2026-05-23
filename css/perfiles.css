@@ -51,6 +51,10 @@ nav {
   background: var(--color-primary);
 }
 
+.logoMarca {
+  color: var(--color-primary);
+}
+
 /* MAIN */
 main {
   flex: 1;

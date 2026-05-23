@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
+    />
+    <meta
+      name="author"
+      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,9 +28,29 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="#">OnDev+</a>
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="./pilar.html"
+          >
+            <img
+              src="../assets/img/fondo-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              style="width: 40px; height: 40px; object-fit: contain"
+            />
+            <span class="logoMarca fw-semibold">OnDev+</span>
+          </a>
+          <button
+            class="navbar-toggler border-0 text-white ms-auto me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div class="d-flex ms-auto gap-2 align-items-center">
-            <!-- dropdown idiomas -->
             <div class="dropdown">
               <li class="container nav-item dropdown list-unstyled">
                 <button type="button" class="btn btn-outline-amarillo">
@@ -41,8 +73,6 @@
                 </button>
               </li>
             </div>
-
-            <!-- boton Iniciar Sesion -->
             <button
               class="btn btn-amarillo"
               type="button"
@@ -60,8 +90,7 @@
         </div>
       </nav>
     </header>
-
-    <main> <!-- Sección principal -->
+    <main>
       <div class="container text-white text-center mt-5">
         <h1>Películas y series ilimitadas, y mucho más.</h1>
         <p>Desde $9.999. Cancela cuando quieras.</p>
@@ -89,113 +118,130 @@
           </div>
         </form>
       </div>
-      <!-- Sección de tendencias -->
-      <div class="container row mt-2 g-4 mx-auto">
-        <h2 class="me-5">Tendencias</h2>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+      <section class="categoriaRowSection">
+        <h2 class="categoriaRowTitulo">Tendencias</h2>
+        <div class="categoriaRowScroll">
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/interSellar.jpg"
+                class="categoriaCardImg"
+                alt="Interstellar"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Interstellar</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2014</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/breakingBadCard.jpg"
+                class="categoriaCardImg"
+                alt="Breaking Bad"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Breaking Bad</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">18+</span>
+                <span>2008</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/avatarcard.jpg"
+                class="categoriaCardImg"
+                alt="Avatar"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Avatar</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2009</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/darkCard.jpg"
+                class="categoriaCardImg"
+                alt="Dark"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Dark</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>2017</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/theBatmanCard.avif"
+                class="categoriaCardImg"
+                alt="The Batman"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">The Batman</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/strangerThingsCards.webp"
+                class="categoriaCardImg"
+                alt="Stranger Things"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Stranger Things</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2016</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="../assets/img/jokerCard.jpg"
+                class="categoriaCardImg"
+                alt="The Joker"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Joker</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">18+</span>
+                <span>2019</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Sección de motivos para unirte -->
+      </section>
       <div class="container row mt-2 g-4 mx-auto">
         <h2 class="me-5">Más motivos para unirte</h2>
         <div class="col-6 mt-2 d-flex flex-column">
@@ -236,7 +282,6 @@
           </div>
         </div>
       </div>
-      <!-- Sección de preguntas frecuentes -->
       <div class="container accordion mb-5" id="accordionExample">
         <h2 class="mt-5">Preguntas frecuentes</h2>
         <div class="accordion-item">
@@ -249,7 +294,7 @@
               aria-expanded="false"
               aria-controls="collapseOne"
             >
-              ¿Qué es Netflix?
+              ¿Qué es OnDev+?
             </button>
           </h2>
           <div
@@ -259,15 +304,15 @@
           >
             <div class="accordion-body">
               <p>
-                Netflix es un servicio de streaming que ofrece una gran variedad
-                de películas, series y documentales premiados en casi cualquier
-                pantalla conectada a internet.
+                OnDev+ es una plataforma de streaming que te brinda acceso a una
+                amplia selección de películas, series y contenido exclusivo,
+                disponible en múltiples dispositivos conectados a internet.
               </p>
               <br />
               <p>
-                Todo lo que quieras ver, sin límites ni comerciales, a un costo
-                muy accesible. Siempre hay algo nuevo por descubrir, ¡y todas
-                las semanas se agregan más películas y series!
+                Disfruta de entretenimiento sin interrupciones, con acceso
+                ilimitado y nuevos estrenos agregados constantemente para que
+                siempre encuentres algo emocionante para ver.
               </p>
             </div>
           </div>
@@ -282,7 +327,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              ¿Cuánto cuesta Netflix?
+              ¿Cuánto cuesta OnDev+?
             </button>
           </h2>
           <div
@@ -292,10 +337,11 @@
           >
             <div class="accordion-body">
               <p>
-                Disfruta de Netflix en tu smartphone, tablet, smart TV, laptop o
-                dispositivo de streaming, todo por una tarifa plana mensual.
-                Planes desde $ 8.999 hasta $ 19.999/mes (sin impuestos
-                incluidos).
+                Disfruta de OnDev+ en tu celular, tablet, smart TV, computadora
+                o dispositivo de streaming mediante una suscripción mensual
+                accesible. Contamos con diferentes planes pensados para
+                adaptarse a tus necesidades, brindándote acceso ilimitado a
+                películas, series y contenido exclusivo, sin interrupciones.
               </p>
             </div>
           </div>
@@ -310,7 +356,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              ¿Dónde puedo ver Netflix?
+              ¿Dónde puedo ver OnDev+?
             </button>
           </h2>
           <div
@@ -320,19 +366,16 @@
           >
             <div class="accordion-body">
               <p>
-                Disfruta donde quieras, cuando quieras. Inicia sesión en tu
-                cuenta de Netflix para ver contenido al instante a través de
-                netflix.com desde tu computadora personal o en cualquier
-                dispositivo con conexión a internet que cuente con la app de
-                Netflix, como smart TV, smartphones, tablets, reproductores
-                multimedia y consolas de juegos.
+                Disfruta de OnDev+ donde quieras y cuando quieras. Accede
+                fácilmente desde tu computadora, smartphone, tablet, smart TV o
+                cualquier dispositivo con conexión a internet mediante nuestra
+                plataforma o aplicación.
               </p>
               <br />
               <p>
-                Además, puedes descargar tus series favoritas con la app para
-                iOS o Android. Con la función de descarga, puedes ver contenido
-                donde vayas y sin conexión a internet. Lleva Netflix contigo
-                adonde sea.
+                Además, puedes descargar tus películas y series favoritas para
+                verlas sin conexión desde dispositivos compatibles, para que tu
+                entretenimiento te acompañe en todo momento.
               </p>
             </div>
           </div>
@@ -347,7 +390,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              ¿Cómo cancelo?
+              ¿Cómo cancelo mi suscripción?
             </button>
           </h2>
           <div
@@ -357,9 +400,10 @@
           >
             <div class="accordion-body">
               <p>
-                Netflix es flexible. Cancela la membresía online con solo dos
-                clics. No hay cargos por cancelación. Inicia o cancela tu cuenta
-                cuando quieras.
+                OnDev+ es totalmente flexible. Puedes cancelar tu suscripción en
+                cualquier momento de forma rápida y sencilla, sin cargos
+                adicionales. Activa, pausa o cancela tu suscripción cuando
+                quieras, con total libertad.
               </p>
             </div>
           </div>
@@ -374,7 +418,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              ¿Qué puedo ver en Netflix?
+              ¿Qué puedo ver en OnDev+?
             </button>
           </h2>
           <div
@@ -384,9 +428,10 @@
           >
             <div class="accordion-body">
               <p>
-                Netflix tiene un amplio catálogo de películas, series,
-                documentales, animes, originales premiados y más. Todo lo que
-                quieras ver, cuando quieras.
+                OnDev+ ofrece un amplio catálogo de películas, series,
+                documentales, contenido exclusivo y mucho más. Descubre
+                estrenos, clásicos y producciones originales para disfrutar
+                cuando quieras, con entretenimiento para todos los gustos.
               </p>
             </div>
           </div>
@@ -401,7 +446,7 @@
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              ¿Es bueno Netflix para los niños?
+              ¿OnDev+ es ideal para niños?
             </button>
           </h2>
           <div
@@ -411,10 +456,11 @@
           >
             <div class="accordion-body">
               <p>
-                La experiencia de Netflix para niños está incluida en la
-                membresía para que los padres tengan el control mientras los
-                peques disfrutan series y películas familiares en su propio
-                espacio.
+                Sí, OnDev+ incluye perfiles infantiles dentro de tu membresía,
+                ofreciendo un espacio seguro y entretenido para que los más
+                pequeños disfruten de series, películas y contenido familiar.
+                Además, los padres pueden gestionar el acceso y elegir una
+                experiencia adecuada para cada edad.
               </p>
               <br />
               <p>
@@ -427,11 +473,15 @@
           </div>
         </div>
       </div>
-
       <div class="container text-center mt-5">
+        <h2>¿Todavía no tienes una cuenta de OnDev+?</h2>
         <p>
-          ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
-          reiniciar tu membresía de Netflix.
+          ¡Escribe tu correo y haz clic en el botón de abajo para saber que
+          planes tenemos para vos!
+        </p>
+        <p>
+          ¡Únete a OnDev+ hoy mismo y descubre un mundo de entretenimiento sin
+          límites!
         </p>
         <form
           class="row g-3 justify-content-center"
@@ -455,8 +505,6 @@
           </div>
         </form>
       </div>
-
-      <!-- Modal Iniciar Sesión -->
       <div
         class="modal fade"
         id="loginModal"
@@ -566,103 +614,113 @@
         </div>
       </div>
     </main>
-    <!-- Footer -->
     <footer class="container-fluid mt-5">
       <div class="pt-5 pb-5 bg-black text-white">
-        <div class="row mx-5">
-          <div class="col-12 ms-5 mb-4">
+        <div class="row mx-3 mx-md-5">
+          <div class="col-12 mb-4">
             <a class="text-decoration-none text-reset">
-              <h4>¿Preguntas? Llama al 0800 000 0000</h4>
+              <h4 class="d-flex align-items-center gap-2">
+                <img
+                  src="./assets/img/Fondo-de-logo-OnDev+.png"
+                  alt="Logo OnDev+"
+                  style="width: 80px; height: 80px; object-fit: contain"
+                />
+                ¿Preguntas? Llama al 0800 000 0000
+              </h4>
             </a>
           </div>
-          <div class="col-12 col-sm-6 col-md-3 ms-5">
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
             <a
-              href="./pages/quienesSomos.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Preguntas frecuentes</a
-            ><br />
+            >
             <a
-              href="./pages/precios.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Prensa</a
-            ><br /><a
-              href="./pages/seguridad.html"
-              class="text-decoration-none text-reset"
-              >Formas de ver</a
-            ><br /><a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Preferencias de cookies</a
-            ><br />
+            >
             <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Formas de ver</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preferencias de cookies</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Prueba de velocidad</a
             >
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
             <a
-              href="./pages/quienesSomos.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Centro de ayuda</a
-            ><br />
+            >
             <a
-              href="./pages/precios.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Relaciones con inversionistas</a
-            ><br /><a
-              href="./pages/seguridad.html"
-              class="text-decoration-none text-reset"
-              >Términos de uso</a
-            ><br /><a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Información corporativa</a
-            ><br />
+            >
             <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Términos de uso</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Información corporativa</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Avisos legales</a
             >
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
             <a
-              href="./pages/quienesSomos.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Cuenta</a
-            ><br />
+            >
             <a
-              href="./pages/precios.html"
-              class="text-decoration-none text-reset"
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
               >Empleo</a
-            ><br /><a
-              href="./pages/seguridad.html"
-              class="text-decoration-none text-reset"
-              >Privacidad</a
-            ><br /><a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Contáctanos</a
-            ><br />
+            >
             <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Solo en Netflix</a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Privacidad</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Contáctanos</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Solo en OnDev+</a
             >
           </div>
         </div>
       </div>
-      <li class="container nav-item dropdown list-unstyled">
-        <button type="button" class="btn btn-outline-danger">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
+      <div class="container mt-3">
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-danger dropdown-toggle"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             Idioma
-          </a>
+          </button>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Español</a></li>
             <li><a class="dropdown-item" href="#">Portugués</a></li>
@@ -670,10 +728,10 @@
             <li><a class="dropdown-item" href="#">Français</a></li>
             <li><a class="dropdown-item" href="#">Deutsch</a></li>
           </ul>
-        </button>
-      </li>
-      <div class="container">
-        <h4 class="mt-3">OnDev+ Argentina</h4>
+        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h4>OnDev+ Argentina</h4>
         <p>
           Esta página está protegida por Google reCAPTCHA para comprobar que no
           eres un robot.
