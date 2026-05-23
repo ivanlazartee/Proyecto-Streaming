@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,11 +16,11 @@
     <header></header>
     <main>
       <section class="seccion-portada">
-        <h2>ELEGI <br />TU PLAN<span>PERFECTO</span></h2>
-        <p>
-          Miles de peliculas y series sin interrupciones. Cancela cuando
-          quieras.
-        </p>
+        <img
+    src="../assets/img/suscripcion-imagen.png"
+    alt="Elegí tu plan perfecto"
+    class="portada-imagen"
+  />
         <a href="#seccion-planes" class="boton-borde">VER PLANES</a>
       </section>
       <section class="seccion-planes" id="seccion-planes">
@@ -34,66 +34,70 @@
             <div class="precio">
               $5500<small>/mes</small>
               <p>Ideal para empezar.</p>
-              </div>
-              <hr />
-              <ul class="lista-beneficios">
-                <li>1 pantalla</li>
-                <li>Calidad 1080p HD</li>
-                <li>+3.000 titulos</li>
-                <li class="beneficio-no-incluido">Sin descargas</li>
-                <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
-              <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN BÁSICO</a>
-              </ul>
             </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>1 pantalla</li>
+              <li>Calidad 1080p HD</li>
+              <li>+3.000 titulos</li>
+              <li class="beneficio-no-incluido">Sin descargas</li>
+              <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan"
+              >OBTENÉ PLAN BÁSICO</a
+            >
+          </div>
           <div class="tarjeta-plan">
             <span class="etiqueta-popular">MAS POPULAR</span>
             <h4 class="nombre-plan">ESTANDAR</h4>
             <div class="precio">
               $6999<small>/mes</small>
               <p>La opcion mas elegida.</p>
-              </div>
-              <hr />
-              <ul class="lista-beneficios">
-                <li>2 pantallas</li>
-                <li>Calidad 4K Ultra HD</li>
-                <li>+7.000 titulos</li>
-                <li>10 descargas offline</li>
-                <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
-                <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN ESTÁNDAR</a>
-              </ul>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>2 pantallas</li>
+              <li>Calidad 4K Ultra HD</li>
+              <li>+7.000 titulos</li>
+              <li>10 descargas offline</li>
+              <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan"
+              >OBTENÉ PLAN ESTÁNDAR</a
+            >
           </div>
           <div class="tarjeta-plan">
             <h4 class="nombre-plan">PLUS</h4>
             <div class="precio">
               $11999<small>/mes</small>
               <p>Un escalon mas arriba.</p>
-              </div>
-              <hr />
-              <ul class="lista-beneficios">
-                <li>3 pantallas</li>
-                <li>Calidad 4K Ultra HDR10</li>
-                <li>+10.000 titulos</li>
-                <li>25 descargas offline</li>
-                <li>Estrenos exclusivos</li>
-                <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN PLUS</a>
-              </ul>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>3 pantallas</li>
+              <li>Calidad 4K Ultra HDR10</li>
+              <li>+10.000 titulos</li>
+              <li>25 descargas offline</li>
+              <li>Estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN PLUS</a>
           </div>
           <div class="tarjeta-plan">
             <h4 class="nombre-plan">PREMIUM</h4>
             <div class="precio">
               $17100<small>/mes</small>
               <p>La experiencia total.</p>
-              </div>
-              <hr />
-              <ul class="lista-beneficios">
-                <li>4 pantallas</li>
-                <li>Calidad 4K Ultra HDR10</li>
-                <li>+10.000 titulos</li>
-                <li>25 descargas offline</li>
-                <li>Descargas ilimitadas</li>
-                <li>Estrenos exclusivos</li>
-                <a href="#seccion-registro" class="boton-plan">OBTENÉ PREMIUM</a>
-              </ul>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>4 pantallas</li>
+              <li>Calidad 4K Ultra HDR10</li>
+              <li>+10.000 titulos</li>
+              <li>25 descargas offline</li>
+              <li>Descargas ilimitadas</li>
+              <li>Estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan">OBTENÉ PREMIUM</a>
           </div>
         </div>
       </section>
@@ -129,34 +133,34 @@
                   required
                 />
               </div>
-              </div>
-              <div class="grupo-campo">
-                <label for="email">EMAIL</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="tu@email.com"
-                  minlength="5"
-                  maxlength="50"
-                  required
-                />
-              </div>
-              <div class="grupo-campo">
-                <label for="contrasena">CONTRASEÑA</label>
-                <input
-                  type="password"
-                  id="contrasena"
-                  name="contrasena"
-                  placeholder="Mínimo 8 caracteres"
-                  minlength="8"
-                  maxlength="50"
-                  required
-                />
-              </div>
-              <button type="submit" class="boton-enviar-formulario">
-                Crear cuenta
-              </button>
+            </div>
+            <div class="grupo-campo">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                minlength="5"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="grupo-campo">
+              <label for="contrasena">CONTRASEÑA</label>
+              <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Mínimo 8 caracteres"
+                minlength="8"
+                maxlength="50"
+                required
+              />
+            </div>
+            <button type="submit" class="boton-enviar-formulario">
+              Crear cuenta
+            </button>
           </form>
         </div>
       </section>
