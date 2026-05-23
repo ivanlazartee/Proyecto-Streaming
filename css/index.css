@@ -36,6 +36,10 @@ body {
   font-size: 1.25rem;
 }
 
+.logoMarca {
+  color: var(--color-primary);
+}
+
 /*botones amarillos */
 /* boton(iniciar Sesion)*/
 .btn-amarillo {
