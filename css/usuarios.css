@@ -493,7 +493,8 @@ body {
     flex-shrink: 0;
   }
   .personajeCategoria i {
-    font-size: 3rem;
+    font-size: 2rem;
+    height: 50px;
   }
   .cardCategoria:hover .personajeCategoria {
     bottom: 42px;
