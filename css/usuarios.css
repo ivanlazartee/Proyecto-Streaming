@@ -752,7 +752,7 @@ body {
     color: var(--color-primary);
   }
   .categoriaCard {
-    width: 140px;
+    width: 260px;
     height: 200px;
   }
   .categoriaCardTitulo {
