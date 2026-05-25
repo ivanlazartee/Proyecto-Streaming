@@ -1,392 +1,1074 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
-    />
-    <meta
-      name="keywords"
-      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
-    />
-    <meta
-      name="author"
-      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="../assets/img/fondo-logo-OnDev+.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../css/usuarios.css" />
-    <title>OnDev+</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-          <a
-            class="navbar-brand d-flex align-items-center gap-2"
-            href="./pilar.html"
-          >
-            <img
-              src="../assets/img/fondo-logo-OnDev+.png"
-              alt="Logo OnDev+"
-              style="width: 40px; height: 40px; object-fit: contain"
-            />
-            <span class="logoMarca fw-semibold">OnDev+</span>
-          </a>
-          <button
-            class="navbar-toggler border-0 text-white ms-auto me-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active text-white"
-                  aria-current="page"
-                  href="./pilar.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Series</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Peliculas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Mi lista</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Originales</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Buscar"
-                style="
-                  background-color: var(--color-surface-high);
-                  border-color: var(--color-surface);
-                "
-              />
-            </form>
-            <ul class="navbar-nav ms-auto ms-lg-0">
-              <li class="nav-item dropdown">
-                <a
-                  class="profile-toggle dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  data-bs-offset="0,12"
-                  aria-expanded="false"
-                >
-                  <img
-                    src="../assets/img/fondoPilar.png"
-                    alt="Perfil"
-                    class="profile-avatar"
-                  />
-                  <svg
-                    class="profile-chevron"
-                    width="12"
-                    height="12"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline points="6 9 12 15 18 9" />
-                  </svg>
-                </a>
-                <ul class="dropdown-menu profile-menu dropdown-menu-end">
-                  <li>
-                    <a class="profile-item active-profile" href="./pilar.html">
-                      <img
-                        src="../assets/img/fondoPilar.png"
-                        alt="Perfil"
-                        class="profile-avatar"
-                      />
-                      <span>Pilar</span>
-                      <svg
-                        class="ms-auto"
-                        width="14"
-                        height="14"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="profile-item" href="./ivan.html">
-                      <img
-                        src="../assets/img/fondoIvan.png"
-                        alt="Perfil"
-                        class="profile-avatar"
-                      />
-                      <span>Iván</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="profile-item" href="./mariano.html">
-                      <img
-                        src="../assets/img/fondoMariano.png"
-                        alt="Perfil"
-                        class="profile-avatar"
-                      />
-                      <span>Mariano</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="profile-item" href="./perfiles.html">
-                      <div
-                        class="mini-avatar"
-                        style="background: var(--color-surface-high)"
-                      >
-                        +
-                      </div>
-                      <span>Administrar perfiles</span>
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider profile-divider" /></li>
-                  <li>
-                    <a class="profile-menu-item" href="./error404.html">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
-                      </svg>
-                      Cuenta
-                    </a>
-                  </li>
-                  <li>
-                    <a class="profile-menu-item" href="./error404.html">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <circle cx="12" cy="12" r="3" />
-                        <path
-                          d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
-                        />
-                      </svg>
-                      Configuración
-                    </a>
-                  </li>
-                  <li>
-                    <a class="profile-menu-item" href="./error404.html">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 8v4M12 16h.01" />
-                      </svg>
-                      Ayuda
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider profile-divider" /></li>
-                  <li>
-                    <a class="profile-menu-item logout" href="./error404.html">
-                      <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path
-                          d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"
-                        />
-                      </svg>
-                      Cerrar sesión
-                    </a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main></main>
-    <footer class="container-fluid mt-5">
-      <div class="pt-5 pb-5 bg-black text-white">
-        <div class="row mx-3 mx-md-5">
-          <div class="col-12 mb-4">
-            <a class="text-decoration-none text-reset">
-              <h4 class="d-flex align-items-center gap-2">
-                <img
-                  src="../assets/img/fondo-logo-OnDev+.png"
-                  alt="Logo OnDev+"
-                  style="width: 80px; height: 80px; object-fit: contain"
-                />
-                ¿Preguntas? Llama al 0800 000 0000
-              </h4>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Preguntas frecuentes</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Prensa</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Formas de ver</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Preferencias de cookies</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Prueba de velocidad</a
-            >
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Centro de ayuda</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Relaciones con inversionistas</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Términos de uso</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Información corporativa</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Avisos legales</a
-            >
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 mb-3">
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Cuenta</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Empleo</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Privacidad</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Contáctanos</a
-            >
-            <a
-              href="../pages/error404.html"
-              class="text-decoration-none text-reset d-block mb-1"
-              >Solo en OnDev+</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="container mt-3">
-        <div class="dropdown">
-          <button
-            class="btn btn-outline-danger dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Idioma
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Español</a></li>
-            <li><a class="dropdown-item" href="#">Portugués</a></li>
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Français</a></li>
-            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras." />
+  <meta name="keywords"
+    content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español." />
+  <meta name="author" content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/usuarios.css" />
+  <title>OnDev+</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./pilar.html">
+          <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
+            style="width: 40px; height: 40px; object-fit: contain" />
+          <span class="logoMarca fw-semibold">OnDev+</span>
+        </a>
+        <button class="navbar-toggler border-0 text-white ms-auto me-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="./pilar.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#series">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#peliculas">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#categorias">Mi lista</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/error404.html">Originales</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto ms-lg-0">
+            <li class="nav-item dropdown">
+              <a class="profile-toggle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-offset="0,12" aria-expanded="false">
+                <img src="../assets/img/fondoPilar.png" alt="Perfil" class="profile-avatar" />
+                <svg class="profile-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu profile-menu dropdown-menu-end">
+                <li>
+                  <a class="profile-item active-profile" href="./pilar.html">
+                    <img src="../assets/img/fondoPilar.png" alt="Perfil" class="profile-avatar" />
+                    <span>Pilar</span>
+                    <svg class="ms-auto" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-item" href="./ivan.html">
+                    <img src="../assets/img/fondoIvan.png" alt="Perfil" class="profile-avatar" />
+                    <span>Iván</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-item" href="./mariano.html">
+                    <img src="../assets/img/fondoMariano.png" alt="Perfil" class="profile-avatar" />
+                    <span>Mariano</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-item" href="./perfiles.html">
+                    <div class="mini-avatar" style="background: var(--color-surface-high)">
+                      +
+                    </div>
+                    <span>Administrar perfiles</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider profile-divider" />
+                </li>
+                <li>
+                  <a class="profile-menu-item" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    Cuenta
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-menu-item" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    Configuración
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-menu-item" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 8v4M12 16h.01" />
+                    </svg>
+                    Ayuda
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider profile-divider" />
+                </li>
+                <li>
+                  <a class="profile-menu-item logout" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg>
+                    Cerrar sesión
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="container mt-2 mb-3">
-        <h4>OnDev+ Argentina</h4>
-        <p>
-          Esta página está protegida por Google reCAPTCHA para comprobar que no
-          eres un robot.
-        </p>
+    </nav>
+  </header>
+  <main>
+    <!-- ═══════════════════════ CARRUSEL ═══════════════════════ -->
+    <section class="heroCarousel">
+      <div id="carouselStream" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <!-- Slide 1: Adolescence -->
+          <div class="carousel-item active">
+            <div class="heroSlide">
+              <div class="overlayHero"></div>
+              <img
+                src="https://acimutpsicologia.com/wp-content/uploads/2025/04/serie-adolescencia-netflix-final-explicado.webp"
+                class="imgHero desktopHero" alt="imagen serie Adolescence">
+              <img src="https://www.orientaserie.it/wp-content/uploads/2025/03/Adolescence-683x1024.jpg"
+                class="imgHero mobileHero" alt="imagen serie Adolescence">
+              <div class="contenidoHero">
+                <span class="tagHero">ESTRENO</span>
+                <h1 class="tituloHero">Adolescence</h1>
+                <p class="descripcionHero">
+                  Un padre destrozado intenta entender cómo su hijo de 13 años
+                  pudo cometer un crimen que sacudió a toda su familia.
+                </p>
+                <div class="infoHero">
+                  <span>2025</span>
+                  <span>•</span>
+                  <span>Drama</span>
+                  <span>•</span>
+                  <span>Thriller</span>
+                </div>
+                <button class="btnHero">Ver ahora</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Gladiator II -->
+          <div class="carousel-item">
+            <div class="heroSlide">
+              <div class="overlayHero"></div>
+              <img src="https://decine21.com/images/noticias/0001/gladiator-II-critica-errores-historicos.webp"
+                class="imgHero desktopHero" alt="imagen pelicula Gladiator II">
+              <img src="https://pics.filmaffinity.com/Gladiator_II-192031838-large.jpg" class="imgHero mobileHero"
+                alt="imagen pelicula Gladiator II">
+              <div class="contenidoHero">
+                <span class="tagHero">TENDENCIA</span>
+                <h1 class="tituloHero">Gladiator II</h1>
+                <p class="descripcionHero">
+                  Lucius, nieto del emperador Marco Aurelio, es capturado y
+                  forzado a convertirse en gladiador para sobrevivir Roma.
+                </p>
+                <div class="infoHero">
+                  <span>2024</span>
+                  <span>•</span>
+                  <span>Acción</span>
+                  <span>•</span>
+                  <span>Épica</span>
+                </div>
+                <button class="btnHero">Ver ahora</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Mission Impossible The Final Reckoning -->
+          <div class="carousel-item">
+            <div class="heroSlide">
+              <div class="overlayHero"></div>
+              <img
+                src="https://www.accioncine.es/wp-content/uploads/2025/05/Critica-Mision-Imposible-Sentencia-Final.jpg"
+                class="imgHero desktopHero" alt="imagen pelicula Mission Impossible The Final Reckoning">
+              <img
+                src="https://losrostros.com.mx/wp-content/uploads/2025/04/compilation-of-fan-made-posters-for-mission-impossible-the-v0-8j3uktqpt81e1.webp"
+                class="imgHero mobileHero" alt="imagen pelicula Mission Impossible The Final Reckoning">
+              <div class="contenidoHero">
+                <span class="tagHero">EXCLUSIVA</span>
+                <h1 class="tituloHero">Mission: Impossible</h1>
+                <p class="descripcionHero">
+                  Ethan Hunt enfrenta su misión más peligrosa contra una IA
+                  que amenaza con destruir el orden mundial para siempre.
+                </p>
+                <div class="infoHero">
+                  <span>2025</span>
+                  <span>•</span>
+                  <span>Acción</span>
+                  <span>•</span>
+                  <span>Espionaje</span>
+                </div>
+                <button class="btnHero">Ver ahora</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </section>
+
+    <!-- ═══════════════════════ TOP 10 PELÍCULAS ═══════════════════════ -->
+    <section id="peliculas" class="top10Section">
+      <h2 class="top10Titulo">Top <span>10</span> películas</h2>
+      <div class="top10Scroll">
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://cailloupettismoviereviews.com/wp-content/uploads/2023/07/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+              class="imgTop" alt="imagen pelicula Oppenheimer">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">1</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Oppenheimer</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2023</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://media.vogue.mx/photos/65ade20c2f2da518be259d6f/2:3/w_2560%2Cc_limit/poor-things-pelicula.jpg"
+              class="imgTop" alt="imagen pelicula Poor Things">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">2</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Poor Things</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2023</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://play-lh.googleusercontent.com/C3wqt3lpqa1GS4BOckWHIEjLkh8b0fRNxvdtigCTt530hkyISD_67EUj6AYRJzy27dlfFiSsIt4SK_A0YA"
+              class="imgTop" alt="imagen pelicula Killers of the Flower Moon">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">3</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Killers of the Flower Moon</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2023</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://i.blogs.es/547838/romulusportada/375_375.jpeg" class="imgTop"
+              alt="imagen pelicula Alien Romulus">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">4</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Alien: Romulus</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Sci-Fi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://i.pinimg.com/736x/ca/91/ba/ca91bac5ccbc2945d3f144a96e71e7eb.jpg" class="imgTop"
+              alt="imagen pelicula Challengers">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">5</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Challengers</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://www.nuevarevista.net/wp-content/uploads/2025/04/conclave-cartel.jpg" class="imgTop"
+              alt="imagen pelicula Conclave">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">6</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Conclave</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">13+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Thriller</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://pics.filmaffinity.com/Wicked-569771920-large.jpg" class="imgTop"
+              alt="imagen pelicula Wicked">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">7</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Wicked</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">13+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Musical</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://media.gq.com.mx/photos/66a134ae5c6f1cb30f381848/1:1/w_1941,h_1941,c_limit/A%20Complete%20Unknown.jpg"
+              class="imgTop" alt="imagen pelicula A Complete Unknown">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">8</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">A Complete Unknown</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">13+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Biográfica</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://pics.filmaffinity.com/Gladiator_II-192031838-large.jpg" class="imgTop"
+              alt="imagen pelicula Gladiator II">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">9</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Gladiator II</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Acción</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://lumiere-a.akamaihd.net/v1/images/p_studios_fantasticfourfirststeps_homeentannounce_poste_2eaafb1e.jpeg"
+              class="imgTop" alt="imagen pelicula The Fantastic Four">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">10</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">The Fantastic Four</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">13+</span>
+              <span>2025</span>
+              <span>•</span>
+              <span>Acción</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CATEGORÍAS ═══════════════════════ -->
+    <section id="categorias" class="categoriasSection">
+      <h2 class="tituloCategorias">Explorar categorías</h2>
+      <div class="gridCategorias">
+        <div class="cardCategoria">
+          <h3>Anime</h3>
+          <span class="personajeCategoria"><i class="fa-solid fa-torii-gate"></i></span>
+        </div>
+        <div class="cardCategoria">
+          <h3>Romance</h3>
+          <span class="personajeCategoria"><i class="fa-solid fa-heart"></i></span>
+        </div>
+        <div class="cardCategoria">
+          <h3>Drama</h3>
+          <span class="personajeCategoria"><i class="fa-solid fa-masks-theater"></i></span>
+        </div>
+        <div class="cardCategoria">
+          <h3>Terror</h3>
+          <span class="personajeCategoria"><i class="fa-solid fa-ghost"></i></span>
+        </div>
+        <div class="cardCategoria">
+          <h3>Fantasía</h3>
+          <span class="personajeCategoria"><i class="fa-solid fa-dragon"></i></span>
+        </div>
+        <div class="cardCategoria">
+          <h3>Sci-Fi</h3>
+          <span class="personajeCategoria"><i class="fa-solid fa-rocket"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ TOP 10 SERIES ═══════════════════════ -->
+    <section class="top10Section" id="series">
+      <h2 class="top10Titulo">Top <span>10</span> series</h2>
+      <div class="top10Scroll">
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://images.justwatch.com/poster/327009059/s718/the-white-lotus.jpg" class="imgTop"
+              alt="The White Lotus">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">1</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">The White Lotus</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2025</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://media.revistagq.com/photos/67e51249416081497c9df181/2:3/w_1280,h_1920,c_limit/Adolescence_(UK)_n_S1_E3_00_14_39_15.jpg"
+              class="imgTop" alt="Adolescence">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">2</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Adolescence</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2025</span>
+              <span>•</span>
+              <span>Thriller</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://resizing.flixster.com/QDgQvBck0uIAlV-6f0TUMeM4D5I=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p21271538_b_v12_aq.jpg"
+              class="imgTop" alt="Severance T2">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">3</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Severance T2</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2025</span>
+              <span>•</span>
+              <span>Misterio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://cinescopia.com/wp-content/uploads/2024/05/Shogun_Poster_1-700x993.webp" class="imgTop"
+              alt="Shogun">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">4</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Shogun</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://m.media-amazon.com/images/I/81LVtnitzDL._AC_UF1000,1000_QL80_.jpg" class="imgTop"
+              alt="Fallout">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">5</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Fallout</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Sci-Fi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://www.thetrainline.com/cms/media/10692/baby-reindeer-netflix-1.jpg?mode=crop&width=1080&height=1080&quality=70"
+              class="imgTop" alt="Baby Reindeer">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">6</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Baby Reindeer</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://preview.redd.it/textless-rhaenyra-house-of-the-dragon-s2-2024-official-v0-wcrolzm9bqpc1.jpg?width=640&crop=smart&auto=webp&s=83537620b6774c9d92478c727fb9909053f4a4d8"
+              class="imgTop" alt="House of the Dragon T2">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">7</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">House of the Dragon T2</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Fantasía</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img
+              src="https://www.thedailybeast.com/resizer/v2/KH6UTBOLX5LK7AQ366NGJ652EQ.jpg?smart=true&auth=893d9d38274909036797695d91f6f13a321a67442549e09252f27b485dbb5456&width=1600&height=900"
+              class="imgTop" alt="True Detective: Night Country">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">8</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">True Detective: Night Country</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">18+</span>
+              <span>2024</span>
+              <span>•</span>
+              <span>Misterio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://static-blogs.diariovasco.com/wp-content/uploads/sites/37/2023/05/destacada-1.png"
+              class="imgTop" alt="The Diplomat">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">9</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">The Diplomat</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2023</span>
+              <span>•</span>
+              <span>Drama</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cardTop">
+          <div class="imgContainer">
+            <img src="https://sm.ign.com/t/ign_es/screenshot/default/sin-titulo-1_y2g8.1280.jpg" class="imgTop"
+              alt="Andor T2">
+            <div class="overlayTop"></div>
+          </div>
+          <span class="numeroTop">10</span>
+          <div class="infoTop">
+            <h3 class="tituloTop">Andor T2</h3>
+            <div class="metaTop">
+              <span class="badgeEdad">16+</span>
+              <span>2025</span>
+              <span>•</span>
+              <span>Sci-Fi</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CATEGORÍA: SCI-FI ═══════════════════════ -->
+    <section class="categoriaRowSection">
+      <h2 class="categoriaRowTitulo">Sci-Fi</h2>
+      <div class="categoriaRowScroll">
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABeFol9G5Q2mWDa4N9dF_u3tEW2kKvlC6I6yWaa07zidPas66L2lsOWrA5ZtAliflgim45nPxCMOIqDUFWPj-3zLsf-349GEJslno.jpg?r=58f"
+              class="categoriaCardImg" alt="imagen pelicula Everything Everywhere All at Once">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Everything Everywhere All at Once</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://spoilertown.com/wp-content/uploads/2025/10/nope-2022.webp" class="categoriaCardImg"
+              alt="imagen pelicula Nope">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Nope</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://www.loslunesseriefilos.com/wp-content/uploads/2023/09/the-creator-critica.jpg"
+              class="categoriaCardImg" alt="imagen pelicula The Creator">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">The Creator</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/E4TL43SFUJA4BLYQ2I6A6XQMIY.jpeg"
+              class="categoriaCardImg" alt="imagen serie Dark Matter">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Dark Matter</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://cdn.mos.cms.futurecdn.net/vZygtNS3pKeH9W5BMhL5k4.jpg" class="categoriaCardImg"
+              alt="imagen serie 3 Body Problem">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">3 Body Problem</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://m.media-amazon.com/images/S/pv-target-images/5765b209c512cc71cf3230421b1bef72186d6af5ddca4795162837dda69f24d4._SX1080_FMjpg_.jpg"
+              class="categoriaCardImg" alt="imagen serie Foundation T2">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Foundation T2</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://media.themoviedb.org/t/p/w780/3TNSoa0UHGEzEz5ndXGjJVKo8RJ.jpg" class="categoriaCardImg"
+              alt="imagen pelicula Atlas">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Atlas</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CATEGORÍA: THRILLER ═══════════════════════ -->
+    <section class="categoriaRowSection">
+      <h2 class="categoriaRowTitulo">Thriller</h2>
+      <div class="categoriaRowScroll">
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://thepeoplesmovies.com/wp-content/uploads/2023/01/Glass-Onion_-A-Knives-Out-Mystery-2022.jpg"
+              class="categoriaCardImg" alt="imagen pelicula Glass Onion">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Glass Onion</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://peachz.ca/wp-content/uploads/2023/12/p25479414_v_h10_aa.jpg" class="categoriaCardImg"
+              alt="imagen pelicula Saltburn">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Saltburn</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">18+</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABcCdzRHlCEy8Wfa3I1LGEkrVsa5uUcGbZbaYbmeOkINj9XtCC5MS4Hjn2tDY4BokCNicSrsUPdTg3fFiJFqB-YLc-a_Zt7EK58Xz.jpg?r=86e"
+              class="categoriaCardImg" alt="imagen pelicula The Menu">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">The Menu</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://laestatuilla.com/wp-content/uploads/2022/09/tar-cate-blanchett-predicciones-oscar-2023.jpg"
+              class="categoriaCardImg" alt="imagen pelicula Tár">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Tár</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2024/09/speak-no-evil_w11z1f.jpg"
+              class="categoriaCardImg" alt="imagen pelicula Speak No Evil">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Speak No Evil</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">18+</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://editorial.rottentomatoes.com/wp-content/uploads/2024/08/Trap_Reviews6.jpg"
+              class="categoriaCardImg" alt="imagen pelicula Trap">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Trap</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://filmuforia.com/wp-content/uploads/2023/09/A-Haunting-in-Venice-Characters-and-Cast.jpg"
+              class="categoriaCardImg" alt="imagen pelicula A Haunting in Venice">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">A Haunting in Venice</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CATEGORÍA: DOCUMENTAL ═══════════════════════ -->
+    <section class="categoriaRowSection">
+      <h2 class="categoriaRowTitulo">Documental</h2>
+      <div class="categoriaRowScroll">
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQTkm4w__eHF55PQkAYMTMkOJoZl-yNxgHgfr1IgnfCnfpn6I5txtJ7WVnueMbElhx7HwjIDM8s50CMQkeHmySjhxrihuY9qq2Gk2j8xAgwu-KL8ESvw8eSOGs5js8-nWLCaLdZVlz8FExygoGpLZiTNh1vE.jpg?r=aa4"
+              class="categoriaCardImg" alt="imagen documental Beckham">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Beckham</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">ATP</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://www.apple.com/tv-pr/shows-and-films/s/still-a-michael-j-fox-movie/images/show-home-graphic-header/key-art-01/4x1/Apple_TV_STILL_key_art_graphic_header_4_1_show_home.jpg.og.jpg?1706241947236"
+              class="categoriaCardImg" alt="imagen documental Still: A Michael J. Fox Movie">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Still: A Michael J. Fox Movie</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">ATP</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://thebabblingperipatetic.com/wp-content/uploads/2024/01/The-Deepest-Breath.jpg"
+              class="categoriaCardImg" alt="imagen documental The Deepest Breath">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">The Deepest Breath</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">ATP</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQZsoYPJjCE5ijXRBg_1c94Kadt47_5TQH1XX2Yuk6GlPpAC6xwZI4kQWxvyDuCBsPssXZIkVKNKKe1pVMQ0c-PilfiS8aNMlOOTuYMluV4f8jXDxv0pr5FajrwPl4TGyUiRuQ0ESf01qQBtAVjsubETQFfg.jpg?r=579"
+              class="categoriaCardImg" alt="imagen documental What Jennifer Did">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">What Jennifer Did</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://www.ecartelera.com/carteles/fondos/18300/18348-n2.jpg" class="categoriaCardImg"
+              alt="imagen documental American Symphony">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">American Symphony</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">ATP</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img
+              src="https://readysteadycut.com/wp-content/smush-webp/2023/06/7eb977418bff71f90ff0fbf8f24dfd57-1024x576.jpg.webp"
+              class="categoriaCardImg" alt="imagen documental Unknown: Killer Robots">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Unknown: Killer Robots</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="https://images.mubicdn.net/images/film/328612/cache-741880-1745499368/image-w1280.jpg?size=800x"
+              class="categoriaCardImg" alt="imagen documental All That Breathes">
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">All That Breathes</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">ATP</span>
+              <span>2022</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="container-fluid mt-5">
+    <div class="pt-5 pb-5 bg-black text-white">
+      <div class="row mx-3 mx-md-5">
+        <div class="col-12 mb-4">
+          <a class="text-decoration-none text-reset">
+            <h4 class="d-flex align-items-center gap-2">
+              <img src="../assets/img/Fondo-de-logo-OnDev+.png" alt="Logo OnDev+"
+                style="width: 80px; height: 80px; object-fit: contain" />
+              ¿Preguntas? Llama al 0800 000 0000
+            </h4>
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Preguntas frecuentes</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Prensa</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Formas de ver</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Preferencias de
+            cookies</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Prueba de velocidad</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Centro de ayuda</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Relaciones con
+            inversionistas</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Términos de uso</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Información
+            corporativa</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Avisos legales</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Cuenta</a>
+          <a href="../assets/img/img/error404.html" class="text-decoration-none text-reset d-block mb-1">Empleo</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Privacidad</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Contáctanos</a>
+          <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Solo en OnDev+</a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="dropdown">
+        <button class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Idioma
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Español</a></li>
+          <li><a class="dropdown-item" href="#">Portugués</a></li>
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">Français</a></li>
+          <li><a class="dropdown-item" href="#">Deutsch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mt-2 mb-3">
+      <h4>OnDev+ Argentina</h4>
+      <p>
+        Esta página está protegida por Google reCAPTCHA para comprobar que no
+        eres un robot.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

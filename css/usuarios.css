@@ -387,8 +387,8 @@ body {
 .cardCategoria {
   height: 180px;
   border-radius: 22px;
-  background: linear-gradient(145deg, #000, #daa30c98);
-  border: 1px solid rgba(225, 240, 24, 0.31);
+  background: linear-gradient(145deg, #000, #a38e5c98);
+  border: 1px solid rgba(223, 183, 7, 0.31);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -418,8 +418,8 @@ body {
   transform: scale(1.08);
   border-color: var(--color-primary);
 }
-.cardCategoria i {
-  font-size: 3rem;
+.cardCategoria > i {
+  font-size: 2rem;
   color: var(--color-primary);
   position: relative;
   z-index: 2;
@@ -437,7 +437,7 @@ body {
     opacity var(--transition-base),
     transform var(--transition-base);
 }
-.cardCategoria:hover i,
+.cardCategoria:hover > i,
 .cardCategoria:hover h3 {
   opacity: 0;
   transform: translateY(-18px);
@@ -447,7 +447,6 @@ body {
   bottom: -80px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 5.5rem;
   opacity: 0;
   z-index: 3;
   transition:
@@ -457,10 +456,10 @@ body {
   line-height: 1;
   pointer-events: none;
 }
-.personajeCategoria img {
-  width: 100px;
-  height: 80px;
-  object-fit: cover;
+.personajeCategoria i {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  height: 60px;
 }
 .cardCategoria:hover .personajeCategoria {
   bottom: 45px;
@@ -493,10 +492,9 @@ body {
     height: 150px;
     flex-shrink: 0;
   }
-  .personajeCategoria img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
+  .personajeCategoria i {
+    font-size: 2rem;
+    height: 50px;
   }
   .cardCategoria:hover .personajeCategoria {
     bottom: 42px;
@@ -621,7 +619,7 @@ body {
 }
 @media (max-width: 768px) {
   .top10Section {
-    padding: 60px 20px;
+    padding: 10px 20px;
   }
   .cardTop {
     width: 260px;
@@ -748,13 +746,81 @@ body {
 }
 @media (max-width: 768px) {
   .categoriaRowSection {
-    padding: 40px 20px;
+    padding: 10px 20px;
+  }
+  .categoriaRowTitulo {
+    color: var(--color-primary);
   }
   .categoriaCard {
-    width: 140px;
+    width: 260px;
     height: 200px;
   }
   .categoriaCardTitulo {
     font-size: 0.88rem;
   }
+}
+
+footer {
+  background-color: var(--color-bg-nav) !important;
+  border-top: 3px solid var(--color-primary);
+}
+
+footer .pt-5.pb-5 {
+  background-color: var(--color-bg-nav) !important;
+}
+
+footer h4 {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer a {
+  color: var(--color-text-muted) !important;
+  font-size: 14px;
+  line-height: 2.2;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Boton idioma */
+footer .btn-outline-danger {
+  background: transparent !important;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 500;
+}
+
+footer .btn-outline-danger:hover {
+  background: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+footer .nav-link {
+  color: var(--color-text-primary) !important;
+  font-size: 14px;
+}
+
+/* dropdown oscuro */
+.dropdown-menu {
+  background-color: var(--color-surface) !important;
+  border: 0.5px solid var(--color-surface-high) !important;
+}
+
+.dropdown-item {
+  color: var(--color-text-primary) !important;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-surface-mid) !important;
+  color: var(--color-primary) !important;
+}
+
+footer p {
+  color: var(--color-text-muted);
+  font-size: 13px;
 }
