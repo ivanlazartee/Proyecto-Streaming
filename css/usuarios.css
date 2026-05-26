@@ -379,6 +379,11 @@ body {
   color: var(--color-text-primary);
   margin-bottom: 40px;
 }
+.spanCategorias{
+  color: var(--color-primary);
+  font-weight: 100;
+  border-bottom: 1px solid var(--color-primary-hover);
+}
 .gridCategorias {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
