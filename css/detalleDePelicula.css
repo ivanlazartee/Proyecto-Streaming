@@ -290,42 +290,6 @@ main {
   background: var(--color-primary-hover);
 }
 
-.boton-trailer {
-  background: var(--color-surface-high);
-  color: var(--color-text-primary);
-  font-family: "Outfit", sans-serif;
-  font-weight: 700;
-  font-size: 0.88rem;
-  text-decoration: none;
-  padding: 0.55rem 1.3rem;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.boton-trailer:hover {
-  background: var(--color-text-muted);
-}
-
-.boton-agregar {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: transparent;
-  border: 2px solid var(--color-text-muted);
-  color: var(--color-text-primary);
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-}
-
-.boton-agregar:hover {
-  border-color: var(--color-text-primary);
-}
-
 .icono-play {
   width: 0;
   height: 0;
@@ -361,6 +325,7 @@ main {
   display: flex;
   gap: 0.75rem;
   padding: 1.5rem 4rem 3rem;
+  overflow-x: auto;
 }
 
 .relacionadas::-webkit-scrollbar {
@@ -390,6 +355,8 @@ main {
   aspect-ratio: 16/9;
   object-fit: cover;
   display: block;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
 }
 
 .tarjeta-pelicula span {
@@ -425,7 +392,6 @@ footer a:hover {
   color: var(--color-primary) !important;
 }
 
-/* Boton idioma */
 footer .btn-outline-danger {
   background: transparent !important;
   border: 2px solid var(--color-primary) !important;
@@ -443,7 +409,6 @@ footer .nav-link {
   font-size: 14px;
 }
 
-/* dropdown oscuro */
 .dropdown-menu {
   background-color: var(--color-surface) !important;
   border: 0.5px solid var(--color-surface-high) !important;
@@ -469,15 +434,18 @@ footer p {
   padding: 20px 60px;
   background: var(--color-bg);
 }
+
 .categoriaRowTitulo {
   font-size: 2.3rem;
   font-weight: 800;
   color: var(--color-text-primary);
   margin-bottom: 35px;
 }
+
 .categoriaRowTitulo span {
   color: var(--color-primary);
 }
+
 .categoriaRowScroll {
   display: flex;
   gap: 14px;
@@ -485,6 +453,7 @@ footer p {
   padding-block: 10px;
   scroll-behavior: smooth;
 }
+
 .top10Scroll,
 .categoriaRowScroll,
 .gridCategorias {
@@ -492,11 +461,13 @@ footer p {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
+
 .top10Scroll::-webkit-scrollbar,
 .categoriaRowScroll::-webkit-scrollbar,
 .gridCategorias::-webkit-scrollbar {
   display: none;
 }
+
 .categoriaCard {
   width: 450px;
   height: 260px;
@@ -513,6 +484,7 @@ footer p {
     box-shadow 0.35s ease;
   will-change: transform;
 }
+
 .categoriaCard:hover {
   transform: scale(1);
   border-color: var(--color-primary);
@@ -520,11 +492,13 @@ footer p {
     0 15px 35px rgba(0, 0, 0, 0.55),
     0 0 20px rgba(251, 191, 36, 0.25);
 }
+
 .categoriaCardImgContainer {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
 .categoriaCardImg {
   width: 100%;
   height: 100%;
@@ -533,9 +507,11 @@ footer p {
   transition: transform 0.45s ease;
   will-change: transform;
 }
+
 .categoriaCard:hover .categoriaCardImg {
   transform: scale(1.1);
 }
+
 .categoriaCardOverlay {
   position: absolute;
   inset: 0;
@@ -546,6 +522,7 @@ footer p {
     rgba(0, 0, 0, 0.05) 100%
   );
 }
+
 .categoriaCardInfo {
   position: absolute;
   bottom: 14px;
@@ -553,6 +530,7 @@ footer p {
   right: 14px;
   z-index: 3;
 }
+
 .categoriaCardTitulo {
   font-size: 1rem;
   font-weight: 700;
@@ -560,6 +538,7 @@ footer p {
   margin-bottom: 6px;
   line-height: 1.2;
 }
+
 .categoriaCardMeta {
   display: flex;
   flex-wrap: wrap;
@@ -567,6 +546,7 @@ footer p {
   color: var(--color-text-muted);
   font-size: 0.78rem;
 }
+
 .categoriaCardBadge {
   background: rgba(255, 255, 255, 0.15);
   padding: 2px 6px;
@@ -575,6 +555,7 @@ footer p {
   font-weight: 600;
   font-size: 0.75rem;
 }
+
 @media (max-width: 768px) {
   .categoriaRowSection {
     padding: 40px 20px;
