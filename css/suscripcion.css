@@ -21,6 +21,133 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  background-color: var(--color-bg-nav) !important;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar-brand {
+  color: var(--color-primary) !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.btn-amarillo {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 700 !important;
+}
+
+#loginModal .form-control {
+    background-color: #ffffff !important;
+    color: #1a2030 !important;
+    border: 1px solid #ced4da !important;
+}
+
+#loginModal .form-control:focus {
+    background-color: #ffffff !important;
+    color: #1a2030 !important;
+    box-shadow: 0 0 0 0.25rem rgba(251, 191, 36, 0.25); /* Un sutil brillo amarillo de Bootstrap */
+    border-color: #fbbf24 !important;
+}
+
+#loginModal .form-control::placeholder {
+    color: #6c757d !important;
+    opacity: 1;
+}
+
+.btn-amarillo:hover,
+.btn-amarillo:focus,
+.btn-amarillo:active {
+  background-color: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-amarillo {
+  background-color: transparent !important;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 700 !important;
+}
+
+.btn-outline-amarillo:hover,
+.btn-outline-amarillo:focus,
+.btn-outline-amarillo:active {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+}
+
+.card-motivos {
+  border: 0.5px solid var(--color-surface-high);
+  border-radius: 12px;
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-surface);
+  padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.card-motivos:hover {
+  border-left-color: var(--color-primary-hover);
+}
+
+.card-motivos__header {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.card-motivos__body {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.accordion-item {
+  background: var(--color-surface) !important;
+  border: 0.5px solid var(--color-surface-high) !important;
+  border-left: 3px solid var(--color-primary) !important;
+  border-radius: 12px !important;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--color-surface-mid) !important;
+  color: var(--color-primary) !important;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(5deg);
+}
+
+.accordion-body {
+  background: var(--color-surface-mid) !important;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+  border-top: 0.5px solid var(--color-surface-high);
+}
+
 body {
   background:linear-gradient(to bottom, #f5d42d 0%, #c8a020 15%, #3d2800 40%, #000 100%);
   color: var(--color-bg);
@@ -39,7 +166,7 @@ body {
 .boton-borde {
   display: inline-block;
   position: absolute;
-  bottom: 12%;       /* se ubica sobre la imagen, zona del botón */
+  bottom: 12%;       
   left: 4%;
   padding: 10px 32px;
   border: 1.5px solid #0a0d12;
@@ -93,7 +220,7 @@ body {
   border-top: 5px solid var(--color-primary-hover);
   border-radius: 12px;
   padding: 32px 24px;
-  width: 230px;
+  width: 250px;
   transition:
     transform 0.25s ease,
     border-color 0.25s ease;
@@ -299,4 +426,68 @@ input:focus {
     bottom: 6%;
     left: 3%;
   }
+}
+
+footer {
+  background-color: var(--color-bg-nav) !important;
+  border-top: 3px solid var(--color-primary);
+}
+
+footer .pt-5.pb-5 {
+  background-color: var(--color-bg-nav) !important;
+}
+
+footer h4 {
+  color: var(--color-text-primary);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer a {
+  color: var(--color-text-muted) !important;
+  font-size: 14px;
+  line-height: 2.2;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--color-primary) !important;
+}
+
+footer .btn-outline-danger {
+  background: transparent !important;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 500;
+}
+
+footer .btn-outline-danger:hover {
+  background: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+footer .nav-link {
+  color: var(--color-text-primary) !important;
+  font-size: 14px;
+}
+
+/* dropdown oscuro */
+.dropdown-menu {
+  background-color: var(--color-surface) !important;
+  border: 0.5px solid var(--color-surface-high) !important;
+}
+
+.dropdown-item {
+  color: var(--color-text-primary) !important;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: var(--color-surface-mid) !important;
+  color: var(--color-primary) !important;
+}
+
+footer p {
+  color: var(--color-text-muted);
+  font-size: 13px;
 }
