@@ -1,38 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./css/index.css" />
-    <title>OnDev+</title>
-  </head>
-  <body class="text-white">
-    <header>
-      <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">
-            <img
-              src="./assets/img/fondo-logo-OnDev+.png"
-              alt="Logo OnDev+"
-              style="width: 50px; height: 50px; object-fit: contain"
-            />
-          </a>
-          <div class="d-flex ms-auto gap-2 align-items-center">
-            <li class="nav-item dropdown list-unstyled">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras." />
+  <meta name="keywords"
+    content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español." />
+  <meta name="author" content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina" />
+  <link rel="icon" type="image/png" href="./assets/img/fondo-logo-OnDev+.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <title>OnDev+</title>
+</head>
+
+<body class="text-white">
+  <header>
+    <nav class="fixed-top navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
+            style="width: 40px; height: 40px; object-fit: contain" />
+          <span class="logoMarca fw-semibold">OnDev+</span>
+        </a>
+        <div class="d-flex ms-auto gap-2 align-items-center">
+          <div class="dropdown">
+            <li class="container nav-item dropdown list-unstyled">
               <button type="button" class="btn btn-outline-amarillo">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
                   Idioma
                 </a>
                 <ul class="dropdown-menu">
@@ -44,680 +42,450 @@
                 </ul>
               </button>
             </li>
-            <a
-              href="./pages/suscripcion.html"
-              class="btn"
-              style="
-                background-color: #fbbf24;
-                border: 2px solid #fbbf24;
-                color: #fff;
-                font-weight: 600;
-              "
-            >
+          </div>
+          <a href="./pages/suscripcion.html">
+            <button class="btn btn-amarillo" type="button" style="
+                  background-color: transparent;
+                  border: 2px solid #fbbf24;
+                  color: #fbbf24;
+                ">
               Suscribirse
-            </a>
-            <button
-              class="btn btn-amarillo"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-              style="
+            </button>
+          </a>
+          <button class="btn btn-amarillo" type="button" data-bs-toggle="modal" data-bs-target="#loginModal" style="
                 background-color: transparent;
                 border: 2px solid #fbbf24;
                 color: #fbbf24;
-              "
-            >
-              Iniciar Sesión
-            </button>
-          </div>
+              ">
+            Iniciar Sesión
+          </button>
         </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Sección principal -->
-      <div class="container text-white text-center mt-5">
-        <h1>Películas y series ilimitadas, y mucho más.</h1>
-        <p>Desde $9.999. Cancela cuando quieras.</p>
-        <h2>¿Listo para ver OnDev+?</h2>
-        <p>Ingresa tu email para crear tu cuenta o reiniciar tu membresía.</p>
-        <form
-          class="row g-3 justify-content-center"
-          action="./pages/perfiles.html"
-          method="get"
-        >
-          <div class="col-auto">
-            <label for="inputEmail" class="visually-hidden">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Email"
-              required
-            />
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-amarillo mb-3">
-              Comenzar >
-            </button>
-          </div>
-        </form>
       </div>
-      <!-- Sección de tendencias -->
-      <div class="container row mt-2 g-4 mx-auto">
-        <h2 class="me-5">Tendencias</h2>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+    </nav>
+  </header>
+  <main>
+    <br>
+    <div class="container text-white text-center mt-5">
+      <h1>Películas y series ilimitadas, y mucho más.</h1>
+      <p>Desde $9.999. Cancela cuando quieras.</p>
+      <h2>¿Listo para ver OnDev+?</h2>
+      <p>Ingresa tu email para crear tu cuenta o reiniciar tu membresía.</p>
+      <form class="row g-3 justify-content-center" action="./pages/perfiles.html" method="get">
+        <div class="col-auto">
+          <label for="inputEmail" class="visually-hidden">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-amarillo mb-3">
+            Comenzar >
+          </button>
+        </div>
+      </form>
+    </div>
+    <section class="categoriaRowSection">
+      <h2 class="categoriaRowTitulo">Tendencias</h2>
+      <div class="categoriaRowScroll">
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/interSellar.jpg" class="categoriaCardImg" alt="Interstellar" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Interstellar</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2014</span>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/breakingBadCard.jpg" class="categoriaCardImg" alt="Breaking Bad" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Breaking Bad</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">18+</span>
+              <span>2008</span>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/avatarcard.jpg" class="categoriaCardImg" alt="Avatar" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Avatar</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2009</span>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/darkCard.jpg" class="categoriaCardImg" alt="Dark" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Dark</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2017</span>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/theBatmanCard.avif" class="categoriaCardImg" alt="The Batman" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">The Batman</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">16+</span>
+              <span>2022</span>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="./assets/img/el-y-ella.avif"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-outline-success">Go somewhere</a>
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/strangerThingsCards.webp" class="categoriaCardImg" alt="Stranger Things" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Stranger Things</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">13+</span>
+              <span>2016</span>
+            </div>
+          </div>
+        </div>
+        <div class="categoriaCard">
+          <div class="categoriaCardImgContainer">
+            <img src="../assets/img/jokerCard.jpg" class="categoriaCardImg" alt="The Joker" />
+            <div class="categoriaCardOverlay"></div>
+          </div>
+          <div class="categoriaCardInfo">
+            <h3 class="categoriaCardTitulo">Joker</h3>
+            <div class="categoriaCardMeta">
+              <span class="categoriaCardBadge">18+</span>
+              <span>2019</span>
             </div>
           </div>
         </div>
       </div>
-      <!-- Sección de motivos para unirte -->
-      <div class="container row mt-2 g-4 mx-auto">
-        <h2 class="me-5">Más motivos para unirte</h2>
-        <div class="col-6 mt-2 d-flex flex-column">
-          <div class="card-motivos h-100">
-            <p class="card-motivos__header">Entretenimiento en todas partes.</p>
-            <p class="card-motivos__body">
-              Accede desde televisores inteligentes, consolas, dispositivos de
-              streaming y mucho más, cuando quieras.
-            </p>
-          </div>
+    </section>
+    <div class="container row mt-2 g-4 mx-auto">
+      <h2 class="me-5">Más motivos para unirte</h2>
+      <div class="col-6 mt-2 d-flex flex-column">
+        <div class="card-motivos h-100">
+          <p class="card-motivos__header">Disfruta en tu TV</p>
+          <p class="card-motivos__body">
+            Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV,
+            reproductores de Blu-ray y más.
+          </p>
         </div>
-        <div class="col-6 mt-2 d-flex flex-column">
-          <div class="card-motivos h-100">
-            <p class="card-motivos__header">
-              Descarga y disfruta sin conexión.
-            </p>
-            <p class="card-motivos__body">
-              Lleva tus películas y series favoritas contigo para verlas en
-              cualquier momento, incluso sin internet.
-            </p>
-          </div>
+      </div>
+      <div class="col-6 mt-2 d-flex flex-column">
+        <div class="card-motivos h-100">
+          <p class="card-motivos__header">
+            Descarga tus series para verlas offline
+          </p>
+          <p class="card-motivos__body">
+            Guarda tu contenido favorito y siempre tendrás algo para ver.
+          </p>
         </div>
-        <div class="col-6 mt-2 d-flex flex-column">
-          <div class="card-motivos h-100">
-            <p class="card-motivos__header">
-              Mira contenido en cualquier dispositivo.
-            </p>
-            <p class="card-motivos__body">
-              Disfruta de tus películas y series favoritas sin límites desde tu
-              celular, tablet, computadora o televisor.
-            </p>
-          </div>
+      </div>
+      <div class="col-6 mt-2 d-flex flex-column">
+        <div class="card-motivos h-100">
+          <p class="card-motivos__header">Disfruta donde quieras</p>
+          <p class="card-motivos__body">
+            Películas y series ilimitadas en tu teléfono, tablet, laptop y TV.
+          </p>
         </div>
-        <div class="col-6 mt-2 d-flex flex-column">
-          <div class="card-motivos h-100">
-            <p class="card-motivos__header">
-              Perfiles infantiles personalizados.
+      </div>
+      <div class="col-6 mt-2 d-flex flex-column">
+        <div class="card-motivos h-100">
+          <p class="card-motivos__header">Crea perfiles para niños</p>
+          <p class="card-motivos__body">
+            Los niños vivirán aventuras con sus personajes favoritos en un
+            espacio diseñado exclusivamente para ellos, gratis con tu
+            membresía.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container accordion mb-5" id="accordionExample">
+      <h2 class="mt-5">Preguntas frecuentes</h2>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            ¿Qué es OnDev+?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              OnDev+ es una plataforma de streaming que te brinda acceso a una
+              amplia selección de películas, series y contenido exclusivo,
+              disponible en múltiples dispositivos conectados a internet.
             </p>
-            <p class="card-motivos__body">
-              Ofrece a los más pequeños un espacio seguro y divertido, con
-              contenido pensado especialmente para su entretenimiento.
+            <br />
+            <p>
+              Disfruta de entretenimiento sin interrupciones, con acceso
+              ilimitado y nuevos estrenos agregados constantemente para que
+              siempre encuentres algo emocionante para ver.
             </p>
           </div>
         </div>
       </div>
-      <!-- Sección de preguntas frecuentes -->
-      <div class="container accordion mb-5" id="accordionExample">
-        <h2 class="mt-5">Preguntas frecuentes</h2>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="false"
-              aria-controls="collapseOne"
-            >
-              ¿Qué es OnDev+?
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                OnDev+ es una plataforma de streaming que te brinda acceso a una
-                amplia selección de películas, series y contenido exclusivo,
-                disponible en múltiples dispositivos conectados a internet.
-              </p>
-              <br />
-              <p>
-                Disfruta de entretenimiento sin interrupciones, con acceso
-                ilimitado y nuevos estrenos agregados constantemente para que
-                siempre encuentres algo emocionante para ver.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              ¿Cuánto cuesta OnDev+?
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Disfruta de OnDev+ en tu celular, tablet, smart TV, computadora
-                o dispositivo de streaming mediante una suscripción mensual
-                accesible. Contamos con diferentes planes pensados para
-                adaptarse a tus necesidades, brindándote acceso ilimitado a
-                películas, series y contenido exclusivo, sin interrupciones.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              ¿Dónde puedo ver OnDev+?
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Disfruta de OnDev+ donde quieras y cuando quieras. Accede
-                fácilmente desde tu computadora, smartphone, tablet, smart TV o
-                cualquier dispositivo con conexión a internet mediante nuestra
-                plataforma o aplicación.
-              </p>
-              <br />
-              <p>
-                Además, puedes descargar tus películas y series favoritas para
-                verlas sin conexión desde dispositivos compatibles, para que tu
-                entretenimiento te acompañe en todo momento.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFour"
-              aria-expanded="false"
-              aria-controls="collapseFour"
-            >
-              ¿Cómo cancelo mi suscripción?
-            </button>
-          </h2>
-          <div
-            id="collapseFour"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                OnDev+ es totalmente flexible. Puedes cancelar tu suscripción en
-                cualquier momento de forma rápida y sencilla, sin cargos
-                adicionales. Activa, pausa o cancela tu suscripción cuando
-                quieras, con total libertad.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseFive"
-              aria-expanded="false"
-              aria-controls="collapseFive"
-            >
-              ¿Qué puedo ver en OnDev+?
-            </button>
-          </h2>
-          <div
-            id="collapseFive"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                OnDev+ ofrece un amplio catálogo de películas, series,
-                documentales, contenido exclusivo y mucho más. Descubre
-                estrenos, clásicos y producciones originales para disfrutar
-                cuando quieras, con entretenimiento para todos los gustos.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseSix"
-              aria-expanded="false"
-              aria-controls="collapseSix"
-            >
-              ¿OnDev+ es ideal para niños?
-            </button>
-          </h2>
-          <div
-            id="collapseSix"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <p>
-                Sí, OnDev+ incluye perfiles infantiles dentro de tu membresía,
-                ofreciendo un espacio seguro y entretenido para que los más
-                pequeños disfruten de series, películas y contenido familiar.
-                Además, los padres pueden gestionar el acceso y elegir una
-                experiencia adecuada para cada edad.
-              </p>
-              <br />
-              <p>
-                Los perfiles para niños incluyen controles parentales protegidos
-                por PIN que te permiten restringir el contenido que pueden ver
-                los niños en función de la clasificación por edad y bloquear
-                determinados títulos que no quieras que los niños vean.
-              </p>
-            </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            ¿Cuánto cuesta OnDev+?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              Disfruta de OnDev+ en tu celular, tablet, smart TV, computadora
+              o dispositivo de streaming mediante una suscripción mensual
+              accesible. Contamos con diferentes planes pensados para
+              adaptarse a tus necesidades, brindándote acceso ilimitado a
+              películas, series y contenido exclusivo, sin interrupciones.
+            </p>
           </div>
         </div>
       </div>
-
-      <div class="container text-center mt-5">
-        <p>
-          ¿Quieres disfrutar de OnDev+ ahora? Ingresa tu email para crear una
-          cuenta o reactivar tu membresía y comienza a ver tus películas y
-          series favoritas.
-        </p>
-        <form
-          class="row g-3 justify-content-center"
-          action="./pages/perfiles.html"
-          method="get"
-        >
-          <div class="col-auto">
-            <label for="inputEmail" class="visually-hidden">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Email"
-              required
-            />
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            ¿Dónde puedo ver OnDev+?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              Disfruta de OnDev+ donde quieras y cuando quieras. Accede
+              fácilmente desde tu computadora, smartphone, tablet, smart TV o
+              cualquier dispositivo con conexión a internet mediante nuestra
+              plataforma o aplicación.
+            </p>
+            <br />
+            <p>
+              Además, puedes descargar tus películas y series favoritas para
+              verlas sin conexión desde dispositivos compatibles, para que tu
+              entretenimiento te acompañe en todo momento.
+            </p>
           </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-amarillo mb-3">
-              Comenzar >
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
-
-      <!-- Modal Iniciar Sesión -->
-      <div
-        class="modal fade"
-        id="loginModal"
-        tabindex="-1"
-        aria-labelledby="loginModalLabel"
-        aria-hidden="true"
-        style="background-color: transparent; color: #fbbf24"
-      >
-        <div class="modal-dialog">
-          <div
-            class="modal-content"
-            style="
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿Cómo cancelo mi suscripción?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              OnDev+ es totalmente flexible. Puedes cancelar tu suscripción en
+              cualquier momento de forma rápida y sencilla, sin cargos
+              adicionales. Activa, pausa o cancela tu suscripción cuando
+              quieras, con total libertad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            ¿Qué puedo ver en OnDev+?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              OnDev+ ofrece un amplio catálogo de películas, series,
+              documentales, contenido exclusivo y mucho más. Descubre
+              estrenos, clásicos y producciones originales para disfrutar
+              cuando quieras, con entretenimiento para todos los gustos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            ¿OnDev+ es ideal para niños?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p>
+              Sí, OnDev+ incluye perfiles infantiles dentro de tu membresía,
+              ofreciendo un espacio seguro y entretenido para que los más
+              pequeños disfruten de series, películas y contenido familiar.
+              Además, los padres pueden gestionar el acceso y elegir una
+              experiencia adecuada para cada edad.
+            </p>
+            <br />
+            <p>
+              Los perfiles para niños incluyen controles parentales protegidos
+              por PIN que te permiten restringir el contenido que pueden ver
+              los niños en función de la clasificación por edad y bloquear
+              determinados títulos que no quieras que los niños vean.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+      <h2>¿Todavía no tienes una cuenta de OnDev+?</h2>
+      <p>
+        ¡Escribe tu correo y haz clic en el botón de abajo para saber que
+        planes tenemos para vos!
+      </p>
+      <p>
+        ¡Únete a OnDev+ hoy mismo y descubre un mundo de entretenimiento sin
+        límites!
+      </p>
+      <form class="row g-3 justify-content-center" action="./pages/perfiles.html" method="get">
+        <div class="col-auto">
+          <label for="inputEmail" class="visually-hidden">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email" required />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-amarillo mb-3">
+            Comenzar >
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true"
+      style="background-color: transparent; color: #fbbf24">
+      <div class="modal-dialog">
+        <div class="modal-content" style="
               background-color: #1a2030;
               border: 2px solid #374151;
               color: #fbbf24;
-            "
-          >
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="loginModalLabel">
+            ">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Iniciar Sesión
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="./pages/error404.html" method="get">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" style="color: #fcd34d">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  minlength="10" maxlength="50" required />
+                <div id="emailHelp" class="" style="color: #9ca3af">
+                  <p>
+                    Nunca compartiremos tu correo electrónico con nadie más.
+                  </p>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label" style="color: #fcd34d">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" minlength="6" maxlength="30"
+                  required />
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1" style="color: #fcd34d">¿Quieres recibir
+                  notificaciones de nuestras futuras
+                  novedades?</label>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" required />
+                <label class="form-check-label" for="exampleCheck1" style="color: #fcd34d">¿Aceptas nuestros términos y
+                  condiciones?</label>
+              </div>
+              <button type="submit" class="btn btn-amarillo" style="background-color: #fbbf24">
                 Iniciar Sesión
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <form action="./pages/error404.html" method="get">
-                <div class="mb-3">
-                  <label
-                    for="exampleInputEmail1"
-                    class="form-label"
-                    style="color: #fcd34d"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    minlength="10"
-                    maxlength="50"
-                    required
-                  />
-                  <div id="emailHelp" class="" style="color: #9ca3af">
-                    <p>
-                      Nunca compartiremos tu correo electrónico con nadie más.
-                    </p>
-                  </div>
-                </div>
-                <div class="mb-3">
-                  <label
-                    for="exampleInputPassword1"
-                    class="form-label"
-                    style="color: #fcd34d"
-                    >Contraseña</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    minlength="6"
-                    maxlength="30"
-                    required
-                  />
-                </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label
-                    class="form-check-label"
-                    for="exampleCheck1"
-                    style="color: #fcd34d"
-                    >¿Quieres recibir notificaciones de nuestras futuras
-                    novedades?</label
-                  >
-                </div>
-                <div class="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                    required
-                  />
-                  <label
-                    class="form-check-label"
-                    for="exampleCheck1"
-                    style="color: #fcd34d"
-                    >¿Aceptas nuestros términos y condiciones?</label
-                  >
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn-amarillo"
-                  style="background-color: #fbbf24"
-                >
-                  Iniciar Sesión
-                </button>
-              </form>
-            </div>
+              </button>
+            </form>
           </div>
         </div>
       </div>
-    </main>
-    <!-- Footer -->
-    <footer class="container-fluid mt-5">
-      <div class="pt-5 pb-5 bg-black text-white">
-        <div class="row mx-5">
-          <div class="col-12 ms-5 mb-4">
-            <a class="text-decoration-none text-reset">
-              <h4>
-                <!-- Logo agregado aquí -->
-                <img
-                  src="./assets/img/Fondo-de-logo-OnDev+.png"
-                  alt="Logo OnDev+"
-                  style="width: 80px; height: 80px; object-fit: contain"
-                  class="mt-3"
-                />¿Preguntas? Llama al 0800 000 0000
-              </h4>
-            </a>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3 ms-5">
-            <a
-              href="./pages/quienesSomos.html"
-              class="text-decoration-none text-reset"
-              >Preguntas frecuentes</a
-            ><br />
-            <a
-              href="./pages/precios.html"
-              class="text-decoration-none text-reset"
-              >Prensa</a
-            ><br />
-            <a
-              href="./pages/seguridad.html"
-              class="text-decoration-none text-reset"
-              >Formas de ver</a
-            ><br />
-            <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Preferencias de cookies</a
-            ><br />
-            <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Prueba de velocidad</a
-            >
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <a
-              href="./pages/quienesSomos.html"
-              class="text-decoration-none text-reset"
-              >Centro de ayuda</a
-            ><br />
-            <a
-              href="./pages/precios.html"
-              class="text-decoration-none text-reset"
-              >Relaciones con inversionistas</a
-            ><br />
-            <a
-              href="./pages/seguridad.html"
-              class="text-decoration-none text-reset"
-              >Términos de uso</a
-            ><br />
-            <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Información corporativa</a
-            ><br />
-            <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Avisos legales</a
-            >
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <a
-              href="./pages/quienesSomos.html"
-              class="text-decoration-none text-reset"
-              >Cuenta</a
-            ><br />
-            <a
-              href="./pages/precios.html"
-              class="text-decoration-none text-reset"
-              >Empleo</a
-            ><br />
-            <a
-              href="./pages/seguridad.html"
-              class="text-decoration-none text-reset"
-              >Privacidad</a
-            ><br />
-            <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Contáctanos</a
-            ><br />
-            <a
-              href="./pages/roboExtravio.html"
-              class="text-decoration-none text-reset"
-              >Solo en OnDev+</a
-            >
-          </div>
-        </div>
-      </div>
-      <li class="container nav-item dropdown list-unstyled">
-        <button type="button" class="btn btn-outline-danger">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Idioma
+    </div>
+  </main>
+  `
+  <footer class="container-fluid mt-5">
+    <div class="pt-5 pb-5 bg-black text-white">
+      <div class="row mx-3 mx-md-5">
+        <div class="col-12 mb-4">
+          <a class="text-decoration-none text-reset">
+            <h4 class="d-flex align-items-center gap-2">
+              <img src="./assets/img/Fondo-de-logo-OnDev+.png" alt="Logo OnDev+"
+                style="width: 80px; height: 80px; object-fit: contain" />
+              ¿Preguntas? Llama al 0800 000 0000
+            </h4>
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Español</a></li>
-            <li><a class="dropdown-item" href="#">Portugués</a></li>
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Français</a></li>
-            <li><a class="dropdown-item" href="#">Deutsch</a></li>
-          </ul>
-        </button>
-      </li>
-      <div class="container">
-        <h4 class="mt-2">OnDev+ Argentina</h4>
-        <p>
-          Esta página está protegida por Google reCAPTCHA para comprobar que no
-          eres un robot.
-        </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Preguntas frecuentes</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Prensa</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Formas de ver</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Preferencias de
+            cookies</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Prueba de velocidad</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Centro de ayuda</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Relaciones con
+            inversionistas</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Términos de uso</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Información
+            corporativa</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Avisos legales</a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 mb-3">
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Cuenta</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Empleo</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Privacidad</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Contáctanos</a>
+          <a href="./pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Solo en OnDev+</a>
+        </div>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </div>
+    <div class="container mt-3">
+      <div class="dropdown">
+        <button class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Idioma
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Español</a></li>
+          <li><a class="dropdown-item" href="#">Portugués</a></li>
+          <li><a class="dropdown-item" href="#">English</a></li>
+          <li><a class="dropdown-item" href="#">Français</a></li>
+          <li><a class="dropdown-item" href="#">Deutsch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mt-2 mb-3">
+      <h4>OnDev+ Argentina</h4>
+      <p>
+        Esta página está protegida por Google reCAPTCHA para comprobar que no
+        eres un robot.
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
