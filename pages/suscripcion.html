@@ -1,1 +1,440 @@
-<h1>Page de suscripcion Pilar</h1>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/suscripcion.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/fondo-logo-OnDev+.png"
+      type="image/x-icon"
+    />
+    <title>OnDev+ - Suscripcion</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/img/fondo-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              style="width: 50px; height: 50px; object-fit: contain"
+            />
+          </a>
+          <div class="d-flex ms-auto gap-2 align-items-center">
+            <button
+              class="btn btn-amarillo"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+              style="
+                background-color: transparent;
+                border: 2px solid #fbbf24;
+                color: #fbbf24;
+              "
+            >
+              Iniciar Sesión
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="seccion-portada">
+        <img
+          src="../assets/img/suscripcion-imagen.png"
+          alt="Elegí tu plan perfecto"
+          class="portada-imagen"
+        />
+        <a href="#seccion-planes" class="boton-borde">VER PLANES</a>
+      </section>
+      <section class="seccion-planes" id="seccion-planes">
+        <div class="titulo-seccion">
+          <h3>NUESTROS <span>PLANES</span></h3>
+          <p>Todos incluyen acceso inmediato.</p>
+        </div>
+        <div class="contenedor-tarjetas">
+          <div class="tarjeta-plan">
+            <h4 class="nombre-plan">BASICO</h4>
+            <div class="precio">
+              $9.999<small>/mes</small>
+              <p>Ideal para empezar.</p>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>1 pantalla</li>
+              <li>Calidad 1080p HD</li>
+              <li>+3.000 titulos</li>
+              <li class="beneficio-no-incluido">Sin descargas</li>
+              <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan"
+              >OBTENÉ PLAN BÁSICO</a
+            >
+          </div>
+          <div class="tarjeta-plan">
+            <span class="etiqueta-popular">MAS POPULAR</span>
+            <h4 class="nombre-plan">ESTANDAR</h4>
+            <div class="precio">
+              $12.400<small>/mes</small>
+              <p>La opcion mas elegida.</p>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>2 pantallas</li>
+              <li>Calidad 4K Ultra HD</li>
+              <li>+7.000 titulos</li>
+              <li>10 descargas offline</li>
+              <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan"
+              >OBTENÉ PLAN ESTÁNDAR</a
+            >
+          </div>
+          <div class="tarjeta-plan">
+            <h4 class="nombre-plan">PLUS</h4>
+            <div class="precio">
+              $15720<small>/mes</small>
+              <p>Un escalon mas arriba.</p>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>3 pantallas</li>
+              <li>Calidad 4K Ultra HDR10</li>
+              <li>+10.000 titulos</li>
+              <li>25 descargas offline</li>
+              <li>Estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN PLUS</a>
+          </div>
+          <div class="tarjeta-plan">
+            <h4 class="nombre-plan">PREMIUM</h4>
+            <div class="precio">
+              $17.100<small>/mes</small>
+              <p>La experiencia total.</p>
+            </div>
+            <hr />
+            <ul class="lista-beneficios">
+              <li>4 pantallas</li>
+              <li>Calidad 4K Ultra HDR10</li>
+              <li>+10.000 titulos</li>
+              <li>25 descargas offline</li>
+              <li>Descargas ilimitadas</li>
+              <li>Estrenos exclusivos</li>
+            </ul>
+            <a href="#seccion-registro" class="boton-plan">OBTENÉ PREMIUM</a>
+          </div>
+        </div>
+      </section>
+      <section class="seccion-registro" id="seccion-registro">
+        <div class="titulo-seccion">
+          <h3>CREÁ TU <span>CUENTA</span></h3>
+          <p>Completá tus datos y empezá hoy mismo.</p>
+        </div>
+        <div class="tarjeta-formulario">
+          <form action="../pages/error404.html" method="get">
+            <div class="fila-dos-columnas">
+              <div class="grupo-campo">
+                <label for="nombre">NOMBRE</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Ej. Iván"
+                  minlength="3"
+                  maxlength="50"
+                  required
+                />
+              </div>
+              <div class="grupo-campo">
+                <label for="apellido">APELLIDO</label>
+                <input
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Ej. De filippo"
+                  minlength="2"
+                  maxlength="50"
+                  required
+                />
+              </div>
+            </div>
+            <div class="grupo-campo">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                minlength="5"
+                maxlength="50"
+                required
+              />
+            </div>
+            <div class="grupo-campo">
+              <label for="contrasena">CONTRASEÑA</label>
+              <input
+                type="password"
+                id="contrasena"
+                name="contrasena"
+                placeholder="Mínimo 8 caracteres"
+                minlength="8"
+                maxlength="50"
+                required
+              />
+            </div>
+            <button type="submit" class="boton-enviar-formulario">
+              Crear cuenta
+            </button>
+          </form>
+        </div>
+      </section>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+      style="background-color: transparent; color: #fbbf24"
+    >
+      <div class="modal-dialog">
+        <div
+          class="modal-content"
+          style="
+            background-color: #1a2030;
+            border: 2px solid #374151;
+            color: #fbbf24;
+          "
+        >
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Iniciar Sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="./pages/error404.html" method="get">
+              <div class="mb-3">
+                <label
+                  for="exampleInputEmail1"
+                  class="form-label"
+                  style="color: #fcd34d"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  minlength="10"
+                  maxlength="50"
+                  required
+                />
+                <div id="emailHelp" class="" style="color: #9ca3af">
+                  <p>
+                    Nunca compartiremos tu correo electrónico con nadie más.
+                  </p>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label
+                  for="exampleInputPassword1"
+                  class="form-label"
+                  style="color: #fcd34d"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  minlength="6"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label
+                  class="form-check-label"
+                  for="exampleCheck1"
+                  style="color: #fcd34d"
+                  >¿Quieres recibir notificaciones de nuestras futuras
+                  novedades?</label
+                >
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck2"
+                  required
+                />
+                <label
+                  class="form-check-label"
+                  for="exampleCheck2"
+                  style="color: #fcd34d"
+                  >¿Aceptas nuestros términos y condiciones?</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn btn-amarillo"
+                style="background-color: #fbbf24"
+              >
+                Iniciar Sesión
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <footer class="container-fluid mt-5">
+      <div class="pt-5 pb-5 bg-black text-white">
+        <div class="row mx-5">
+          <div class="col-12 ms-5 mb-4">
+            <a class="text-decoration-none text-reset">
+              <h4>
+                <img
+                  src="../assets/img/Fondo-de-logo-OnDev+.png"
+                  alt="Logo OnDev+"
+                  style="width: 80px; height: 80px; object-fit: contain"
+                  class="mt-3"
+                />¿Preguntas? Llama al 0800 000 0000
+              </h4>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 ms-5">
+            <a
+              href="./pages/quienesSomos.html"
+              class="text-decoration-none text-reset"
+              >Preguntas frecuentes</a
+            ><br />
+            <a
+              href="./pages/precios.html"
+              class="text-decoration-none text-reset"
+              >Prensa</a
+            ><br />
+            <a
+              href="./pages/seguridad.html"
+              class="text-decoration-none text-reset"
+              >Formas de ver</a
+            ><br />
+            <a
+              href="./pages/roboExtravio.html"
+              class="text-decoration-none text-reset"
+              >Preferencias de cookies</a
+            ><br />
+            <a
+              href="./pages/roboExtravio.html"
+              class="text-decoration-none text-reset"
+              >Prueba de velocidad</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a
+              href="./pages/quienesSomos.html"
+              class="text-decoration-none text-reset"
+              >Centro de ayuda</a
+            ><br />
+            <a
+              href="./pages/precios.html"
+              class="text-decoration-none text-reset"
+              >Relaciones con inversionistas</a
+            ><br />
+            <a
+              href="./pages/seguridad.html"
+              class="text-decoration-none text-reset"
+              >Términos de uso</a
+            ><br />
+            <a
+              href="./pages/roboExtravio.html"
+              class="text-decoration-none text-reset"
+              >Información corporativa</a
+            ><br />
+            <a
+              href="./pages/roboExtravio.html"
+              class="text-decoration-none text-reset"
+              >Avisos legales</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <a
+              href="./pages/quienesSomos.html"
+              class="text-decoration-none text-reset"
+              >Cuenta</a
+            ><br />
+            <a
+              href="./pages/precios.html"
+              class="text-decoration-none text-reset"
+              >Empleo</a
+            ><br />
+            <a
+              href="./pages/seguridad.html"
+              class="text-decoration-none text-reset"
+              >Privacidad</a
+            ><br />
+            <a
+              href="./pages/roboExtravio.html"
+              class="text-decoration-none text-reset"
+              >Contáctanos</a
+            ><br />
+            <a
+              href="./pages/roboExtravio.html"
+              class="text-decoration-none text-reset"
+              >Solo en OnDev+</a
+            >
+          </div>
+        </div>
+      </div>
+      <li class="container nav-item dropdown list-unstyled">
+        <button type="button" class="btn btn-outline-danger">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Idioma
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">Portugués</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+          </ul>
+        </button>
+      </li>
+      <div class="container">
+        <h4 class="mt-2">OnDev+ Argentina</h4>
+        <p>
+          Esta página está protegida por Google reCAPTCHA para comprobar que no
+          eres un robot.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
