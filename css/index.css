@@ -18,7 +18,12 @@
 }
 
 body {
-  background: var(--color-bg);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://i.pinimg.com/736x/70/f8/f2/70f8f2db9605102930a393e4b6efcd06.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -212,7 +217,6 @@ footer p {
 .categoriaRowSection {
   width: 100%;
   padding: 20px 60px;
-  background: var(--color-bg);
 }
 .categoriaRowTitulo {
   font-size: 2.3rem;
