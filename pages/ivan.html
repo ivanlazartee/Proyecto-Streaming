@@ -1,1019 +1,1366 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras." />
-    <meta name="keywords"
-        content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español." />
-    <meta name="author" content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina" />
-    <link rel="icon" type="image/png" href="../assets/img/fondo-logo-OnDev+.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta
+      name="description"
+      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
+    />
+    <meta
+      name="author"
+      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/img/fondo-logo-OnDev+.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/usuarios.css" />
     <title>OnDev+</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="fixed-top navbar navbar-expand-lg py-3">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center gap-2" href="./ivan.html">
-                    <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
-                        style="width: 40px; height: 40px; object-fit: contain" />
-                    <span class="logoMarca fw-semibold">OnDev+</span>
-                </a>
-                <button class="navbar-toggler border-0 text-white ms-auto me-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="./ivan.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#series">Series</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#peliculas">Peliculas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#categorias">Mi lista</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="../pages/error404.html">Originales</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="
+      <nav class="fixed-top navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="./ivan.html"
+          >
+            <img
+              src="../assets/img/fondo-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              style="width: 40px; height: 40px; object-fit: contain"
+            />
+            <span class="logoMarca fw-semibold">OnDev+</span>
+          </a>
+          <button
+            class="navbar-toggler border-0 text-white ms-auto me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./ivan.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./series.html">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#peliculas">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#categorias">Mi lista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/error404.html"
+                  >Originales</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+                style="
                   background-color: var(--color-surface-high);
                   border-color: var(--color-surface);
-                " />
-                    </form>
-                    <ul class="navbar-nav ms-auto ms-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="profile-toggle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                data-bs-offset="0,12" aria-expanded="false">
-                                <img src="../assets/img/fondoIvan.png" alt="Perfil" class="profile-avatar" />
-                                <svg class="profile-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="6 9 12 15 18 9" />
-                                </svg>
-                            </a>
-                            <ul class="dropdown-menu profile-menu dropdown-menu-end">
-                                <li>
-                                    <a class="profile-item active-profile" href="./ivan.html">
-                                        <img src="../assets/img/fondoIvan.png" alt="Perfil" class="profile-avatar" />
-                                        <span>Iván</span>
-                                        <svg class="ms-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <polyline points="20 6 9 17 4 12" />
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-item" href="./mariano.html">
-                                        <img src="../assets/img/fondoMariano.png" alt="Perfil" class="profile-avatar" />
-                                        <span>Mariano</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-item" href="./pilar.html">
-                                        <img src="../assets/img/fondoPilar.png" alt="Perfil" class="profile-avatar" />
-                                        <span>Pilar</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-item" href="./perfiles.html">
-                                        <div class="mini-avatar" style="background: var(--color-surface-high)">
-                                            +
-                                        </div>
-                                        <span>Administrar perfiles</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider profile-divider" />
-                                </li>
-                                <li>
-                                    <a class="profile-menu-item" href="./error404.html">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                            <circle cx="12" cy="7" r="4" />
-                                        </svg>
-                                        Cuenta
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-menu-item" href="./error404.html">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <circle cx="12" cy="12" r="3" />
-                                            <path
-                                                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                                        </svg>
-                                        Configuración
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="profile-menu-item" href="./error404.html">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 8v4M12 16h.01" />
-                                        </svg>
-                                        Ayuda
-                                    </a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider profile-divider" />
-                                </li>
-                                <li>
-                                    <a class="profile-menu-item logout" href="../index.html">
-                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                            stroke-linejoin="round">
-                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
-                                        </svg>
-                                        Cerrar sesión
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                "
+              />
+            </form>
+            <ul class="navbar-nav ms-auto ms-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="profile-toggle dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-offset="0,12"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/img/fondoIvan.png"
+                    alt="Perfil"
+                    class="profile-avatar"
+                  />
+                  <svg
+                    class="profile-chevron"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu profile-menu dropdown-menu-end">
+                  <li>
+                    <a class="profile-item active-profile" href="./ivan.html">
+                      <img
+                        src="../assets/img/fondoIvan.png"
+                        alt="Perfil"
+                        class="profile-avatar"
+                      />
+                      <span>Iván</span>
+                      <svg
+                        class="ms-auto"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./mariano.html">
+                      <img
+                        src="../assets/img/fondoMariano.png"
+                        alt="Perfil"
+                        class="profile-avatar"
+                      />
+                      <span>Mariano</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./pilar.html">
+                      <img
+                        src="../assets/img/fondoPilar.png"
+                        alt="Perfil"
+                        class="profile-avatar"
+                      />
+                      <span>Pilar</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./perfiles.html">
+                      <div
+                        class="mini-avatar"
+                        style="background: var(--color-surface-high)"
+                      >
+                        +
+                      </div>
+                      <span>Administrar perfiles</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider profile-divider" />
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                      Cuenta
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                          d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                        />
+                      </svg>
+                      Configuración
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v4M12 16h.01" />
+                      </svg>
+                      Ayuda
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider profile-divider" />
+                  </li>
+                  <li>
+                    <a class="profile-menu-item logout" href="../index.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"
+                        />
+                      </svg>
+                      Cerrar sesión
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="heroCarousel">
-            <div id="carouselStream" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselStream" data-bs-slide-to="2"></button>
+      <section class="heroCarousel">
+        <div id="carouselStream" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselStream"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselStream"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselStream"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="heroSlide">
+                <div class="overlayHero"></div>
+                <img
+                  src="https://media.gq.com.mx/photos/5be9cd19d1a6deb6ed7c8bf4/16:9/w_2992,h_1683,c_limit/the_dark_knight_860.jpg"
+                  class="imgHero desktopHero"
+                  alt="The Dark Knight"
+                />
+                <img
+                  src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2018/07/joker-batman.png"
+                  class="imgHero mobileHero"
+                  alt="The Dark Knight"
+                />
+                <div class="contenidoHero">
+                  <span class="tagHero">DESTACADA</span>
+                  <h1 class="tituloHero">The Dark Knight</h1>
+                  <p class="descripcionHero">
+                    Batman se enfrenta al Joker, un villano caótico que busca
+                    sumir a Gotham en la anarquía y poner a prueba los límites
+                    del héroe.
+                  </p>
+                  <div class="infoHero">
+                    <span>2008</span>
+                    <span>•</span>
+                    <span>Acción</span>
+                    <span>•</span>
+                    <span>Crimen</span>
+                  </div>
+                  <button class="btnHero">Ver ahora</button>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="heroSlide">
-                            <div class="overlayHero"></div>
-                            <img src="https://media.gq.com.mx/photos/5be9cd19d1a6deb6ed7c8bf4/16:9/w_2992,h_1683,c_limit/the_dark_knight_860.jpg"
-                                class="imgHero desktopHero" alt="The Dark Knight" />
-                            <img src="https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2018/07/joker-batman.png"
-                                class="imgHero mobileHero" alt="The Dark Knight" />
-                            <div class="contenidoHero">
-                                <span class="tagHero">DESTACADA</span>
-                                <h1 class="tituloHero">The Dark Knight</h1>
-                                <p class="descripcionHero">
-                                    Batman se enfrenta al Joker, un villano caótico que busca
-                                    sumir a Gotham en la anarquía y poner a prueba los límites
-                                    del héroe.
-                                </p>
-                                <div class="infoHero">
-                                    <span>2008</span>
-                                    <span>•</span>
-                                    <span>Acción</span>
-                                    <span>•</span>
-                                    <span>Crimen</span>
-                                </div>
-                                <button class="btnHero">Ver ahora</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="heroSlide">
-                            <div class="overlayHero"></div>
-                            <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW1xnxBCAAjN3Mq9vWaCDRplydCsnoMkgnc4XQMlrzD6P8TwkEbc_LoDKAMFRTWMkHocvYcnsgY_h8rGecWZ3B952yR9JSKDF9mJ.jpg?r=ad3"
-                                class="imgHero desktopHero" alt="Blade Runner 2049" />
-                            <img src="https://i.blogs.es/5c9aa5/2049/500_333.jpeg" class="imgHero mobileHero"
-                                alt="Blade Runner 2049" />
-                            <div class="contenidoHero">
-                                <span class="tagHero">EXCLUSIVA</span>
-                                <h1 class="tituloHero">Blade Runner 2049</h1>
-                                <p class="descripcionHero">
-                                    Un agente replicante descubre un secreto enterrado durante
-                                    décadas que podría hundir a lo que queda de la sociedad.
-                                </p>
-                                <div class="infoHero">
-                                    <span>2017</span>
-                                    <span>•</span>
-                                    <span>Sci-Fi</span>
-                                    <span>•</span>
-                                    <span>Neo-Noir</span>
-                                </div>
-                                <button class="btnHero">Ver ahora</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="heroSlide">
-                            <div class="overlayHero"></div>
-                            <img src="https://image.tmdb.org/t/p/original/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg"
-                                class="imgHero desktopHero" alt="Parasite" />
-                            <img src="https://image.tmdb.org/t/p/w780/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
-                                class="imgHero mobileHero" alt="Parasite" />
-                            <div class="contenidoHero">
-                                <span class="tagHero">TENDENCIA</span>
-                                <h1 class="tituloHero">Parasite</h1>
-                                <p class="descripcionHero">
-                                    Una familia sin recursos infiltra el hogar de una familia
-                                    adinerada con consecuencias oscuras e imprevisibles.
-                                </p>
-                                <div class="infoHero">
-                                    <span>2019</span>
-                                    <span>•</span>
-                                    <span>Thriller</span>
-                                    <span>•</span>
-                                    <span>Drama</span>
-                                </div>
-                                <button class="btnHero">Ver ahora</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div class="carousel-item">
+              <div class="heroSlide">
+                <div class="overlayHero"></div>
+                <img
+                  src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW1xnxBCAAjN3Mq9vWaCDRplydCsnoMkgnc4XQMlrzD6P8TwkEbc_LoDKAMFRTWMkHocvYcnsgY_h8rGecWZ3B952yR9JSKDF9mJ.jpg?r=ad3"
+                  class="imgHero desktopHero"
+                  alt="Blade Runner 2049"
+                />
+                <img
+                  src="https://i.blogs.es/5c9aa5/2049/500_333.jpeg"
+                  class="imgHero mobileHero"
+                  alt="Blade Runner 2049"
+                />
+                <div class="contenidoHero">
+                  <span class="tagHero">EXCLUSIVA</span>
+                  <h1 class="tituloHero">Blade Runner 2049</h1>
+                  <p class="descripcionHero">
+                    Un agente replicante descubre un secreto enterrado durante
+                    décadas que podría hundir a lo que queda de la sociedad.
+                  </p>
+                  <div class="infoHero">
+                    <span>2017</span>
+                    <span>•</span>
+                    <span>Sci-Fi</span>
+                    <span>•</span>
+                    <span>Neo-Noir</span>
+                  </div>
+                  <button class="btnHero">Ver ahora</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="heroSlide">
+                <div class="overlayHero"></div>
+                <img
+                  src="https://image.tmdb.org/t/p/original/TU9NIjwzjoKPwQHoHshkFcQUCG.jpg"
+                  class="imgHero desktopHero"
+                  alt="Parasite"
+                />
+                <img
+                  src="https://image.tmdb.org/t/p/w780/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+                  class="imgHero mobileHero"
+                  alt="Parasite"
+                />
+                <div class="contenidoHero">
+                  <span class="tagHero">TENDENCIA</span>
+                  <h1 class="tituloHero">Parasite</h1>
+                  <p class="descripcionHero">
+                    Una familia sin recursos infiltra el hogar de una familia
+                    adinerada con consecuencias oscuras e imprevisibles.
+                  </p>
+                  <div class="infoHero">
+                    <span>2019</span>
+                    <span>•</span>
+                    <span>Thriller</span>
+                    <span>•</span>
+                    <span>Drama</span>
+                  </div>
+                  <button class="btnHero">Ver ahora</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="peliculas" class="top10Section">
-            <h2 class="top10Titulo">Top <span>10</span> películas</h2>
-            <div class="top10Scroll">
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" class="imgTop"
-                            alt="The Dark Knight" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">1</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">The Dark Knight</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>2008</span>
-                            <span>•</span>
-                            <span>Acción</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" class="imgTop"
-                            alt="Parasite" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">2</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Parasite</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>2019</span>
-                            <span>•</span>
-                            <span>Thriller</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg" class="imgTop"
-                            alt="Blade Runner 2049" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">3</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Blade Runner 2049</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>2017</span>
-                            <span>•</span>
-                            <span>Sci-Fi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg" class="imgTop"
-                            alt="Whiplash" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">4</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Whiplash</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">13+</span>
-                            <span>2014</span>
-                            <span>•</span>
-                            <span>Drama</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://m.media-amazon.com/images/M/MV5BMTM3MzQ5MjQ5OF5BMl5BanBnXkFtZTcwMTQ3NzMzMw@@._V1_.jpg"
-                            class="imgTop" alt="The Prestige" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">5</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">The Prestige</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">13+</span>
-                            <span>2006</span>
-                            <span>•</span>
-                            <span>Misterio</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg" class="imgTop"
-                            alt="Fight Club" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">6</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Fight Club</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>1999</span>
-                            <span>•</span>
-                            <span>Thriller</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://pics.filmaffinity.com/El_padrino-993414333-large.jpg" class="imgTop"
-                            alt="El Padrino" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">7</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">El Padrino</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>1972</span>
-                            <span>•</span>
-                            <span>Crimen</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg" class="imgTop"
-                            alt="1917" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">8</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">1917</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">13+</span>
-                            <span>2019</span>
-                            <span>•</span>
-                            <span>Bélica</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="../assets/img/sinlugarparalosdebiles.jpg" class="imgTop"
-                            alt="Sin lugar para los débiles" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">9</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Sin Lugar para los Débiles</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2007</span>
-                            <span>•</span>
-                            <span>Thriller</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_957471-MLU70398283386_072023-O.webp" class="imgTop"
-                            alt="El Renacido" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">10</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">El Renacido</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>2015</span>
-                            <span>•</span>
-                            <span>Aventura</span>
-                        </div>
-                    </div>
-                </div>
+      <section id="peliculas" class="top10Section">
+        <h2 class="top10Titulo">Top <span>10</span> películas</h2>
+        <div class="top10Scroll">
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+                class="imgTop"
+                alt="The Dark Knight"
+              />
+              <div class="overlayTop"></div>
             </div>
-        </section>
+            <span class="numeroTop">1</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">The Dark Knight</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>2008</span>
+                <span>•</span>
+                <span>Acción</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+                class="imgTop"
+                alt="Parasite"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">2</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Parasite</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>2019</span>
+                <span>•</span>
+                <span>Thriller</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
+                class="imgTop"
+                alt="Blade Runner 2049"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">3</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Blade Runner 2049</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>2017</span>
+                <span>•</span>
+                <span>Sci-Fi</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg"
+                class="imgTop"
+                alt="Whiplash"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">4</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Whiplash</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">13+</span>
+                <span>2014</span>
+                <span>•</span>
+                <span>Drama</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMTM3MzQ5MjQ5OF5BMl5BanBnXkFtZTcwMTQ3NzMzMw@@._V1_.jpg"
+                class="imgTop"
+                alt="The Prestige"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">5</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">The Prestige</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">13+</span>
+                <span>2006</span>
+                <span>•</span>
+                <span>Misterio</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+                class="imgTop"
+                alt="Fight Club"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">6</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Fight Club</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>1999</span>
+                <span>•</span>
+                <span>Thriller</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://pics.filmaffinity.com/El_padrino-993414333-large.jpg"
+                class="imgTop"
+                alt="El Padrino"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">7</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">El Padrino</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>1972</span>
+                <span>•</span>
+                <span>Crimen</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/iZf0KyrE25z1sage4SYFLCCrMi9.jpg"
+                class="imgTop"
+                alt="1917"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">8</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">1917</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">13+</span>
+                <span>2019</span>
+                <span>•</span>
+                <span>Bélica</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="../assets/img/sinlugarparalosdebiles.jpg"
+                class="imgTop"
+                alt="Sin lugar para los débiles"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">9</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Sin Lugar para los Débiles</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2007</span>
+                <span>•</span>
+                <span>Thriller</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://http2.mlstatic.com/D_NQ_NP_957471-MLU70398283386_072023-O.webp"
+                class="imgTop"
+                alt="El Renacido"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">10</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">El Renacido</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>2015</span>
+                <span>•</span>
+                <span>Aventura</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="categorias" class="categoriasSection">
-            <h2 class="tituloCategorias">Explorar categorías <span class="spanCategorias">PELICULAS</span></h2>
-            <div class="gridCategorias">
-                <div class="cardCategoria">
-                    <h3>Romance</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-heart"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Anime</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-torii-gate"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Sci-Fi</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-rocket"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Drama</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-masks-theater"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Terror</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-ghost"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Fantasía</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-dragon"></i></span>
-                </div>
-            </div>
-        </section>
+      <section id="categorias" class="categoriasSection">
+        <h2 class="tituloCategorias">
+          Explorar categorías <span class="spanCategorias">PELICULAS</span>
+        </h2>
+        <div class="gridCategorias">
+          <div class="cardCategoria">
+            <h3>Romance</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-heart"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Anime</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-torii-gate"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Sci-Fi</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-rocket"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Drama</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-masks-theater"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Terror</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-ghost"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Fantasía</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-dragon"></i
+            ></span>
+          </div>
+        </div>
+      </section>
 
-        <section id="series" class="top10Section">
-            <h2 class="top10Titulo">Top <span>10</span> series</h2>
-            <div class="top10Scroll">
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg" class="imgTop"
-                            alt="Chernobyl" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">1</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Chernobyl</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>2019</span>
-                            <span>•</span>
-                            <span>Drama</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://www.crew-united.com/Media/Images/1161/1161601/1161601.entity.jpg"
-                            class="imgTop" alt="True Detective" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">2</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">True Detective</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2014</span>
-                            <span>•</span>
-                            <span>Crimen</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg" class="imgTop"
-                            alt="Squid Game" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">3</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Squid Game</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2021</span>
-                            <span>•</span>
-                            <span>Thriller</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg" class="imgTop"
-                            alt="The Wire" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">4</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">The Wire</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2002</span>
-                            <span>•</span>
-                            <span>Crimen</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg" class="imgTop"
-                            alt="Sherlock" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">5</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Sherlock</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">13+</span>
-                            <span>2010</span>
-                            <span>•</span>
-                            <span>Misterio</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg" class="imgTop"
-                            alt="Narcos" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">6</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Narcos</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2015</span>
-                            <span>•</span>
-                            <span>Crimen</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/7PRddO7z7mcPi21nZTCMGShAyy1.jpg" class="imgTop"
-                            alt="Black Mirror" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">7</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Black Mirror</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">16+</span>
-                            <span>2011</span>
-                            <span>•</span>
-                            <span>Sci-Fi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://pics.filmaffinity.com/Mindhunter_Serie_de_TV-446717610-large.jpg"
-                            class="imgTop" alt="Mindhunter" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">8</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Mindhunter</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2017</span>
-                            <span>•</span>
-                            <span>Thriller</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://images.static-bluray.com/products/20/124368_2_large.jpg" class="imgTop"
-                            alt="Severance" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">9</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Severance</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">13+</span>
-                            <span>2022</span>
-                            <span>•</span>
-                            <span>Sci-Fi</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTop">
-                    <div class="imgContainer">
-                        <img src="https://tvseriesfinale.com/wp-content/uploads/2020/03/westworld09-590x381.jpg"
-                            class="imgTop" alt="Westworld" />
-                        <div class="overlayTop"></div>
-                    </div>
-                    <span class="numeroTop">10</span>
-                    <div class="infoTop">
-                        <h3 class="tituloTop">Westworld</h3>
-                        <div class="metaTop">
-                            <span class="badgeEdad">18+</span>
-                            <span>2016</span>
-                            <span>•</span>
-                            <span>Sci-Fi</span>
-                        </div>
-                    </div>
-                </div>
+      <section id="series" class="top10Section">
+        <h2 class="top10Titulo">Top <span>10</span> series</h2>
+        <div class="top10Scroll">
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/hlLXt2tOPT6RRnjiUmoxyG1LTFi.jpg"
+                class="imgTop"
+                alt="Chernobyl"
+              />
+              <div class="overlayTop"></div>
             </div>
-        </section>
+            <span class="numeroTop">1</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Chernobyl</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>2019</span>
+                <span>•</span>
+                <span>Drama</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://www.crew-united.com/Media/Images/1161/1161601/1161601.entity.jpg"
+                class="imgTop"
+                alt="True Detective"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">2</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">True Detective</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2014</span>
+                <span>•</span>
+                <span>Crimen</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/dDlEmu3EZ0Pgg93K2SVNLCjCSvE.jpg"
+                class="imgTop"
+                alt="Squid Game"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">3</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Squid Game</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2021</span>
+                <span>•</span>
+                <span>Thriller</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/4lbclFySvugI51fwsyxBTOm4DqK.jpg"
+                class="imgTop"
+                alt="The Wire"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">4</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">The Wire</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2002</span>
+                <span>•</span>
+                <span>Crimen</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/7WTsnHkbA0FaG6R9twfFde0I9hl.jpg"
+                class="imgTop"
+                alt="Sherlock"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">5</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Sherlock</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">13+</span>
+                <span>2010</span>
+                <span>•</span>
+                <span>Misterio</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/rTmal9fDbwh5F0waol2hq35U4ah.jpg"
+                class="imgTop"
+                alt="Narcos"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">6</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Narcos</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2015</span>
+                <span>•</span>
+                <span>Crimen</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/7PRddO7z7mcPi21nZTCMGShAyy1.jpg"
+                class="imgTop"
+                alt="Black Mirror"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">7</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Black Mirror</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">16+</span>
+                <span>2011</span>
+                <span>•</span>
+                <span>Sci-Fi</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://pics.filmaffinity.com/Mindhunter_Serie_de_TV-446717610-large.jpg"
+                class="imgTop"
+                alt="Mindhunter"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">8</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Mindhunter</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2017</span>
+                <span>•</span>
+                <span>Thriller</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://images.static-bluray.com/products/20/124368_2_large.jpg"
+                class="imgTop"
+                alt="Severance"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">9</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Severance</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">13+</span>
+                <span>2022</span>
+                <span>•</span>
+                <span>Sci-Fi</span>
+              </div>
+            </div>
+          </div>
+          <div class="cardTop">
+            <div class="imgContainer">
+              <img
+                src="https://tvseriesfinale.com/wp-content/uploads/2020/03/westworld09-590x381.jpg"
+                class="imgTop"
+                alt="Westworld"
+              />
+              <div class="overlayTop"></div>
+            </div>
+            <span class="numeroTop">10</span>
+            <div class="infoTop">
+              <h3 class="tituloTop">Westworld</h3>
+              <div class="metaTop">
+                <span class="badgeEdad">18+</span>
+                <span>2016</span>
+                <span>•</span>
+                <span>Sci-Fi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="categorias" class="categoriasSection">
-            <h2 class="tituloCategorias">Explorar categorías <span class="spanCategorias">SERIES</span></h2>
-            <div class="gridCategorias">
-                <div class="cardCategoria">
-                    <h3>Drama</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-masks-theater"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Romance</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-heart"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Sci-Fi</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-rocket"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Anime</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-torii-gate"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Terror</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-ghost"></i></span>
-                </div>
-                <div class="cardCategoria">
-                    <h3>Fantasía</h3>
-                    <span class="personajeCategoria"><i class="fa-solid fa-dragon"></i></span>
-                </div>
-            </div>
-        </section>
+      <section id="categorias" class="categoriasSection">
+        <h2 class="tituloCategorias">
+          Explorar categorías <span class="spanCategorias">SERIES</span>
+        </h2>
+        <div class="gridCategorias">
+          <div class="cardCategoria">
+            <h3>Drama</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-masks-theater"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Romance</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-heart"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Sci-Fi</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-rocket"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Anime</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-torii-gate"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Terror</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-ghost"></i
+            ></span>
+          </div>
+          <div class="cardCategoria">
+            <h3>Fantasía</h3>
+            <span class="personajeCategoria"
+              ><i class="fa-solid fa-dragon"></i
+            ></span>
+          </div>
+        </div>
+      </section>
 
-        <section class="categoriaRowSection">
-            <h2 class="categoriaRowTitulo">Acción</h2>
-            <div class="categoriaRowScroll">
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://m.media-amazon.com/images/S/pv-target-images/3f9800905eaad0bee81190ccd47034bedd94e448c26e6242424801446a08800c._UR1920,1080_.jpg"
-                            class="categoriaCardImg" alt="John Wick" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">John Wick</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">18+</span>
-                            <span>2014</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg"
-                            class="categoriaCardImg" alt="Mission: Impossible – Fallout" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Mission: Impossible</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
-                            class="categoriaCardImg" alt="Top Gun: Maverick" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Top Gun: Maverick</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2022</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://spoilertown.com/wp-content/uploads/2024/10/the-raid-2011.webp"
-                            class="categoriaCardImg" alt="The Raid" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">The Raid</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">18+</span>
-                            <span>2011</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/hA2ple9q4qnwxp3hKVNhroipsir.jpg"
-                            class="categoriaCardImg" alt="Mad Max: Fury Road" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Mad Max: Fury Road</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">16+</span>
-                            <span>2015</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://images.squarespace-cdn.com/content/v1/54e310f0e4b0f4a6ba3ac899/1621895153298-YPQVDNKWDOIF1MS2IZ7S/fury-movie-wide.jpg"
-                            class="categoriaCardImg" alt="Fury" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Fury</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">16+</span>
-                            <span>2014</span>
-                        </div>
-                    </div>
-                </div>
+      <section class="categoriaRowSection">
+        <h2 class="categoriaRowTitulo">Acción</h2>
+        <div class="categoriaRowScroll">
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://m.media-amazon.com/images/S/pv-target-images/3f9800905eaad0bee81190ccd47034bedd94e448c26e6242424801446a08800c._UR1920,1080_.jpg"
+                class="categoriaCardImg"
+                alt="John Wick"
+              />
+              <div class="categoriaCardOverlay"></div>
             </div>
-        </section>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">John Wick</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">18+</span>
+                <span>2014</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/AkJQpZp9WoNdj7pLYSj1L0RcMMN.jpg"
+                class="categoriaCardImg"
+                alt="Mission: Impossible – Fallout"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Mission: Impossible</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg"
+                class="categoriaCardImg"
+                alt="Top Gun: Maverick"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Top Gun: Maverick</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2022</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://spoilertown.com/wp-content/uploads/2024/10/the-raid-2011.webp"
+                class="categoriaCardImg"
+                alt="The Raid"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">The Raid</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">18+</span>
+                <span>2011</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/hA2ple9q4qnwxp3hKVNhroipsir.jpg"
+                class="categoriaCardImg"
+                alt="Mad Max: Fury Road"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Mad Max: Fury Road</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>2015</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/54e310f0e4b0f4a6ba3ac899/1621895153298-YPQVDNKWDOIF1MS2IZ7S/fury-movie-wide.jpg"
+                class="categoriaCardImg"
+                alt="Fury"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Fury</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>2014</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="categoriaRowSection">
-            <h2 class="categoriaRowTitulo">Aventura</h2>
-            <div class="categoriaRowScroll">
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://m.media-amazon.com/images/S/pv-target-images/547b65689ffa5ae13305e0615404050ebed64c0651d33a5abb20de18e82cd95a.jpg"
-                            class="categoriaCardImg" alt="Into the Wild" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Into the Wild</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2007</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://images.mubicdn.net/images/film/5294/cache-10946-1745489606/image-w1280.jpg"
-                            class="categoriaCardImg" alt="Cast Away" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Cast Away</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">ATP</span>
-                            <span>2000</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg"
-                            class="categoriaCardImg" alt="The Martian" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">The Martian</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2015</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://mediasatgroup.wordpress.com/wp-content/uploads/2013/01/life-of-pi-0a.jpg"
-                            class="categoriaCardImg" alt="Life of Pi" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Life of Pi</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">ATP</span>
-                            <span>2012</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://m.media-amazon.com/images/S/pv-target-images/2921c985594b2166744ee3f96ce1487c5c1066d02b9214f5b946477697e5f896.jpg"
-                            class="categoriaCardImg" alt="127 Hours" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">127 Hours</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2010</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://moshfishreviews.com/wp-content/uploads/2022/06/uncharted.png"
-                            class="categoriaCardImg" alt="Uncharted" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Uncharted</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2022</span>
-                        </div>
-                    </div>
-                </div>
+      <section class="categoriaRowSection">
+        <h2 class="categoriaRowTitulo">Aventura</h2>
+        <div class="categoriaRowScroll">
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://m.media-amazon.com/images/S/pv-target-images/547b65689ffa5ae13305e0615404050ebed64c0651d33a5abb20de18e82cd95a.jpg"
+                class="categoriaCardImg"
+                alt="Into the Wild"
+              />
+              <div class="categoriaCardOverlay"></div>
             </div>
-        </section>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Into the Wild</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2007</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://images.mubicdn.net/images/film/5294/cache-10946-1745489606/image-w1280.jpg"
+                class="categoriaCardImg"
+                alt="Cast Away"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Cast Away</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">ATP</span>
+                <span>2000</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg"
+                class="categoriaCardImg"
+                alt="The Martian"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">The Martian</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2015</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://mediasatgroup.wordpress.com/wp-content/uploads/2013/01/life-of-pi-0a.jpg"
+                class="categoriaCardImg"
+                alt="Life of Pi"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Life of Pi</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">ATP</span>
+                <span>2012</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://m.media-amazon.com/images/S/pv-target-images/2921c985594b2166744ee3f96ce1487c5c1066d02b9214f5b946477697e5f896.jpg"
+                class="categoriaCardImg"
+                alt="127 Hours"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">127 Hours</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2010</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://moshfishreviews.com/wp-content/uploads/2022/06/uncharted.png"
+                class="categoriaCardImg"
+                alt="Uncharted"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Uncharted</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section class="categoriaRowSection">
-            <h2 class="categoriaRowTitulo">Comedia</h2>
-            <div class="categoriaRowScroll">
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/2/6/1391709755966/THE-GRAND-BUDAPEST-HOTEL--011.jpg?width=465&dpr=1&s=none&crop=none"
-                            class="categoriaCardImg" alt="The Grand Budapest Hotel" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">The Grand Budapest Hotel</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">ATP</span>
-                            <span>2014</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWcHea2v6m3V2u468t1YIFKlFWdIz-HXRsIJhwOu-ME3I-wQdzE8pA7Riky0ZDjurKgcQCO3Ogncjh128UvaM1U42YKcm85eV81O.jpg?r=e98"
-                            class="categoriaCardImg" alt="Superbad" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Superbad</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">16+</span>
-                            <span>2007</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
-                            class="categoriaCardImg" alt="Knives Out" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Knives Out</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://wallpapers.com/images/hd/the-big-lebowski-movie-poster-digital-art-hshqgehyft0ywo7s.jpg"
-                            class="categoriaCardImg" alt="The Big Lebowski" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">The Big Lebowski</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">16+</span>
-                            <span>1998</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://deadline.com/wp-content/uploads/2017/10/paddington-2.jpg"
-                            class="categoriaCardImg" alt="Paddington 2" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Paddington 2</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">ATP</span>
-                            <span>2017</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://www.framerated.co.uk/wp-content/uploads/2018/08/gamenight01.jpg"
-                            class="categoriaCardImg" alt="Game Night" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">Game Night</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">13+</span>
-                            <span>2018</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="categoriaCard">
-                    <div class="categoriaCardImgContainer">
-                        <img src="https://static0.moviewebimages.com/wordpress/wp-content/uploads/article/h9aC9axjrUmGXYvD4QMSqh5nHqhL1m.jpg?w=1200&h=628&fit=crop"
-                            class="categoriaCardImg" alt="The Nice Guys" />
-                        <div class="categoriaCardOverlay"></div>
-                    </div>
-                    <div class="categoriaCardInfo">
-                        <h3 class="categoriaCardTitulo">The Nice Guys</h3>
-                        <div class="categoriaCardMeta">
-                            <span class="categoriaCardBadge">16+</span>
-                            <span>2016</span>
-                        </div>
-                    </div>
-                </div>
+      <section class="categoriaRowSection">
+        <h2 class="categoriaRowTitulo">Comedia</h2>
+        <div class="categoriaRowScroll">
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/2/6/1391709755966/THE-GRAND-BUDAPEST-HOTEL--011.jpg?width=465&dpr=1&s=none&crop=none"
+                class="categoriaCardImg"
+                alt="The Grand Budapest Hotel"
+              />
+              <div class="categoriaCardOverlay"></div>
             </div>
-        </section>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">The Grand Budapest Hotel</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">ATP</span>
+                <span>2014</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWcHea2v6m3V2u468t1YIFKlFWdIz-HXRsIJhwOu-ME3I-wQdzE8pA7Riky0ZDjurKgcQCO3Ogncjh128UvaM1U42YKcm85eV81O.jpg?r=e98"
+                class="categoriaCardImg"
+                alt="Superbad"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Superbad</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>2007</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg"
+                class="categoriaCardImg"
+                alt="Knives Out"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Knives Out</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2019</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://wallpapers.com/images/hd/the-big-lebowski-movie-poster-digital-art-hshqgehyft0ywo7s.jpg"
+                class="categoriaCardImg"
+                alt="The Big Lebowski"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">The Big Lebowski</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>1998</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://deadline.com/wp-content/uploads/2017/10/paddington-2.jpg"
+                class="categoriaCardImg"
+                alt="Paddington 2"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Paddington 2</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">ATP</span>
+                <span>2017</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://www.framerated.co.uk/wp-content/uploads/2018/08/gamenight01.jpg"
+                class="categoriaCardImg"
+                alt="Game Night"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">Game Night</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">13+</span>
+                <span>2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="categoriaCard">
+            <div class="categoriaCardImgContainer">
+              <img
+                src="https://static0.moviewebimages.com/wordpress/wp-content/uploads/article/h9aC9axjrUmGXYvD4QMSqh5nHqhL1m.jpg?w=1200&h=628&fit=crop"
+                class="categoriaCardImg"
+                alt="The Nice Guys"
+              />
+              <div class="categoriaCardOverlay"></div>
+            </div>
+            <div class="categoriaCardInfo">
+              <h3 class="categoriaCardTitulo">The Nice Guys</h3>
+              <div class="categoriaCardMeta">
+                <span class="categoriaCardBadge">16+</span>
+                <span>2016</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="container-fluid mt-5">
-        <div class="pt-5 pb-5 bg-black text-white">
-            <div class="row mx-3 mx-md-5">
-                <div class="col-12 mb-4">
-                    <a class="text-decoration-none text-reset">
-                        <h4 class="d-flex align-items-center gap-2">
-                            <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
-                                style="width: 80px; height: 80px; object-fit: contain" />
-                            ¿Preguntas? Llama al 0800 000 0000
-                        </h4>
-                    </a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 mb-3">
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Preguntas
-                        frecuentes</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Prensa</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Formas de
-                        ver</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Preferencias
-                        de cookies</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Prueba de
-                        velocidad</a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 mb-3">
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Centro de
-                        ayuda</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Relaciones con
-                        inversionistas</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Términos de
-                        uso</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Información
-                        corporativa</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Avisos
-                        legales</a>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 mb-3">
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Cuenta</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Empleo</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Privacidad</a>
-                    <a href="../pages/error404.html"
-                        class="text-decoration-none text-reset d-block mb-1">Contáctanos</a>
-                    <a href="../pages/error404.html" class="text-decoration-none text-reset d-block mb-1">Solo en
-                        OnDev+</a>
-                </div>
-            </div>
+      <div class="pt-5 pb-5 bg-black text-white">
+        <div class="row mx-3 mx-md-5">
+          <div class="col-12 mb-4">
+            <a class="text-decoration-none text-reset">
+              <h4 class="d-flex align-items-center gap-2">
+                <img
+                  src="../assets/img/fondo-logo-OnDev+.png"
+                  alt="Logo OnDev+"
+                  style="width: 80px; height: 80px; object-fit: contain"
+                />
+                ¿Preguntas? Llama al 0800 000 0000
+              </h4>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preguntas frecuentes</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Prensa</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Formas de ver</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preferencias de cookies</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Prueba de velocidad</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Centro de ayuda</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Relaciones con inversionistas</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Términos de uso</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Información corporativa</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Avisos legales</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Cuenta</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Empleo</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Privacidad</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Contáctanos</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Solo en OnDev+</a
+            >
+          </div>
         </div>
-        <div class="container mt-3">
-            <div class="dropdown">
-                <button class="btn btn-outline-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Idioma
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Español</a></li>
-                    <li><a class="dropdown-item" href="#">Portugués</a></li>
-                    <li><a class="dropdown-item" href="#">English</a></li>
-                    <li><a class="dropdown-item" href="#">Français</a></li>
-                    <li><a class="dropdown-item" href="#">Deutsch</a></li>
-                </ul>
-            </div>
+      </div>
+      <div class="container mt-3">
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-danger dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Idioma
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">Portugués</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+          </ul>
         </div>
-        <div class="container mt-2 mb-3">
-            <h4>OnDev+ Argentina</h4>
-            <p>
-                Esta página está protegida por Google reCAPTCHA para comprobar que no
-                eres un robot.
-            </p>
-        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h4>OnDev+ Argentina</h4>
+        <p>
+          Esta página está protegida por Google reCAPTCHA para comprobar que no
+          eres un robot.
+        </p>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
