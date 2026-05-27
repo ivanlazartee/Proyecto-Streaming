@@ -130,7 +130,6 @@ body {
   box-shadow: none !important;
 }
 
-/*boton (idiomas)*/
 .btn-outline-amarillo {
   background-color: transparent !important;
   border: 2px solid var(--color-primary) !important;
@@ -147,7 +146,6 @@ body {
   box-shadow: none !important;
 }
 
-/* cards motivos */
 .card-motivos {
   border: 0.5px solid var(--color-surface-high);
   border-radius: 12px;
@@ -175,7 +173,6 @@ body {
   margin: 0;
 }
 
-/*accordion*/
 .accordion-item {
   background: var(--color-surface) !important;
   border: 0.5px solid var(--color-surface-high) !important;
@@ -213,9 +210,6 @@ body {
   line-height: 1.7;
   border-top: 0.5px solid var(--color-surface-high);
 }
-/* =========================
-   FOOTER
-========================= */
 
 .footer {
   width: 100%;
@@ -227,7 +221,6 @@ body {
   padding: 4rem 1.5rem 2rem;
 }
 
-/* CONTENEDOR */
 
 .footerContainer {
   width: 100%;
@@ -240,10 +233,6 @@ body {
   text-align: center;
 }
 
-/* =========================
-   TOP
-========================= */
-
 .footerTop {
   width: 100%;
   display: flex;
@@ -251,8 +240,6 @@ body {
   align-items: center;
   margin-bottom: 3rem;
 }
-
-/* BLOQUE LOGO */
 
 .footerBrand {
   display: flex;
@@ -262,14 +249,11 @@ body {
   text-align: center;
 }
 
-/* LOGO */
 .footerLogo {
   width: 180px;
   height: 180px;
   object-fit: contain;
 }
-
-/* TEXTO */
 
 .footerBrand h3 {
   color: white;
@@ -288,10 +272,6 @@ body {
 .footerBrand a:hover {
   color: var(--color-primary);
 }
-
-/* =========================
-   LINKS
-========================= */
 
 .footerGrid {
   width: 100%;
@@ -335,10 +315,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* =========================
-   BOTTOM
-========================= */
-
 .footerBottom {
   width: 100%;
 
@@ -368,10 +344,6 @@ body {
 .footerBrandName {
   color: var(--color-primary);
 }
-
-/* =========================
-   REDES
-========================= */
 
 .footerSocial {
   display: flex;
@@ -423,8 +395,6 @@ body {
   box-shadow: 0 10px 25px rgba(251, 191, 36, 0.35);
 }
 
-/* TEXTO FINAL */
-
 .footerBottom p {
   color: rgba(255, 255, 255, 0.6);
 
@@ -436,10 +406,6 @@ body {
 
   font-size: 0.95rem;
 }
-
-/* =========================
-   MOBILE
-========================= */
 
 @media (max-width: 768px) {
   .footer {

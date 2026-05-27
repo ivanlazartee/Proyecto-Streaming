@@ -513,11 +513,6 @@ body {
   }
 }
 
-
-
-
-
-
 .top10Section {
   width: 100%;
   padding: 20px 60px;
@@ -778,10 +773,6 @@ body {
   }
 }
 
-
-
-
-
 footer {
   background-color: var(--color-bg-nav) !important;
   border-top: 3px solid var(--color-primary);
@@ -808,7 +799,6 @@ footer a:hover {
   color: var(--color-primary) !important;
 }
 
-/* Boton idioma */
 footer .btn-outline-danger {
   background: transparent !important;
   border: 2px solid var(--color-primary) !important;
@@ -826,7 +816,6 @@ footer .nav-link {
   font-size: 14px;
 }
 
-/* dropdown oscuro */
 .dropdown-menu {
   background-color: var(--color-surface) !important;
   border: 0.5px solid var(--color-surface-high) !important;
