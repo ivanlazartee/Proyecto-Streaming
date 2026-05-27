@@ -1,323 +1,278 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
-    />
-    <meta
-      name="keywords"
-      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
-    />
-    <meta
-      name="author"
-      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras." />
+  <meta name="keywords"
+    content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español." />
+  <meta name="author" content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="icon" type="image/png" href="./assets/img/fondo-logo-OnDev+.png" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/suscripcion.css" />
-    <link
-      rel="shortcut icon"
-      href="../assets/img/fondo-logo-OnDev+.png"
-      type="image/x-icon"
-    />
-    <title>OnDev+ - Suscripcion</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg py-3">
-        <div class="container">
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="../assets/img/fondo-logo-OnDev+.png"
-              alt="Logo OnDev+"
-              style="width: 50px; height: 50px; object-fit: contain"
-            />
-          </a>
-          <div class="d-flex ms-auto gap-2 align-items-center">
-            <button
-              class="btn btn-amarillo"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-              style="
+  <link rel="stylesheet" href="../css/suscripcion.css" />
+  <link rel="shortcut icon" href="../assets/img/fondo-logo-OnDev+.png" type="image/x-icon" />
+  <title>OnDev+ - Suscripcion</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
+            style="width: 50px; height: 50px; object-fit: contain" />
+        </a>
+        <div class="d-flex ms-auto gap-2 align-items-center">
+          <button class="btn btn-amarillo" type="button" data-bs-toggle="modal" data-bs-target="#loginModal" style="
                 background-color: transparent;
                 border: 2px solid #fbbf24;
                 color: #fbbf24;
-              "
-            >
-              Iniciar Sesión
-            </button>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="seccion-portada">
-        <img
-          src="../assets/img/suscripcion-imagen.png"
-          alt="Elegí tu plan perfecto"
-          class="portada-imagen"
-        />
-        <a href="#seccion-planes" class="boton-borde">VER PLANES</a>
-      </section>
-      <section class="seccion-planes" id="seccion-planes">
-        <div class="titulo-seccion">
-          <h3>NUESTROS <span>PLANES</span></h3>
-          <p>Todos incluyen acceso inmediato.</p>
-        </div>
-        <div class="contenedor-tarjetas">
-          <div class="tarjeta-plan">
-            <h4 class="nombre-plan">BASICO</h4>
-            <div class="precio">
-              $9.999<small>/mes</small>
-              <p>Ideal para empezar.</p>
-            </div>
-            <hr />
-            <ul class="lista-beneficios">
-              <li>1 pantalla</li>
-              <li>Calidad 1080p HD</li>
-              <li>+3.000 titulos</li>
-              <li class="beneficio-no-incluido">Sin descargas</li>
-              <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
-            </ul>
-            <a href="#seccion-registro" class="boton-plan"
-              >OBTENÉ PLAN BÁSICO</a
-            >
-          </div>
-          <div class="tarjeta-plan">
-            <span class="etiqueta-popular">MAS POPULAR</span>
-            <h4 class="nombre-plan">ESTANDAR</h4>
-            <div class="precio">
-              $12.400<small>/mes</small>
-              <p>La opcion mas elegida.</p>
-            </div>
-            <hr />
-            <ul class="lista-beneficios">
-              <li>2 pantallas</li>
-              <li>Calidad 4K Ultra HD</li>
-              <li>+7.000 titulos</li>
-              <li>10 descargas offline</li>
-              <li class="beneficio-no-incluido">Sin estrenos exclusivos</li>
-            </ul>
-            <a href="#seccion-registro" class="boton-plan"
-              >OBTENÉ PLAN ESTÁNDAR</a
-            >
-          </div>
-          <div class="tarjeta-plan">
-            <h4 class="nombre-plan">PLUS</h4>
-            <div class="precio">
-              $15720<small>/mes</small>
-              <p>Un escalon mas arriba.</p>
-            </div>
-            <hr />
-            <ul class="lista-beneficios">
-              <li>3 pantallas</li>
-              <li>Calidad 4K Ultra HDR10</li>
-              <li>+10.000 titulos</li>
-              <li>25 descargas offline</li>
-              <li>Estrenos exclusivos</li>
-            </ul>
-            <a href="#seccion-registro" class="boton-plan">OBTENÉ PLAN PLUS</a>
-          </div>
-          <div class="tarjeta-plan">
-            <h4 class="nombre-plan">PREMIUM</h4>
-            <div class="precio">
-              $17.100<small>/mes</small>
-              <p>La experiencia total.</p>
-            </div>
-            <hr />
-            <ul class="lista-beneficios">
-              <li>4 pantallas</li>
-              <li>Calidad 4K Ultra HDR10</li>
-              <li>+10.000 titulos</li>
-              <li>25 descargas offline</li>
-              <li>Descargas ilimitadas</li>
-              <li>Estrenos exclusivos</li>
-            </ul>
-            <a href="#seccion-registro" class="boton-plan">OBTENÉ PREMIUM</a>
-          </div>
-        </div>
-      </section>
-      <section class="seccion-registro" id="seccion-registro">
-        <div class="titulo-seccion">
-          <h3>CREÁ TU <span>CUENTA</span></h3>
-          <p>Completá tus datos y empezá hoy mismo.</p>
-        </div>
-        <div class="tarjeta-formulario">
-          <form action="../pages/error404.html" method="get">
-            <div class="fila-dos-columnas">
-              <div class="grupo-campo">
-                <label for="nombre">NOMBRE</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  name="nombre"
-                  placeholder="Ej. Iván"
-                  minlength="3"
-                  maxlength="50"
-                  required
-                />
-              </div>
-              <div class="grupo-campo">
-                <label for="apellido">APELLIDO</label>
-                <input
-                  type="text"
-                  id="apellido"
-                  name="apellido"
-                  placeholder="Ej. De filippo"
-                  minlength="2"
-                  maxlength="50"
-                  required
-                />
-              </div>
-            </div>
-            <div class="grupo-campo">
-              <label for="email">EMAIL</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="tu@email.com"
-                minlength="5"
-                maxlength="50"
-                required
-              />
-            </div>
-            <div class="grupo-campo">
-              <label for="contrasena">CONTRASEÑA</label>
-              <input
-                type="password"
-                id="contrasena"
-                name="contrasena"
-                placeholder="Mínimo 8 caracteres"
-                minlength="8"
-                maxlength="50"
-                required
-              />
-            </div>
-            <button type="submit" class="boton-enviar-formulario">
-              Crear cuenta
-            </button>
-          </form>
-        </div>
-      </section>
-    <div
-      class="modal fade"
-      id="loginModal"
-      tabindex="-1"
-      aria-labelledby="loginModalLabel"
-      aria-hidden="true"
-      style="background-color: transparent; color: #fbbf24"
-    >
-      <div class="modal-dialog">
-        <div
-          class="modal-content"
-          style="
-            background-color: #1a2030;
-            border: 2px solid #374151;
-            color: #fbbf24;
-          "
-        >
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="loginModalLabel">
-              Iniciar Sesión
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="../pages/perfiles.html" method="get">
-              <div class="mb-3">
-                <label
-                  for="exampleInputEmail1"
-                  class="form-label"
-                  style="color: #fcd34d"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  minlength="10"
-                  maxlength="50"
-                  required
-                />
-                <div id="emailHelp" class="" style="color: #9ca3af">
-                  <p>
-                    Nunca compartiremos tu correo electrónico con nadie más.
-                  </p>
-                </div>
-              </div>
-              <div class="mb-3">
-                <label
-                  for="exampleInputPassword1"
-                  class="form-label"
-                  style="color: #fcd34d"
-                  >Contraseña</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  minlength="6"
-                  maxlength="30"
-                  required
-                />
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label
-                  class="form-check-label"
-                  for="exampleCheck1"
-                  style="color: #fcd34d"
-                  >¿Quieres recibir notificaciones de nuestras futuras
-                  novedades?</label
-                >
-              </div>
-              <div class="mb-3 form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck2"
-                  required
-                />
-                <label
-                  class="form-check-label"
-                  for="exampleCheck2"
-                  style="color: #fcd34d"
-                  >¿Aceptas nuestros términos y condiciones?</label
-                >
-              </div>
-              <button
-                type="submit"
-                class="btn btn-amarillo"
-                style="background-color: #fbbf24"
-              >
-                Iniciar Sesión
-              </button>
-            </form>
-          </div>
+              ">
+            Iniciar Sesión
+          </button>
         </div>
       </div>
-    </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <img src="../assets/img/bannerBreaking.png" alt="Banner streaming" class="hero-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-tag">
+          STREAMING PREMIUM
+        </span>
+        <h1>
+          ELEGÍ TU PLAN <span>PERFECTO</span>
+        </h1>
+        <p>
+          Miles de películas, series y documentales.
+          Cancelá cuando quieras.
+        </p>
+        <div class="hero-buttons">
+          <a href="#planes" class="btn-primary">
+            VER PLANES
+          </a>
+          <a href="#registro" class="btn-secondary">
+            CREAR CUENTA
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="planes-section" id="planes">
+      <div class="section-title">
+        <span>PLANES</span>
+        <h2>NUESTROS PLANES</h2>
+        <p>Elegí el plan ideal para vos.</p>
+      </div>
+
+      <div class="planes-grid">
+
+        <article class="plan-card">
+          <h3>BÁSICO</h3>
+
+          <div class="price">
+            $9.999
+            <small>/mes</small>
+          </div>
+
+          <p class="plan-description">
+            Ideal para empezar.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              1 pantalla
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Calidad HD
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              +3.000 títulos
+            </li>
+
+            <li class="disabled">
+              <i class="fa-solid fa-xmark"></i>
+              Descargas
+            </li>
+          </ul>
+
+          <a href="#registro" class="plan-btn">
+            OBTENER PLAN
+          </a>
+        </article>
+
+        <article class="plan-card featured">
+
+          <div class="popular">
+            MÁS POPULAR
+          </div>
+
+          <h3>ESTÁNDAR</h3>
+
+          <div class="price">
+            $12.400
+            <small>/mes</small>
+          </div>
+
+          <p class="plan-description">
+            La opción más elegida.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              2 pantallas
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              4K Ultra HD
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              +7.000 títulos
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              10 descargas
+            </li>
+          </ul>
+
+          <a href="#registro" class="plan-btn">
+            OBTENER PLAN
+          </a>
+        </article>
+
+        <article class="plan-card">
+          <h3>PLUS</h3>
+
+          <div class="price">
+            $15.720
+            <small>/mes</small>
+          </div>
+
+          <p class="plan-description">
+            Más potencia y calidad.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              3 pantallas
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              HDR10+
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              +10.000 títulos
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Estrenos exclusivos
+            </li>
+          </ul>
+
+          <a href="#registro" class="plan-btn">
+            OBTENER PLAN
+          </a>
+        </article>
+
+        <article class="plan-card">
+          <h3>PREMIUM</h3>
+
+          <div class="price">
+            $17.100
+            <small>/mes</small>
+          </div>
+
+          <p class="plan-description">
+            La experiencia total.
+          </p>
+
+          <ul>
+            <li>
+              <i class="fa-solid fa-check"></i>
+              4 pantallas
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Calidad máxima
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Descargas ilimitadas
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check"></i>
+              Contenido exclusivo
+            </li>
+          </ul>
+
+          <a href="#registro" class="plan-btn">
+            OBTENER PLAN
+          </a>
+        </article>
+
+      </div>
+    </section>
+    <section class="register-section" id="registro">
+      <div class="section-title">
+        <span>REGISTRO</span>
+        <h2>CREÁ TU CUENTA</h2>
+        <p>Comenzá hoy mismo.</p>
+      </div>
+      <div class="form-container">
+        <form>
+          <div class="input-row">
+            <div class="input-group">
+              <label>Nombre</label>
+              <input type="text" placeholder="Ej. Mariano" required>
+            </div>
+            <div class="input-group">
+              <label>Apellido</label>
+              <input type="text" placeholder="Ej. De Filippo" required>
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="tu@email.com" required>
+          </div>
+          <div class="input-group">
+            <label>Contraseña</label>
+            <input type="password" placeholder="Mínimo 8 caracteres" required>
+          </div>
+          <button class="submit-btn">
+            <a href="../pages/error404.html">
+              CREAR CUENTA
+            </a>
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
-    <footer class="footer bg-black">
+  <footer class="footer">
     <div class="footerContainer">
       <div class="footerTop">
         <div class="footerBrand">
@@ -378,7 +333,7 @@
           <a href="../pages/contacto.html">
             Contáctanos
           </a>
-          <a href="../pages/acercaDeNos.html">
+          <a href="../pages/AcercaDeNos.html">
             Acerca de Nosotros
           </a>
         </div>
@@ -391,19 +346,19 @@
           Argentina
         </h4>
         <div class="footerSocial">
-          <a href="#" class="socialLink">
+          <a href="https://www.instagram.com/rollingcodeschool/?hl=es" class="socialLink">
             <i class="fa-brands fa-instagram"></i>
           </a>
-          <a href="#" class="socialLink">
+          <a href="https://www.facebook.com/RollingCodeSchool?locale=es_LA" class="socialLink">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
-          <a href="#" class="socialLink">
+          <a href="https://x.com/rollingcodeok" class="socialLink">
             <i class="fa-brands fa-x-twitter"></i>
           </a>
-          <a href="#" class="socialLink">
+          <a href="https://www.youtube.com/@rollingcode7175" class="socialLink">
             <i class="fa-brands fa-youtube"></i>
           </a>
-          <a href="#" class="socialLink">
+          <a href="https://www.tiktok.com/@rollingcodeschool" class="socialLink">
             <i class="fa-brands fa-tiktok"></i>
           </a>
         </div>
@@ -417,5 +372,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
