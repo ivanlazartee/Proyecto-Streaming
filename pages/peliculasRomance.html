@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras." />
+    <meta name="keywords"
+        content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español." />
+    <meta name="author" content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina" />
+    <link rel="icon" type="image/png" href="../assets/img/fondo-logo-OnDev+.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" ... />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/usuarios.css" />
+    <title>OnDev+ | Romance · Películas</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3 fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="./mariano.html">
+                    <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
+                        style="width: 40px; height: 40px; object-fit: contain" />
+                    <span class="logoMarca fw-semibold">OnDev+</span>
+                </a>
+                <button class="navbar-toggler border-0 text-white ms-auto me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="./mariano.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="mariano.html#series">Series</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="mariano.html#peliculas">Peliculas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="mariano.html#categorias">Mi lista</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="../pages/error404.html">Originales</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="
+                          background-color: var(--color-surface-high);
+                          border-color: var(--color-surface);
+                        " />
+                    </form>
+                    <ul class="navbar-nav ms-auto ms-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="profile-toggle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                data-bs-offset="0,12" aria-expanded="false">
+                                <img src="../assets/img/fondoMariano.png" alt="icono de usuario inicio sesion"
+                                    class="profile-avatar" />
+                                <svg class="profile-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu profile-menu dropdown-menu-end">
+                                <li>
+                                    <a class="profile-item active-profile" href="./mariano.html">
+                                        <img src="../assets/img/fondoMariano.png" alt="icono de usuario inicio sesion"
+                                            class="profile-avatar" />
+                                        <span>Mariano</span>
+                                        <svg class="ms-auto" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <polyline points="20 6 9 17 4 12" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="profile-item" href="./pilar.html">
+                                        <img src="../assets/img/fondoPilar.png" alt="icono de usuario inicio sesion"
+                                            class="profile-avatar" />
+                                        <span>Pilar</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="profile-item" href="./ivan.html">
+                                        <img src="../assets/img/fondoIvan.png" alt="icono de usuario inicio sesion"
+                                            class="profile-avatar" />
+                                        <span>Iván</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="profile-item" href="./perfiles.html">
+                                        <div class="mini-avatar" style="background: var(--color-surface-high)">
+                                            +
+                                        </div>
+                                        <span>Administrar perfiles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider profile-divider" />
+                                </li>
+                                <li>
+                                    <a class="profile-menu-item" href="./error404.html">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                            <circle cx="12" cy="7" r="4" />
+                                        </svg>
+                                        Cuenta
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="profile-menu-item" href="./error404.html">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="3" />
+                                            <path
+                                                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                                        </svg>
+                                        Configuración
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="profile-menu-item" href="./error404.html">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M12 8v4M12 16h.01" />
+                                        </svg>
+                                        Ayuda
+                                    </a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider profile-divider" />
+                                </li>
+                                <li>
+                                    <a class="profile-menu-item logout" href="./error404.html">
+                                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                                        </svg>
+                                        Cerrar sesión
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="catHero catHeroRomance">
+            <div class="catHeroContent">
+                <div class="catHeroBreadcrumb">
+                    <a href="./mariano.html">Inicio</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size:.65rem"></i>
+                    <a href="./mariano.html#peliculas">Películas</a>
+                    <i class="fa-solid fa-chevron-right" style="font-size:.65rem"></i>
+                    <span>Romance</span>
+                </div>
+                <div class="catHeroTag">
+                    <i class="fa-solid fa-rocket"></i>
+                    Categoría · Películas
+                </div>
+                <h1 class="catHeroTitulo">Romance</h1>
+                <p class="catHeroDesc">
+                    Descubrí historias apasionantes, amores inolvidables y conexiones que trascienden el tiempo.
+                    Las mejores películas y series románticas seleccionadas para vos.
+                </p>
+                <div class="catHeroStats">
+                    <div class="catStat"><strong>24</strong><small>Títulos</small></div>
+                    <div class="catStat"><strong>Full HD</strong><small>Calidad</small></div>
+                    <div class="catStat"><strong>9.3</strong><small>Rating avg.</small></div>
+                </div>
+            </div>
+        </section>
+        <section class="catSection">
+            <div class="catSectionHeader">
+                <h2 class="catSectionTitulo">Películas <span>Romance</span></h2>
+                <span class="catResultCount">24 resultados · Página 1 de 3</span>
+            </div>
+            <div class="catGrid">
+                <div class="catCard">
+                    <a href="../pages/Titanic.html">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/fi029444-06-1671462935.jpg?resize=980:*"
+                            class="imgHero desktopHero" alt="imagen pelicula Titanic">
+                        <img src="../assets/img/titanic.jpg" class="imgHero mobileHero" alt="imagen pelicula Titanic">
+                        <div class="catCardOverlay"></div>
+                        <div class="catCardBadgeTop"><span class="badgeHD">4K</span></div>
+                    </a>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Titanic</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>1997</span>
+                            <span>·</span>
+                            <span>3h 14m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <a href="../pages/lalaland.html">
+                        <img src="https://m.media-amazon.com/images/S/pv-target-images/178c2a0f654a66eda07ca098fa243728b6bc7c5f4359863860e12c50be3b8e39.jpg"
+                            class="imgHero desktopHero" alt="imagen pelicula La La Land">
+                        <img src="https://f.radio-grpp.io/2017/01/16/124712_327896.png?imgdimension=look"
+                            class="imgHero mobileHero" alt="imagen pelicula La La Land">
+                        <div class="catCardOverlay"></div>
+                        <div class="catCardBadgeTop"><span class="badgeHD">4K</span></div>
+                    </a>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">La La Land</h3>
+
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2016</span>
+                            <span>·</span>
+                            <span>2h 8m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghiB7mgoC5Ilfs_U7J1fy2s4kFeR6-HKwc2eVI7YWkYnTQdWm41jicexYhG3Kw5ZIwqLTW7fa1gV0MdlZF80iazEpQrFx0DkjcdUyOVa2c7f-fgFDkC-BGkCDkEUNS8MCHp277uJRyabrj/s0/415040_1020_A.jpg"
+                        class="imgHero desktopHero" alt="imagen pelicula The Notebook">
+                    <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/shape/cover/sport/the-notebook-hed-addf1ce62f83145471f378c4799d865a.jpg"
+                        class="imgHero mobileHero" alt="imagen pelicula The Notebook">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop"><span class="badgeHD">HD</span></div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">The Notebook</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2004</span>
+                            <span>·</span>
+                            <span>2h 3m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://play-lh.googleusercontent.com/3t7K3EZWx4FRXATK9tMWpqR4thb_4XVs6R0GBt1NDJt5ypKIzh6mxbD-1SM9II-TAow"
+                        class="imgHero desktopHero" alt="imagen pelicula Me before you">
+                    <img src="https://play-lh.googleusercontent.com/3t7K3EZWx4FRXATK9tMWpqR4thb_4XVs6R0GBt1NDJt5ypKIzh6mxbD-1SM9II-TAow"
+                        class="imgHero mobileHero" alt="imagen pelicula Me before you">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop"><span class="badgeHD">HD</span></div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Me Before You</h3>
+
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2016</span>
+                            <span>·</span>
+                            <span>1h 50m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZTY2OGM3NDgtZTQwMi00MmJiLTg3NGMtZDc0ZGIwODYzZWEyXkEyXkFqcGc@._V1_.jpg"
+                        class="imgHero desktopHero" alt="imagen pelicula Pride and Prejudice">
+                    <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/192/2025/12/02152113/v5gShop7147X33ytbcC2u05KDuc.jpg"
+                        class="imgHero mobileHero" alt="imagen pelicula Pride and Prejudice">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop"><span class="badgeHD">4K</span></div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Pride and Prejudice</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2005</span>
+                            <span>·</span>
+                            <span>2h 9m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://m.media-amazon.com/images/S/pv-target-images/0585b42e5cc6814261b158efdf1609b87478ad0bf089c77372e434efe70a8822.jpg"
+                        class="imgHero desktopHero" alt="imagen pelicula About Time">
+                    <img src="https://play-lh.googleusercontent.com/proxy/r-6FQbWzpvphsjl8uKd8MlAYHna5oPVi--tImiyySgPkv5ykU9su8ybIJaTVypvg8WPH8p55bbZIYdphi7KueggoeiMnBXAzqNwcy_vmvyixylH3fhWkIX4=s1920-w1920-h1080-rw"
+                        class="imgHero mobileHero" alt="imagen pelicula About Time">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop"><span class="badgeHD">HD</span></div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">About Time</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2013</span>
+                            <span>·</span>
+                            <span>2h 3m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://static.wikia.nocookie.net/amazing-everything/images/b/bd/The_Fault_in_Our_Stars_film_poster_2014.jpg/revision/latest/scale-to-width-down/1200?cb=20140928175417"
+                        class="imgHero desktopHero" alt="imagen pelicula The Fault in pur starts">
+                    <img src="https://www.hollywoodreporter.com/wp-content/uploads/2013/12/the_fault_in_our_stars_poster.jpg?w=200&h=200&crop=1"
+                        class="imgHero mobileHero" alt="imagen pelicula The Fault in pur starts">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop"><span class="badgeHD">HD</span></div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">The Fault in Our Stars</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2014</span>
+                            <span>·</span>
+                            <span>2h 6m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://play-lh.googleusercontent.com/GKL-zV3fsvM_V6w1my5ub9OhebmTOffs5IQiwj0Edc0lIsEikYQmMyb6syGVmYtF_E8"
+                        class="imgHero desktopHero" alt="imagen pelicula Call me by Your Name">
+                    <img src="https://media.vogue.es/photos/5cc6fd049ba439351e2c4270/2:3/w_2560%2Cc_limit/peliculas_mejor_vestuario_cine_2017_995137092.jpg"
+                        class="imgHero mobileHero" alt="imagen pelicula Call me by Your Name">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">HD</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Call Me by Your Name</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">16+</span>
+                            <span>2017</span>
+                            <span>·</span>
+                            <span>2h 12m</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catSection">
+            <div class="catSectionHeader">
+                <h2 class="catSectionTitulo">Series <span>Romance</span></h2>
+            </div>
+            <div class="catGrid">
+              <a href="./serieBridgerton.html">
+                <div class="catCard">
+                    <img src="https://static.hiamag.com/styles/autox754/public/article/10/03/2022/WhatsApp%20Image%202022-03-10%20at%2011.18.11%20AM.jpeg"
+                        class="imgHero desktopHero" alt="imagen serie Bridgerton">
+                    <img src="https://imagenes.hobbyconsolas.com/files/image_1920_1080/uploads/imagenes/2026/01/26/69772c3b54efb6-21129123.jpeg"
+                        class="imgHero mobileHero" alt="imagen serie Bridgerton">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">4K</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Bridgerton</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">16+</span>
+                            <span>2020</span>
+                            <span>·</span>
+                            <span>3 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+              </a>
+                <a href="./serieEmily.html">
+                <div class="catCard">
+                    <img src="https://resizing.flixster.com/HpqLOzzIPHmxM4gQUxerNVB0FjM=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvNjliNmYwMTMtZGJjNS00Mzg1LWIyZjMtNzEwMWVjNzg1MzAwLmpwZw=="
+                        class="imgHero desktopHero" alt="imagen serie Emily in Paris">
+                    <img src="https://image.tmdb.org/t/p/original/vcqgEvP3fBabEk6OBasOAvm7owu.jpg"
+                        class="imgHero mobileHero" alt="imagen serie Emily in Paris">
+                    <div class="catCardOverlay"></div>
+
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">4K</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Emily in Paris</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2020</span>
+                            <span>·</span>
+                            <span>4 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                </a>
+                <div class="catCard">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWUzNjQ2YmYtNWI3Yi00NzNmLWJjYWYtMDFiM2RjYjNjZWZmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        class="imgHero desktopHero" alt="imagen serie Normal People">
+                    <img src="https://static-blogs.diariovasco.com/wp-content/uploads/sites/37/2025/02/destacada-3-1.jpg"
+                        class="imgHero mobileHero" alt="imagen serie Normal People">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">HD</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Normal People</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">16+</span>
+                            <span>2020</span>
+                            <span>·</span>
+                            <span>1 Temporada</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://static.wikia.nocookie.net/wiki-doblaje-espana/images/3/3e/Heartstopper_portada.png/revision/latest?cb=20241020170713&path-prefix=es"
+                        class="imgHero desktopHero" alt="imagen serie Heartstopper">
+                    <img src="https://culturapress.es/wp-content/uploads/heartstopper-2-recensione-serie-tv-netflix_jpg_1600x900_crop_q85-930x620.jpg"
+                        class="imgHero mobileHero" alt="imagen serie Heartstopper">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">HD</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Heartstopper</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2022</span>
+                            <span>·</span>
+                            <span>2 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://cdn.moviepilot.de/files/f976136dc99edab14a8893f9f5d3378bdf0e3f94f76c7b51c429febd14ea/copyright/Bildschirmfoto+2021-02-15+um+10.15.27.jpg"
+                        class="imgHero desktopHero" alt="imagen serie Love Alarm">
+                    <img src="https://img.wattpad.com/4b8853250506ea4685d82b3b8eea64e77c557eea/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f6948613833694a48306b49694a513d3d2d3931343533383334352e313631653531383965626263336263373534343431383239313539342e6a7067?s=fit&w=720&h=720"
+                        class="imgHero mobileHero" alt="imagen serie Love Alarm">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">4K</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Love Alarm</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2019</span>
+                            <span>·</span>
+                            <span>2 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTc4M2JmYmEtMjJhOC00MmRlLThhZDEtMWRhZTZiNTI0ZDZhXkEyXkFqcGc@._V1_.jpg"
+                        class="imgHero desktopHero" alt="imagen serie Outlander">
+                    <img src="https://www.lanacion.com.ar/resizer/v2/el-drama-historico-llegara-a-su-fin-pero-ya-se-FRULF6GMD5H6BOMBXN6TODBDOA.jpg?auth=94322e651911dfb86c5eeb1c9f540bb0f30b1c53fa7946a8f29c4600f519ad03&width=1200&height=1200&quality=70&smart=true"
+                        class="imgHero mobileHero" alt="imagen serie Outlander">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">HD</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Outlander</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">16+</span>
+                            <span>2014</span>
+                            <span>·</span>
+                            <span>7 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://m.media-amazon.com/images/I/716lkSqZYBL._AC_UF894,1000_QL80_.jpg"
+                        class="imgHero desktopHero" alt="imagen pelicula XO Kitty">
+                    <img src="https://people.com/thmb/RtaDZZGlD76XZ7hY8TjLxZZbfcQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(1016x423:1018x425)/xo-kitty-season-2-anna-cathcart-main-121824-6ad665232ae94db18add42d3eaa3b45e.jpg"
+                        class="imgHero mobileHero" alt="imagen pelicula XO Kitty">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">HD</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">XO, Kitty</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2023</span>
+                            <span>·</span>
+                            <span>2 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="catCard">
+                    <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p17644808_b_v10_aa.jpg"
+                        class="imgHero desktopHero" alt="imagen pelicula avatar">
+                    <img src="https://media.vogue.es/photos/62a897f3b6ee624ae94f0c6a/2:3/w_2560%2Cc_limit/VirginRiver_Season4_Episode4_00_08_49_11RC.jpg"
+                        class="imgHero mobileHero" alt="imagen pelicula avatar">
+                    <div class="catCardOverlay"></div>
+                    <div class="catCardBadgeTop">
+                        <span class="badgeHD">HD</span>
+                    </div>
+                    <div class="catCardInfo">
+                        <h3 class="catCardTitulo">Virgin River</h3>
+                        <div class="catCardMeta">
+                            <span class="badgeEdad">13+</span>
+                            <span>2019</span>
+                            <span>·</span>
+                            <span>5 Temporadas</span>
+                        </div>
+                    </div>
+                    <div class="catCardPlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="paginadoSection">
+            <p class="paginadoInfo">Mostrando <strong>1–3</strong> de <strong>24</strong> títulos</p>
+            <aside class="paginadoWrap" aria-label="Paginado">
+                <span class="pgBtn disabled" aria-label="Anterior">
+                    <i class="fa-solid fa-chevron-left" style="font-size:.75rem"></i>
+                </span>
+                <a href="./peliculasRomance.html" class="pgBtn active" aria-current="page">1</a>
+                <a href="./error404.html" class="pgBtn">2</a>
+                <span class="pgEllipsis">···</span>
+                <a href="./error404.html" class="pgBtn">3</a>
+                <a href="./error404.html" class="pgBtn" aria-label="Siguiente">
+                    <i class="fa-solid fa-chevron-right" style="font-size:.75rem"></i>
+                </a>
+            </aside>
+    </main>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerTop">
+                <div class="footerBrand">
+                    <img src="../assets/img/Fondo-de-logo-OnDev+.png" alt="Logo OnDev+" class="footerLogo">
+                    <div>
+                        <h3>¿Preguntas?</h3>
+                        <a href="tel:08000000000">
+                            Llama al 0800 000 0000
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footerGrid">
+                <div class="footerColumn">
+                    <a href="./pages/error404.html">
+                        Preguntas frecuentes
+                    </a>
+                    <a href="./pages/error404.html">
+                        Prensa
+                    </a>
+                    <a href="./pages/error404.html">
+                        Formas de ver
+                    </a>
+                    <a href="./pages/error404.html">
+                        Preferencias de cookies
+                    </a>
+                    <a href="./pages/error404.html">
+                        Prueba de velocidad
+                    </a>
+                </div>
+                <div class="footerColumn">
+                    <a href="./pages/error404.html">
+                        Centro de ayuda
+                    </a>
+                    <a href="./pages/error404.html">
+                        Relaciones con inversionistas
+                    </a>
+                    <a href="./pages/error404.html">
+                        Términos de uso
+                    </a>
+                    <a href="./pages/error404.html">
+                        Información corporativa
+                    </a>
+                    <a href="./pages/error404.html">
+                        Avisos legales
+                    </a>
+                </div>
+                <div class="footerColumn">
+                    <a href="./pages/error404.html">
+                        Cuenta
+                    </a>
+                    <a href="./pages/error404.html">
+                        Empleo
+                    </a>
+                    <a href="./pages/error404.html">
+                        Privacidad
+                    </a>
+                    <a href="./pages/error404.html">
+                        Contáctanos
+                    </a>
+                    <a href="./pages/error404.html">
+                        Solo en OnDev+
+                    </a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <h4>
+                    <span class="footerBrandName">
+                        OnDev+
+                    </span>
+                    Argentina
+                </h4>
+                <div class="footerSocial">
+                    <a href="https://www.instagram.com/rollingcodeschool/?hl=es" class="socialLink">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/RollingCodeSchool?locale=es_LA" class="socialLink">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/rollingcodeok" class="socialLink">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@rollingcode7175" class="socialLink">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@rollingcodeschool" class="socialLink">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+                <p>
+                    Esta página está protegida por Google reCAPTCHA
+                    para comprobar que no eres un robot.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
