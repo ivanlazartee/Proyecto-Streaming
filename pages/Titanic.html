@@ -1,5 +1,41 @@
 <!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
+    />
+    <meta
+      name="author"
+      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/fondo-logo-OnDev+.png"
+      type="image/x-icon"
+    />
+    <title>OnDev+ - Titanic</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      ...
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/detalleDePelicula.css" />
+  </head>
 
 <head>
   <meta charset="UTF-8" />
@@ -166,149 +202,137 @@
           <span class="etiqueta">CC</span>
           <span class="etiqueta">5.1</span>
         </div>
-        <p class="informacion">
-          1997 &bull; 3h 15 min &bull; Romance, Drama, Historia
-        </p>
-        <p class="descripcion">
-          Jack y Rose se enamoran a bordo del transatlántico más famoso de la
-          historia, condenado a hundirse en las gélidas aguas del Atlántico
-          Norte tras chocar con un iceberg.
-        </p>
-        <a href="error404.html" class="boton-reproducir"><span class="icono-play"></span> VER AHORA</a>
+      </nav>
+    </header>
+    <main>
+      <video autoplay muted loop id="video-fondo">
+        <source src="../assets/videos/titanic.video.mp4" type="video/mp4" />
+      </video>
+      <section class="portada">
+        <div class="portada-contenido">
+          <h1 class="titulo">TITANIC</h1>
+          <div class="etiquetas">
+            <span class="etiqueta etiqueta-edad">16+</span>
+            <span class="etiqueta">HD</span>
+            <span class="etiqueta">CC</span>
+            <span class="etiqueta">5.1</span>
+          </div>
+          <p class="informacion">
+            1997 &bull; 3h 15 min &bull; Romance, Drama, Historia
+          </p>
+          <p class="descripcion">
+            Jack y Rose se enamoran a bordo del transatlántico más famoso de la
+            historia, condenado a hundirse en las gélidas aguas del Atlántico
+            Norte tras chocar con un iceberg.
+          </p>
+          <a href="error404.html" class="boton-reproducir"
+            ><span class="icono-play"></span> VER AHORA</a
+          >
+        </div>
+      </section>
+      <ul class="pestanas">
+        <li class="activa"><a href="#">Sugerencias</a></li>
+        <li><a href="#">Extras</a></li>
+        <li><a href="#">Detalles</a></li>
+      </ul>
+      <div class="relacionadas">
+        <a href="lalaland.html" class="tarjeta-pelicula">
+          <img src="../assets/img/lalaland.jpg" alt="La la land" />
+          <span>La La Land</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/pride.jpg" alt="Pride and Prejudice" />
+          <span>Pride and Prejudice</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/before.jpg" alt="Before Sunrise" />
+          <span>Before Sunrise</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/amelie.jpg" alt="Amelie" />
+          <span>Amélie</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/callmebe.jpg" alt="Call me by your name" />
+          <span>Call Me By Your Name</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/avatarcard.jpg" alt="Avatar" />
+          <span>Avatar</span>
+        </a>
       </div>
-    </section>
-    <ul class="pestanas">
-      <li class="activa"><a href="#">Sugerencias</a></li>
-      <li><a href="#">Extras</a></li>
-      <li><a href="#">Detalles</a></li>
-    </ul>
-    <div class="relacionadas">
-      <a href="lalaland.html" class="tarjeta-pelicula">
-        <img src="../assets/img/lalaland.jpg" alt="La la land" />
-        <span>La La Land</span>
-      </a>
-      <a href="error404.html" class="tarjeta-pelicula">
-        <img src="../assets/img/pride.jpg" alt="Pride and Prejudice" />
-        <span>Pride and Prejudice</span>
-      </a>
-      <a href="error404.html" class="tarjeta-pelicula">
-        <img src="../assets/img/before.jpg" alt="Before Sunrise" />
-        <span>Before Sunrise</span>
-      </a>
-      <a href="error404.html" class="tarjeta-pelicula">
-        <img src="../assets/img/amelie.jpg" alt="Amelie" />
-        <span>Amélie</span>
-      </a>
-      <a href="error404.html" class="tarjeta-pelicula">
-        <img src="../assets/img/callmebe.jpg" alt="Call me by your name" />
-        <span>Call Me By Your Name</span>
-      </a>
-      <a href="error404.html" class="tarjeta-pelicula">
-        <img src="../assets/img/avatarcard.jpg" alt="Avatar" />
-        <span>Avatar</span>
-      </a>
-    </div>
-  </main>
-   <footer class="footer bg-black">
-    <div class="footerContainer">
-      <div class="footerTop">
-        <div class="footerBrand">
-          <img src="../assets/img/Fondo-de-logo-OnDev+.png" alt="Logo OnDev+" class="footerLogo">
-          <div>
-            <h3>¿Preguntas?</h3>
-            <a href="tel:08000000000">
-              Llama al 0800 000 0000
-            </a>
+    </main>
+    <footer class="footer bg-black">
+      <div class="footerContainer">
+        <div class="footerTop">
+          <div class="footerBrand">
+            <img
+              src="../assets/img/Fondo-de-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              class="footerLogo"
+            />
+            <div>
+              <h3>¿Preguntas?</h3>
+              <a href="tel:08000000000"> Llama al 0800 000 0000 </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footerGrid">
-        <div class="footerColumn">
-          <a href="./pages/error404.html">
-            Preguntas frecuentes
-          </a>
-          <a href="../pages/error404.html">
-            Prensa
-          </a>
-          <a href="../pages/error404.html">
-            Formas de ver
-          </a>
-          <a href="../pages/error404.html">
-            Preferencias de cookies
-          </a>
-          <a href="../pages/error404.html">
-            Prueba de velocidad
-          </a>
+        <div class="footerGrid">
+          <div class="footerColumn">
+            <a href="./pages/error404.html"> Preguntas frecuentes </a>
+            <a href="../pages/error404.html"> Prensa </a>
+            <a href="../pages/error404.html"> Formas de ver </a>
+            <a href="../pages/error404.html"> Preferencias de cookies </a>
+            <a href="../pages/error404.html"> Prueba de velocidad </a>
+          </div>
+          <div class="footerColumn">
+            <a href="../pages/error404.html"> Centro de ayuda </a>
+            <a href="../pages/error404.html"> Relaciones con inversionistas </a>
+            <a href="../pages/error404.html"> Términos de uso </a>
+            <a href="../pages/error404.html"> Información corporativa </a>
+            <a href="../pages/error404.html"> Avisos legales </a>
+          </div>
+          <div class="footerColumn">
+            <a href="../pages/error404.html"> Cuenta </a>
+            <a href="../pages/error404.html"> Empleo </a>
+            <a href="../pages/error404.html"> Privacidad </a>
+            <a href="../pages/contacto.html"> Contáctanos </a>
+            <a href="../pages/AcercaDeNos.html"> Acerca de Nosotros </a>
+          </div>
         </div>
-        <div class="footerColumn">
-          <a href="../pages/error404.html">
-            Centro de ayuda
-          </a>
-          <a href="../pages/error404.html">
-            Relaciones con inversionistas
-          </a>
-          <a href="../pages/error404.html">
-            Términos de uso
-          </a>
-          <a href="../pages/error404.html">
-            Información corporativa
-          </a>
-          <a href="../pages/error404.html">
-            Avisos legales
-          </a>
-        </div>
-        <div class="footerColumn">
-          <a href="../pages/error404.html">
-            Cuenta
-          </a>
-          <a href="../pages/error404.html">
-            Empleo
-          </a>
-          <a href="../pages/error404.html">
-            Privacidad
-          </a>
-          <a href="../pages/contacto.html">
-            Contáctanos
-          </a>
-          <a href="../pages/error404.html">
-            Acerca de Nosotros
-          </a>
+        <div class="footerBottom">
+          <h4>
+            <span class="footerBrandName"> OnDev+ </span>
+            Argentina
+          </h4>
+          <div class="footerSocial">
+            <a href="#" class="socialLink">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="socialLink">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="socialLink">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" class="socialLink">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="socialLink">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+          <p>
+            Esta página está protegida por Google reCAPTCHA para comprobar que
+            no eres un robot.
+          </p>
         </div>
       </div>
-      <div class="footerBottom">
-        <h4>
-          <span class="footerBrandName">
-            OnDev+
-          </span>
-          Argentina
-        </h4>
-        <div class="footerSocial">
-          <a href="#" class="socialLink">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#" class="socialLink">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-          <a href="#" class="socialLink">
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-          <a href="#" class="socialLink">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a href="#" class="socialLink">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
-        </div>
-        <p>
-          Esta página está protegida por Google reCAPTCHA
-          para comprobar que no eres un robot.
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
