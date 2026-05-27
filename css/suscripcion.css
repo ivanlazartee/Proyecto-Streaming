@@ -1,0 +1,608 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #fbbf24;
+  --color-primary-hover: #fcd34d;
+  --color-bg: #0f1117;
+  --color-bg-nav: #0a0d12;
+  --color-surface: #1a2030;
+  --color-surface-mid: #1f2937;
+  --color-surface-high: #374151;
+  --color-text-primary: #f9fafb;
+  --color-text-muted: #9ca3af;
+  --color-border: rgba(255, 255, 255, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: var(--color-bg-nav) !important;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.navbar-brand {
+  color: var(--color-primary) !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.btn-amarillo {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 700 !important;
+}
+
+#loginModal .form-control {
+    background-color: #ffffff !important;
+    color: #1a2030 !important;
+    border: 1px solid #ced4da !important;
+}
+
+#loginModal .form-control:focus {
+    background-color: #ffffff !important;
+    color: #1a2030 !important;
+    box-shadow: 0 0 0 0.25rem rgba(251, 191, 36, 0.25); /* Un sutil brillo amarillo de Bootstrap */
+    border-color: #fbbf24 !important;
+}
+
+#loginModal .form-control::placeholder {
+    color: #6c757d !important;
+    opacity: 1;
+}
+
+.btn-amarillo:hover,
+.btn-amarillo:focus,
+.btn-amarillo:active {
+  background-color: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+}
+
+.btn-outline-amarillo {
+  background-color: transparent !important;
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 700 !important;
+}
+
+.btn-outline-amarillo:hover,
+.btn-outline-amarillo:focus,
+.btn-outline-amarillo:active {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+  box-shadow: none !important;
+}
+
+.card-motivos {
+  border: 0.5px solid var(--color-surface-high);
+  border-radius: 12px;
+  border-left: 3px solid var(--color-primary);
+  background: var(--color-surface);
+  padding: 1.25rem;
+  transition: border-color 0.2s;
+}
+
+.card-motivos:hover {
+  border-left-color: var(--color-primary-hover);
+}
+
+.card-motivos__header {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.card-motivos__body {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.accordion-item {
+  background: var(--color-surface) !important;
+  border: 0.5px solid var(--color-surface-high) !important;
+  border-left: 3px solid var(--color-primary) !important;
+  border-radius: 12px !important;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: var(--color-surface) !important;
+  color: var(--color-text-primary) !important;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--color-surface-mid) !important;
+  color: var(--color-primary) !important;
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(5deg);
+}
+
+.accordion-body {
+  background: var(--color-surface-mid) !important;
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+  border-top: 0.5px solid var(--color-surface-high);
+}
+
+body {
+  background:linear-gradient(to bottom, #f5d42d 0%, #c8a020 15%, #3d2800 40%, #000 100%);
+  color: var(--color-bg);
+}
+
+.seccion-portada {
+  position: relative;
+}
+
+.portada-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.boton-borde {
+  display: inline-block;
+  position: absolute;
+  bottom: 12%;       
+  left: 4%;
+  padding: 10px 32px;
+  border: 1.5px solid #0a0d12;
+  border-radius: 50px;
+  color: #0a0d12;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.boton-borde:hover {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+}
+
+.titulo-seccion {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.titulo-seccion h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.titulo-seccion h3 span {
+  color: var(--color-primary);
+}
+
+.titulo-seccion p {
+  color: var(--color-text-primary);
+  font-size: small;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px
+}
+
+.tarjeta-plan {
+  background: var(--color-bg-nav);
+  border: 1px solid var(--color-primary);
+  border-top: 5px solid var(--color-primary-hover);
+  border-radius: 12px;
+  padding: 32px 24px;
+  width: 250px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.tarjeta-plan:hover {
+  transform: scale(1.06);
+  border-color: var(--color-primary);
+}
+
+.etiqueta-popular {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.nombre-plan {
+  font-family: "bebas neue", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: var(--color-primary);
+  margin-bottom: 7px;
+}
+
+.precio {
+  font-family: "DM sans", sans-serif;
+  font-size: 52px;
+  margin-bottom: 4px;
+  color: var(--color-text-primary);
+}
+
+.precio small {
+  font-family: "DM sans", sans-serif;
+  font-size: 10px;
+  color: var(--color-text-muted);
+  font-weight: normal;
+}
+
+.tarjeta-plan p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.tarjeta-plan hr {
+  border: none;
+  border-top: 1px solid var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.lista-beneficios {
+  list-style: none;
+}
+
+.lista-beneficios li {
+  font-size: 0.83rem;
+  padding: 4px 0;
+  color: var(--color-text-primary);
+}
+
+.lista-beneficios li::before {
+  content: "✓  ";
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.beneficio-no-incluido {
+  color: var(--color-text-muted);
+}
+
+.beneficio-no-incluido::before {
+  content: "✗" !important;
+  color: var(--color-primary) !important;
+}
+
+.boton-plan {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 1.5px solid var(--color-primary);
+  border-radius: 8px;
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.boton-plan:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg-nav);
+}
+
+.seccion-registro {
+  padding: 0 24px 5rem;
+}
+
+.tarjeta-formulario {
+  background-color: var(--color-bg-nav);
+  border: 2px solid var(--color-primary);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+  color: var(--color-surface-high);
+}
+
+.fila-dos-columnas {
+  display: flex;
+  gap: 16px;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+
+label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: var(--color-surface);
+  border: 3px solid var(--color-surface);
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  padding: 11px 16px;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--color-text-primary)
+}
+
+input:focus {
+  border-color: var(--color-primary-hover);
+}
+
+.boton-enviar-formulario {
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-bg-nav);
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.15s;
+}
+
+.boton-enviar-formulario:hover {
+  background: var(--color-primary-hover);
+}
+
+.boton-enviar-formulario:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  
+  .boton-borde {
+    font-size: 12px;
+    padding: 8px 20px;
+    bottom: 8%;
+    left: 3%;
+  }
+
+  .fila-dos-columnas {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .boton-borde {
+    font-size: 10px;
+    padding: 6px 14px;
+    bottom: 6%;
+    left: 3%;
+  }
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 5rem;
+  padding: 4rem 0 2rem;
+}
+.footerContainer {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+.footerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+.footerBrand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.footerLogo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+.footerBrand h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+.footerBrand a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.footerBrand a:hover {
+  color: var(--color-primary-hover);
+}
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerColumn a {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.footerColumn a:hover {
+  color: var(--color-primary);
+  transform: translateX(5px);
+}
+.footerBtn {
+  border: 2px solid var(--color-primary) !important;
+  color: var(--color-primary) !important;
+  background: transparent !important;
+  font-weight: 700 !important;
+  border-radius: 14px;
+  padding: 0.75rem 1.5rem;
+  transition: 0.3s ease;
+}
+.footerBtn:hover {
+  background: var(--color-primary) !important;
+  color: black !important;
+}
+.footerBottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footerBottom h4 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+.footerBrandName {
+  color: var(--color-primary);
+}
+.footerSocial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.socialLink {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: 0.35s ease;
+}
+.socialLink:hover {
+  background: var(--color-primary);
+  color: black;
+  transform: translateY(-6px) scale(1.12);
+  box-shadow: 0 12px 25px rgba(251, 191, 36, 0.35);
+}
+.footerBottom p {
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 700px;
+  line-height: 1.7;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .footerTop {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footerBrand {
+    flex-direction: column;
+  }
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+  .footerColumn {
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 3rem 0 2rem;
+  }
+  .footerContainer {
+    width: 92%;
+  }
+  .footerGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footerLogo {
+    width: 115px;
+    height: 115px;
+  }
+  .footerSocial {
+    gap: 1.3rem;
+  }
+  .socialLink {
+    width: 54px;
+    height: 54px;
+    font-size: 1.15rem;
+  }
+  .footerBottom h4 {
+    font-size: 1.1rem;
+  }
+  .footerBottom p {
+    font-size: 0.95rem;
+  }
+  .footerBtn {
+    width: 100%;
+    max-width: 240px;
+  }
+}

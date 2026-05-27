@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
+    />
+    <meta
+      name="author"
+      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/img/fondo-logo-OnDev+.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/series.css" />
+    <title>OnDev+</title>
+  </head>
+
+  <body>
+    <header>
+    <nav class="fixed-top navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./pilar.html">
+          <img src="../assets/img/fondo-logo-OnDev+.png" alt="Logo OnDev+"
+            style="width: 40px; height: 40px; object-fit: contain" />
+          <span class="logoMarca fw-semibold">OnDev+</span>
+        </a>
+        <button class="navbar-toggler border-0 text-white ms-auto me-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="./pilar.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./seriesPilar.html">Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./peliculasPilar.html">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#categorias">Mi lista</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../pages/error404.html">Originales</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" style="
+                  background-color: var(--color-surface-high);
+                  border-color: var(--color-surface);
+                " />
+          </form>
+          <ul class="navbar-nav ms-auto ms-lg-0">
+            <li class="nav-item dropdown">
+              <a class="profile-toggle dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                data-bs-offset="0,12" aria-expanded="false">
+                <img src="../assets/img/fondoPilar.png" alt="Perfil" class="profile-avatar" />
+                <svg class="profile-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </a>
+              <ul class="dropdown-menu profile-menu dropdown-menu-end">
+                <li>
+                  <a class="profile-item active-profile" href="./pilar.html">
+                    <img src="../assets/img/fondoPilar.png" alt="Perfil" class="profile-avatar" />
+                    <span>Pilar</span>
+                    <svg class="ms-auto" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-item" href="./ivan.html">
+                    <img src="../assets/img/fondoIvan.png" alt="Perfil" class="profile-avatar" />
+                    <span>Iván</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-item" href="./mariano.html">
+                    <img src="../assets/img/fondoMariano.png" alt="Perfil" class="profile-avatar" />
+                    <span>Mariano</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-item" href="./perfiles.html">
+                    <div class="mini-avatar" style="background: var(--color-surface-high)">
+                      +
+                    </div>
+                    <span>Administrar perfiles</span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider profile-divider" />
+                </li>
+                <li>
+                  <a class="profile-menu-item" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                      <circle cx="12" cy="7" r="4" />
+                    </svg>
+                    Cuenta
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-menu-item" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3" />
+                      <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    Configuración
+                  </a>
+                </li>
+                <li>
+                  <a class="profile-menu-item" href="./error404.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 8v4M12 16h.01" />
+                    </svg>
+                    Ayuda
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider profile-divider" />
+                </li>
+                <li>
+                  <a class="profile-menu-item logout" href="../index.html">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                    </svg>
+                    Cerrar sesión
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <section class="heroCarousel">
+        <div id="carouselStream" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="heroSlide">
+                <div class="overlayHero"></div>
+                <img
+                  src="https://media.revistagq.com/photos/63f5e589cf53bfbacf6f662e/16:9/w_2560%2Cc_limit/pelicula-favorita-spider-man-tom-holland.jpeg"
+                  class="imgHero desktopHero"
+                  alt="Breaking Bad"
+                />
+                <img
+                  src="https://m.media-amazon.com/images/S/pv-target-images/0a76c4a1044229d184bb09480b314150340ee8c45de8365c062a6e0f20201614.jpg"
+                  class="imgHero mobileHero"
+                  alt="Breaking Bad"
+                />
+                <div class="contenidoHero">
+                  <h1 class="tituloHero">Spider-Man No Way Home</h1>
+                  <p class="descripcionHero">
+                    Spider-Man se enfrenta a una crisis multiversal que cambia
+                    su vida para siempre y lo obliga a tomar decisiones
+                    difíciles.
+                  </p>
+                  <div class="infoHero">
+                    <span>2021</span>
+                    <span>•</span>
+                    <span>Adrenalítico</span>
+                    <span>•</span>
+                    <span>Acción</span>
+                  </div>
+                  <a href="./error404.html">
+                    <button class="btnHero">Ver ahora</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de categorías -->
+      <section class="categoriaRowSection">
+        <h2 class="categoriaRowTitulo">
+          Peliculas <span>relacionadas</span>
+        </h2>
+        <a href="./error404.html">
+          <div class="categoriaRowScroll">
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/94d63151-3319-428c-abf6-e2592f9d236b/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Iron Man 3</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2013</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/e1e3fdaf-4cb7-4489-b38e-35bee7f5cd5d/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Capitana Marvel</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2019</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/54495646-baac-405a-9b82-b73171bdc200/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="Interstellar"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Thor</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2011</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/61e20243-d06f-4477-85d8-a194db250f94/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="Avatar"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Capitán América y el soldado de invierno</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2014</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/98894d93-c87a-4487-b5f3-02b816e68291/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="Breaking Bad"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Avengers Endgame</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">16+</span>
+                  <span>2019</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/71d52eae-ad33-44c4-b196-8bac9d28dbaa/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="Dark"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Pantra Negra</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2018</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/92091f40-3eac-4315-a21a-1b71015e8c1a/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="The Batman"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Black Widow</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/a1389a1c-5f29-446d-9cf1-47759c510e4d/compose?format=webp&label=standard_art_disney-original_178&width=800"
+                  class="categoriaCardImg"
+                  alt="Stranger Things"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">She Hulk</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">14+</span>
+                  <span>2022</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/e85629d1-05e5-4728-b5cf-b3eb483d4aa2/compose?format=webp&width=2880"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Avengers Era De Ultrón</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2015</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/68cf68ac-6c8a-49e5-9916-ec137f73dc41/compose?format=webp&label=standard_art_178&width=800"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">ANT-MAN El Hombre Hormiga</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">13+</span>
+                  <span>2015</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+
+      <!-- segunda seccion de series-->
+      <section id="series" class="top10Section">
+        <h2 class="top10Titulo">Top <span>10</span> películas en Argentina</h2>
+        <a href="./error404.html">
+          <div class="top10Scroll">
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://dnm.nflximg.net/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXdklr_H0kR2qovC2ydNaI1Ic7cROSIzh4hHRFx1u6eQnLv30ugRf1UVNB-z039cwpcFzCC9fic92dTXRTeMbr2RsAM0SucI6MUx.jpg?r=99f"
+                  class="imgTop"
+                  alt="Chernobyl"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">1</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Hazme el favor</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">13+</span>
+                  <span>2023</span>
+                  <span>•</span>
+                  <span>Romance</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABXQSO9jS6eLpKszi17AFIIMYtFLh80HSb0wJuU3YqbnEjZjpu46UGeksGleUt7QQqLhgRndy2NA-3f3LEzGlCSxr5uzV2PGzTk0v.webp?r=f82"
+                  class="imgTop"
+                  alt="True Detective"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">2</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Intercambiados</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">13+</span>
+                  <span>2026</span>
+                  <span>•</span>
+                  <span>Animación y Aventura</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABYF5TL8d2XXSP4AYVCkvR6h60FO3x4SybWeD6YlbRGFhuqlbQb-rQxnCfFXxKdcspznRw2v__Xx4xnnjWMW6poliLzkbATDK_IoK.webp?r=573"
+                  class="imgTop"
+                  alt="Squid Game"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">3</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Las damas primero</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2026</span>
+                  <span>•</span>
+                  <span>Romance</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABVc68o0zOsPc0xNV7hDi2oV1UsbRs-u4cQkczrkj8bfey0RNoEgdq1TkIGcAiUMIkILTxCSpiPrJx1mKtxLA2mq92Q2CE9cAQjuo.webp?r=50b"
+                  class="imgTop"
+                  alt="The Wire"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">4</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">El choque</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2026</span>
+                  <span>•</span>
+                  <span>Drama y suspenso</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://dnm.nflximg.net/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABaL8E1NXp31VRxny2PQdUh_py6nPqiDaL83m5Jzk2LEDUs57C0krSVxN18sdtrQ1zo-YbB0oQ51RgnudEJpbe3SB_XOv7s6-MdPN.jpg?r=d4b"
+                  class="imgTop"
+                  alt="Sherlock"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">5</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Aguas siniestras</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2024</span>
+                  <span>•</span>
+                  <span>Misterio</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQ5M9aBZDDmRKwhNzYalQsFV83KNXlT9KJ0zylQLVumoMEcgUTHTniX9DkcbFzIKk4-25Zvcz-Ny-N0qGLTSp9S-ap9ZaJgpoT1v.webp?r=9d9"
+                  class="imgTop"
+                  alt="Narcos"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">6</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Coco antes de chanel</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2009</span>
+                  <span>•</span>
+                  <span>Drama</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABa0PhdQEPWe3Ibh_WixAyvGDx3fqq-YsTghxrs-B_OTx7PVrhJYPsefVUjLd2SedggCpt3H0eXDykQrgxu3PGy_57gFmvPwuHaTk.webp?r=10b"
+                  class="imgTop"
+                  alt="Black Mirror"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">7</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Conquistando a mi suegro</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2005</span>
+                  <span>•</span>
+                  <span>Romance y comedia</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABZraTB6MXOL9BuEmypP7zx97iXctIVtS3MSzq4gg2GuXI-rX03bczarsgYQ6rp4WskaxY79kniqf5N4FcKGdLNVWHKC4Ji71zSG3.webp?r=ffc"
+                  class="imgTop"
+                  alt="Mindhunter"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">8</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Criaturas luminosas</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2017</span>
+                  <span>•</span>
+                  <span>Drama y misterio</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABQ_YDGjAsg41Gh1vLwUeotHEL29R2hXjWgQUoMf8pBEMo8-0NcVMvl0XQPxu9gHYOb7qO3j_Tqp3tLShOFTqL2JJp8OORgSX-8Pl.webp?r=14f"
+                  class="imgTop"
+                  alt="Severance"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">9</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">Ápex</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2026</span>
+                  <span>•</span>
+                  <span>Sci-Fi</span>
+                </div>
+              </div>
+            </div>
+            <div class="cardTop">
+              <div class="imgContainer">
+                <img
+                  src="https://occ-0-3795-420.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABY3V26WRNZJZUhvqzRMlLDN95CqqAQmE629uuGK0dok2CnKmSxtqvxSgXlVwh5vC3xpLoAg7l2Zn6U0i6SYIjgJtzkke_4beIOwC.webp?r=349"
+                  class="imgTop"
+                  alt="Westworld"
+                />
+                <div class="overlayTop"></div>
+              </div>
+              <span class="numeroTop">10</span>
+              <div class="infoTop">
+                <h3 class="tituloTop">En sus zapatos</h3>
+                <div class="metaTop">
+                  <span class="badgeEdad">16+</span>
+                  <span>2005</span>
+                  <span>•</span>
+                  <span>Drama</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer class="container-fluid mt-5">
+      <div class="pt-5 pb-5 bg-black text-white">
+        <div class="row mx-3 mx-md-5">
+          <div class="col-12 mb-4">
+            <a class="text-decoration-none text-reset">
+              <h4 class="d-flex align-items-center gap-2">
+                <img
+                  src="../assets/img/fondo-logo-OnDev+.png"
+                  alt="Logo OnDev+"
+                  style="width: 80px; height: 80px; object-fit: contain"
+                />
+                ¿Preguntas? Llama al 0800 000 0000
+              </h4>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preguntas frecuentes</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Prensa</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Formas de ver</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preferencias de cookies</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Prueba de velocidad</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Centro de ayuda</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Relaciones con inversionistas</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Términos de uso</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Información corporativa</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Avisos legales</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Cuenta</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Empleo</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Privacidad</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Contáctanos</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Solo en OnDev+</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-danger dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Idioma
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">Portugués</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h4>OnDev+ Argentina</h4>
+        <p>
+          Esta página está protegida por Google reCAPTCHA para comprobar que no
+          eres un robot.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

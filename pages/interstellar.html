@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
+    />
+    <meta
+      name="author"
+      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/Fondo-de-logo-OnDev+.png"
+      type="image/x-icon"
+    />
+    <title>OnDev+ - Interstellar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      ...
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/detalleDePelicula.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="./mariano.html"
+          >
+            <img
+              src="../assets/img/fondo-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              style="width: 40px; height: 40px; object-fit: contain"
+            />
+            <span class="logoMarca fw-semibold">OnDev+</span>
+          </a>
+          <button
+            class="navbar-toggler border-0 text-white ms-auto me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./mariano.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#series">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#peliculas">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#categorias">Mi lista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/error404.html"
+                  >Originales</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+                style="
+                  background-color: var(--color-surface-high);
+                  border-color: var(--color-surface);
+                "
+              />
+            </form>
+            <ul class="navbar-nav ms-auto ms-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="profile-toggle dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-offset="0,12"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/img/fondoMariano.png"
+                    alt="icono de usuario inicio sesion"
+                    class="profile-avatar"
+                  />
+                  <svg
+                    class="profile-chevron"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu profile-menu dropdown-menu-end">
+                  <li>
+                    <a
+                      class="profile-item active-profile"
+                      href="./mariano.html"
+                    >
+                      <img
+                        src="../assets/img/fondoMariano.png"
+                        alt="icono de usuario inicio sesion"
+                        class="profile-avatar"
+                      />
+                      <span>Mariano</span>
+                      <svg
+                        class="ms-auto"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./pilar.html">
+                      <img
+                        src="../assets/img/fondoPilar.png"
+                        alt="icono de usuario inicio sesion"
+                        class="profile-avatar"
+                      />
+                      <span>Pilar</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./ivan.html">
+                      <img
+                        src="../assets/img/fondoIvan.png"
+                        alt="icono de usuario inicio sesion"
+                        class="profile-avatar"
+                      />
+                      <span>Iván</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./perfiles.html">
+                      <div
+                        class="mini-avatar"
+                        style="background: var(--color-surface-high)"
+                      >
+                        +
+                      </div>
+                      <span>Administrar perfiles</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider profile-divider" />
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                      Cuenta
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                          d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                        />
+                      </svg>
+                      Configuración
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v4M12 16h.01" />
+                      </svg>
+                      Ayuda
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider profile-divider" />
+                  </li>
+                  <li>
+                    <a class="profile-menu-item logout" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"
+                        />
+                      </svg>
+                      Cerrar sesión
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <video autoplay muted loop id="video-fondo">
+        <source src="../assets/videos/interStellarVideo.mp4" type="video/mp4" />
+      </video>
+      <section class="portada">
+        <div class="portada-contenido">
+          <h1 class="titulo">INTERSTELLAR</h1>
+          <div class="etiquetas">
+            <span class="etiqueta etiqueta-edad">16+</span>
+            <span class="etiqueta">HD</span>
+            <span class="etiqueta">CC</span>
+            <span class="etiqueta">5.1</span>
+          </div>
+          <p class="informacion">2014 &bull; 2h 49 min &bull; Sci-Fi, Drama</p>
+          <p class="descripcion">
+            Al ver que la vida en la Tierra está llegando a su fin, un grupo de
+            exploradores dirigidos por el piloto Cooper (McConaughey) y la
+            científica Amelia (Hathaway) emprende una misión que puede ser la
+            más importante de la historia de la humanidad: viajar más allá de
+            nuestra galaxia para descubrir algún planeta en otra que pueda
+            garantizar el futuro de la raza humana.
+          </p>
+          <a href="error404.html" class="boton-reproducir"
+            ><span class="icono-play"></span> VER AHORA</a
+          >
+        </div>
+      </section>
+      <ul class="pestanas">
+        <li class="activa"><a href="#">Sugerencias</a></li>
+        <li><a href="#">Extras</a></li>
+        <li><a href="#">Detalles</a></li>
+      </ul>
+      <div class="relacionadas">
+        <a href="avatar.html" class="tarjeta-pelicula">
+          <img src="../assets/img/avatarcard.jpg" alt="Avatar" />
+          <span>Avatar</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/batman.png" alt="The Batman" />
+          <span>The Batman</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/jokerCard.jpg" alt="Joker" />
+          <span>Joker</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/getOut.webp" alt="Get Out" />
+          <span>Get Out</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/hereditary.jpg" alt="Hereditary" />
+          <span>Hereditary</span>
+        </a>
+        <a href="error404.html" class="tarjeta-pelicula">
+          <img src="../assets/img/shining.jpg" alt="The shining" />
+          <span>The Shining</span>
+        </a>
+      </div>
+    </main>
+     <footer class="footer bg-black">
+    <div class="footerContainer">
+      <div class="footerTop">
+        <div class="footerBrand">
+          <img src="../assets/img/Fondo-de-logo-OnDev+.png" alt="Logo OnDev+" class="footerLogo">
+          <div>
+            <h3>¿Preguntas?</h3>
+            <a href="tel:08000000000">
+              Llama al 0800 000 0000
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footerGrid">
+        <div class="footerColumn">
+          <a href="../pages/error404.html">
+            Preguntas frecuentes
+          </a>
+          <a href="../pages/error404.html">
+            Prensa
+          </a>
+          <a href="../pages/error404.html">
+            Formas de ver
+          </a>
+          <a href="../pages/error404.html">
+            Preferencias de cookies
+          </a>
+          <a href="../pages/error404.html">
+            Prueba de velocidad
+          </a>
+        </div>
+        <div class="footerColumn">
+          <a href="../pages/error404.html">
+            Centro de ayuda
+          </a>
+          <a href="../pages/error404.html">
+            Relaciones con inversionistas
+          </a>
+          <a href="../pages/error404.html">
+            Términos de uso
+          </a>
+          <a href="../pages/error404.html">
+            Información corporativa
+          </a>
+          <a href="../pages/error404.html">
+            Avisos legales
+          </a>
+        </div>
+        <div class="footerColumn">
+          <a href="../pages/error404.html">
+            Cuenta
+          </a>
+          <a href="../pages/error404.html">
+            Empleo
+          </a>
+          <a href="../pages/error404.html">
+            Privacidad
+          </a>
+          <a href="../pages/contacto.html">
+            Contáctanos
+          </a>
+          <a href="../pages/AcercaDeNosotros.html">
+            Acerca de Nosotros
+          </a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <h4>
+          <span class="footerBrandName">
+            OnDev+
+          </span>
+          Argentina
+        </h4>
+        <div class="footerSocial">
+          <a href="#" class="socialLink">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" class="socialLink">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" class="socialLink">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="#" class="socialLink">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" class="socialLink">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+        <p>
+          Esta página está protegida por Google reCAPTCHA
+          para comprobar que no eres un robot.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
