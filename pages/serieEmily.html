@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OnDev+ es tu plataforma de streaming con las mejores películas y series. Disfruta contenido ilimitado en HD y 4K, en cualquier dispositivo, cuando quieras."
+    />
+    <meta
+      name="keywords"
+      content="streaming, películas online, series online, ver películas, ver series, plataforma streaming, OnDev+, películas HD, series HD, contenido bajo demanda, VOD, entretenimiento online, streaming latino, películas en español, series en español."
+    />
+    <meta
+      name="author"
+      content="Mariano De Filippo, Ivan Lazarte, Maria del Pilar Molina"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/img/fondo-logo-OnDev+.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/detalleDeSerie.css" />
+    <title>OnDev+</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="fixed-top navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="./ivan.html"
+          >
+            <img
+              src="../assets/img/fondo-logo-OnDev+.png"
+              alt="Logo OnDev+"
+              style="width: 40px; height: 40px; object-fit: contain"
+            />
+            <span class="logoMarca fw-semibold">OnDev+</span>
+          </a>
+          <button
+            class="navbar-toggler border-0 text-white ms-auto me-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="./mariano.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#series">Series</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#peliculas">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#categorias">Mi lista</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../pages/error404.html"
+                  >Originales</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+                style="
+                  background-color: var(--color-surface-high);
+                  border-color: var(--color-surface);
+                "
+              />
+            </form>
+            <ul class="navbar-nav ms-auto ms-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="profile-toggle dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-bs-offset="0,12"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/img/fondoMariano.png"
+                    alt="icono de usuario inicio sesion"
+                    class="profile-avatar"
+                  />
+                  <svg
+                    class="profile-chevron"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu profile-menu dropdown-menu-end">
+                  <li>
+                    <a
+                      class="profile-item active-profile"
+                      href="./mariano.html"
+                    >
+                      <img
+                        src="../assets/img/fondoMariano.png"
+                        alt="icono de usuario inicio sesion"
+                        class="profile-avatar"
+                      />
+                      <span>Mariano</span>
+                      <svg
+                        class="ms-auto"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./pilar.html">
+                      <img
+                        src="../assets/img/fondoPilar.png"
+                        alt="icono de usuario inicio sesion"
+                        class="profile-avatar"
+                      />
+                      <span>Pilar</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./ivan.html">
+                      <img
+                        src="../assets/img/fondoIvan.png"
+                        alt="icono de usuario inicio sesion"
+                        class="profile-avatar"
+                      />
+                      <span>Iván</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-item" href="./perfiles.html">
+                      <div
+                        class="mini-avatar"
+                        style="background: var(--color-surface-high)"
+                      >
+                        +
+                      </div>
+                      <span>Administrar perfiles</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider profile-divider" />
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                      </svg>
+                      Cuenta
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                          d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                        />
+                      </svg>
+                      Configuración
+                    </a>
+                  </li>
+                  <li>
+                    <a class="profile-menu-item" href="./error404.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v4M12 16h.01" />
+                      </svg>
+                      Ayuda
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider profile-divider" />
+                  </li>
+                  <li>
+                    <a class="profile-menu-item logout" href="../index.html">
+                      <svg
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"
+                        />
+                      </svg>
+                      Cerrar sesión
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--imagen tipo carrusel breaking bad-->
+      <section class="heroCarousel">
+        <div id="carouselStream" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="heroSlide">
+                <div class="overlayHero"></div>
+                <img
+                  src="https://www.hola.com/horizon/landscape/bc9719b1daab-emily-netflix.jpg"
+                  class="imgHero desktopHero"
+                  alt="Emily in Paris"
+                />
+                <img
+                  src="https://media.vogue.es/photos/693045ab12e152e12a4b0cfb/2:3/w_2560%2Cc_limit/EIP_Unit_01189R.jpg"
+                  class="imgHero mobileHero"
+                  alt="Breaking Bad"
+                />
+                <div class="contenidoHero">
+                  <h1 class="tituloHero">Emily in Paris</h1>
+                  <p class="descripcionHero">
+                    Emily Chen, una joven de Nueva York, viaja a París para
+                    trabajar como asistente de un diseñador de moda.
+                  </p>
+                  <div class="infoHero">
+                    <span>2020</span>
+                    <span>•</span>
+                    <span>Comedia</span>
+                    <span>•</span>
+                    <span>Romance</span>
+                  </div>
+                  <a href="./error404.html">
+                    <button class="btnHero">Ver ahora</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="episodiosSection">
+        <div class="container">
+          <div class="episodiosHeader">
+            <div class="dropdown">
+              <li class="container nav-item dropdown list-unstyled">
+                <button type="button" class="btn btn-outline-amarillo">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <h2 class="episodiosTitulo">Temporada 1</h2>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./error404.html"
+                        ><h5>Temporada 2</h5>
+                        <p style="color: var(--color-surface-high)">
+                          (10 episodios)
+                        </p></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./error404.html"
+                        ><h5>Temporada 3</h5>
+                        <p style="color: var(--color-surface-high)">
+                          (10 episodios)
+                        </p></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./error404.html"
+                        ><h5>Temporada 4</h5>
+                        <p style="color: var(--color-surface-high)">
+                          (10 episodios)
+                        </p></a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./error404.html"
+                        ><h5>Temporada 5</h5>
+                        <p style="color: var(--color-surface-high)">
+                          (10 episodios)
+                        </p></a
+                      >
+                    </li>
+                  </ul>
+                </button>
+              </li>
+            </div>
+            <span class="episodiosCount">10 episodios</span>
+          </div>
+
+          <div class="listaEpisodios">
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">01</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://imagenes.elpais.com/resizer/v2/5KQBOUDUCNPC7I5HRGYSU3FO5E.jpg?auth=7822d830c9ced782b35f468247ef45d314574e75d462d3b91f77bb946c8fc857&width=1200"
+                  alt="Episodio 1"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">J'adore</h3>
+                  <span class="cardEpisodioMin">32 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Emily Cooper llega a París para trabajar en una agencia de
+                  marketing de lujo. Sin hablar francés y chocando con la
+                  cultura local, intenta ganarse a sus nuevos colegas mientras
+                  descubre la ciudad.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">02</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQRW6jSCXQfA1bOG4dA8aE0DsJ0UlCYek8hkumEyQYdYHcvLpxoUBaK-o9UgvGUHCHu3lvjuqM1qeY3WPWC4kCRuFo4cZWmAr3x91wkKmuMV-IPWVB0dtpvW6Eca1hBZV3pvGMLgdgDxbQ17J2zzAGquiJd8.jpg?r=de8"
+                  alt="Episodio 2"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Masculin Féminin</h3>
+                  <span class="cardEpisodioMin">30 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Emily gestiona una cuenta de perfumes con un enfoque atrevido
+                  que divide a la agencia. Mientras tanto, conoce a Gabriel, su
+                  encantador vecino chef, y empieza a explorar el barrio.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">03</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://www.refinery29.com/images/10096533.jpg?crop=40%3A21"
+                  alt="Episodio 3"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Sexy ou Sexiste</h3>
+                  <span class="cardEpisodioMin">31 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Emily se enfrenta a una campaña publicitaria que considera
+                  sexista y decide actuar. Su postura choca con los valores de
+                  la agencia francesa, pero le abre puertas inesperadas en el
+                  mundo de la moda.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">04</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://www.femestella.com/wp-content/uploads/2024/08/EIP_403_Unit_00474R-copy.jpg"
+                  alt="Episodio 4"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">
+                    Une Expérience Catastrophique
+                  </h3>
+                  <span class="cardEpisodioMin">33 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Una velada en un restaurante de alta cocina se convierte en un
+                  desastre inesperado. Emily intenta salvar la relación con un
+                  cliente importante mientras lidia con los malentendidos
+                  culturales que la persiguen.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">05</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://medias.spotern.com/spots/w640/354/354830-1641305055.jpg"
+                  alt="Episodio 5"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Faux Amis</h3>
+                  <span class="cardEpisodioMin">30 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Emily descubre el concepto de los "falsos amigos" en el idioma
+                  y en la vida real. Una colaboración con una diseñadora de moda
+                  la pone a prueba mientras su relación con Camille se vuelve
+                  más cercana.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">06</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://wwd.com/wp-content/uploads/2020/10/TCDEMIN_ZX005.jpg?w=1000&h=563&crop=1"
+                  alt="Episodio 6"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Boiling Point</h3>
+                  <span class="cardEpisodioMin">31 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Las tensiones en la agencia llegan a su límite cuando Sylvie
+                  cuestiona abiertamente el trabajo de Emily. Un evento de moda
+                  se convierte en el escenario donde ambas deberán demostrar su
+                  valía.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">07</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://media.glamour.com/photos/66ea90c511652ddde5db2d2a/master/w_2560%2Cc_limit/EIP_Unit_01327R.jpg"
+                  alt="Episodio 7"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Fille Interrompue</h3>
+                  <span class="cardEpisodioMin">32 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  Emily es invitada a un château en el campo francés para un fin
+                  de semana con clientes. Lejos de la ciudad, los sentimientos
+                  por Gabriel se intensifican y los secretos comienzan a salir a
+                  la superficie.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">08</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://tomandlorenzo.com/wp-content/uploads/2020/10/Emily-in-Paris-Lily-Collins-Netflix-TV-Reviews-Costumes-Analysis-Fashion-Patricia-Field-Tom-Lorenzo-Site-PART-TWO-2.jpg"
+                  alt="Episodio 8"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Family Affair</h3>
+                  <span class="cardEpisodioMin">31 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  La familia de Camille visita París y Emily queda atrapada
+                  entre su amistad y sus sentimientos encontrados. Una cena
+                  reveladora cambia la dinámica entre los tres de manera
+                  irreversible.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">09</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://media.glamourmagazine.co.uk/photos/61389d3654a5dc97887e8781/16:9/w_2560%2Cc_limit/eip_105_unit_00249r_sf.jpg"
+                  alt="Episodio 9"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">An Englishman in Paris</h3>
+                  <span class="cardEpisodioMin">33 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  El jefe americano de Emily llega a París para evaluar su
+                  trabajo. Su presencia complica las relaciones en la agencia y
+                  obliga a Emily a elegir entre sus lealtades profesionales y
+                  personales.
+                </p>
+              </div>
+            </div>
+
+            <div class="cardEpisodio">
+              <div class="cardEpisodioNum">10</div>
+              <div class="cardEpisodioImg">
+                <img
+                  src="https://www.elespectador.com/resizer/v2/JZWJVP77IZFS5BKDGQAW5G5VXQ.jpg?auth=7505dfe30c234db5d644a3d8b04f43636320e8e3d7e08eb7afce345c22e52191&width=910&height=606&smart=true&quality=70"
+                  alt="Episodio 10"
+                />
+                <div class="playOverlay"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div class="cardEpisodioInfo">
+                <div class="cardEpisodioTop">
+                  <h3 class="cardEpisodioTitulo">Ca Va, Ca Vient</h3>
+                  <span class="cardEpisodioMin">34 min</span>
+                </div>
+                <p class="cardEpisodioDesc">
+                  La primera temporada llega a su clímax con decisiones que lo
+                  cambian todo. Emily debe elegir entre quedarse en París o
+                  volver a Chicago, mientras el corazón y la carrera le exigen
+                  cosas opuestas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de categorías -->
+      <section class="categoriaRowSection">
+        <h2 class="categoriaRowTitulo">Series <span>recomendadas</span></h2>
+        <a href="./error404.html">
+          <div class="categoriaRowScroll">
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/carisimaCard.jpg"
+                  class="categoriaCardImg"
+                  alt="Interstellar"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Carísima</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/berlinCard.png"
+                  class="categoriaCardImg"
+                  alt="Breaking Bad"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Berlín</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/nemesisCard.webp"
+                  class="categoriaCardImg"
+                  alt="Avatar"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Némesis</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 2</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/TheBoroughsCards.jpg"
+                  class="categoriaCardImg"
+                  alt="Dark"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">
+                  The Boroughs: Jubilación rebelde
+                </h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/envidiosaCard.jpg"
+                  class="categoriaCardImg"
+                  alt="The Batman"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Envidiosa</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 3</span>
+                  <span>2024</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/elCuentoDeLaCriadaCard.avif"
+                  class="categoriaCardImg"
+                  alt="Stranger Things"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">El cuento de la criada</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 6</span>
+                  <span>2017</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/hombreEnLlamasCard.webp"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Hombre en llamas</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/futuroDesiertoCard.jpg"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Futuro desierto</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/entrePadreEHijoCard.jpg"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">Entre padre e hijo</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+            <div class="categoriaCard">
+              <div class="categoriaCardImgContainer">
+                <img
+                  src="../assets/img/theWonderFoolsCard.jpg"
+                  class="categoriaCardImg"
+                  alt="The Joker"
+                />
+                <div class="categoriaCardOverlay"></div>
+              </div>
+              <div class="categoriaCardInfo">
+                <h3 class="categoriaCardTitulo">The Wonder Fools</h3>
+                <div class="categoriaCardMeta">
+                  <span class="categoriaCardBadge">Temp. 1</span>
+                  <span>2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </main>
+    <footer class="container-fluid mt-5">
+      <div class="pt-5 pb-5 bg-black text-white">
+        <div class="row mx-3 mx-md-5">
+          <div class="col-12 mb-4">
+            <a class="text-decoration-none text-reset">
+              <h4 class="d-flex align-items-center gap-2">
+                <img
+                  src="../assets/img/fondo-logo-OnDev+.png"
+                  alt="Logo OnDev+"
+                  style="width: 80px; height: 80px; object-fit: contain"
+                />
+                ¿Preguntas? Llama al 0800 000 0000
+              </h4>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preguntas frecuentes</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Prensa</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Formas de ver</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Preferencias de cookies</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Prueba de velocidad</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Centro de ayuda</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Relaciones con inversionistas</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Términos de uso</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Información corporativa</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Avisos legales</a
+            >
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-3">
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Cuenta</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Empleo</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Privacidad</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Contáctanos</a
+            >
+            <a
+              href="../pages/error404.html"
+              class="text-decoration-none text-reset d-block mb-1"
+              >Solo en OnDev+</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-danger dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Idioma
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Español</a></li>
+            <li><a class="dropdown-item" href="#">Portugués</a></li>
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Français</a></li>
+            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container mt-2 mb-3">
+        <h4>OnDev+ Argentina</h4>
+        <p>
+          Esta página está protegida por Google reCAPTCHA para comprobar que no
+          eres un robot.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
