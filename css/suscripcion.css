@@ -57,6 +57,10 @@ html {
   font-weight: 700 !important;
 }
 
+.modal-header .btn-close{
+  background-color: var(--color-primary);
+}
+
 #loginModal .form-control {
   background-color: #ffffff !important;
   color: #1a2030 !important;
@@ -469,16 +473,47 @@ html {
 }
 
 @media (max-width: 768px) {
-  .hero {
-    height: 90vh;
+.hero {
+    height: 100svh; 
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% center; 
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.3)),
+      linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 60%);
+  }
+
+  .hero-content {
+    top: 50%;
+    left: 5%;
+    right: 5%;
+    max-width: 100%;
   }
 
   .hero h1 {
-    font-size: 4.5rem;
+    font-size: clamp(2.8rem, 10vw, 4.5rem);
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    top: 45%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 9vw, 3.5rem);
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .input-row {
@@ -492,8 +527,16 @@ html {
 }
 
 @media (max-width: 576px) {
-  .navbar {
-    width: 92%;
+ .navbar {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .navbar .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
   }
 
   .logo img {
@@ -523,6 +566,7 @@ html {
     font-size: 2.8rem;
   }
 }
+
 .footer {
   width: 100%;
   background: rgba(0, 0, 0, 0.95);

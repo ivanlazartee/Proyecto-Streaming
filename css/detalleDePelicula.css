@@ -32,6 +32,10 @@ body {
   color: var(--color-primary);
 }
 
+.modal-header .btn-close{
+  background-color: var(--color-primary);
+}
+
 .profile-avatar {
   width: 34px;
   height: 34px;
@@ -715,6 +719,7 @@ footer p {
   }
 }
 @media (max-width: 576px) {
+  .portada-contenido {padding: 0 1rem 16px 1rem;}
   .footer {
     padding: 3rem 0 2rem;
   }

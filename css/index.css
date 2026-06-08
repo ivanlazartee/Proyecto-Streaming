@@ -121,6 +121,10 @@ body {
   font-weight: 700 !important;
 }
 
+.modal-header .btn-close{
+  background-color: var(--color-primary);
+}
+
 .btn-amarillo:hover,
 .btn-amarillo:focus,
 .btn-amarillo:active {

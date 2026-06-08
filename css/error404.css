@@ -155,4 +155,39 @@ body {
   .gif-mobile {
     display: block;
   }
+
+  .titulo-error {
+    white-space: normal;        
+    width: 100% !important;     
+    border-right: none;         
+    animation: aparecer 1s ease-out 0.5s forwards; 
+    letter-spacing: 2px;        
+    font-size: clamp(0.85rem, 2.5vw, 1rem); 
+  }
+
+  .texto-error {
+    font-size: clamp(0.75rem, 2vw, 0.9rem);
+    letter-spacing: 1px;
+  }
+
+  .caja-texto {
+    margin-bottom: 60px;
+    padding: 0 16px;
+  }
+
+  .boton-inicio {
+    padding: 12px 28px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-error {
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    letter-spacing: 1px;
+  }
+
+  .caja-texto {
+    margin-bottom: 40px;
+  }
 }
