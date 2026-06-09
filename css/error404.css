@@ -157,10 +157,10 @@ body {
   }
 
   .titulo-error {
-    white-space: normal;        
-    width: 100% !important;     
-    border-right: none;         
-    animation: aparecer 1s ease-out 0.5s forwards; 
+    white-space: normal;       
+    width: 100% !important;    
+    border-right: none;       
+    animation: aparecer 1s ease-out 0.5s forwards;
     letter-spacing: 2px;        
     font-size: clamp(0.85rem, 2.5vw, 1rem); 
   }

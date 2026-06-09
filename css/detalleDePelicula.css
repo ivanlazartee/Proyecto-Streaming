@@ -304,11 +304,10 @@ main {
 
 .pestanas {
   display: flex;
-  gap: 2rem;
   padding: 0 4rem;
   list-style: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
-
 .pestanas li a {
   display: block;
   padding: 0.85rem 0;
@@ -319,10 +318,10 @@ main {
   text-decoration: none;
   color: var(--color-text-muted);
 }
-
 .pestanas li.activa a {
-  color: var(--color-text-primary);
-  border-bottom: 3px solid var(--color-text-primary);
+  color: var(--color-primary);
+  border-top: 3px solid var(--color-primary);
+  margin-top: -1px;
 }
 
 .relacionadas {

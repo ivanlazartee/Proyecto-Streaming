@@ -90,9 +90,7 @@
         </div>
       </section>
       <ul class="pestanas">
-        <li class="activa"><a href="#">Sugerencias</a></li>
-        <li><a href="#">Extras</a></li>
-        <li><a href="#">Detalles</a></li>
+        <li class="activa"><a href="#">Peliculas Recomendadas</a></li>
       </ul>
       <div class="relacionadas">
         <a href="indexInterstellar.html" class="tarjeta-pelicula">
@@ -221,5 +219,113 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+      style="background-color: transparent; color: #fbbf24"
+    >
+      <div class="modal-dialog">
+        <div
+          class="modal-content"
+          style="
+            background-color: #1a2030;
+            border: 2px solid #374151;
+            color: #fbbf24;
+          "
+        >
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">
+              Iniciar Sesión
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="../pages/perfiles.html" method="get">
+              <div class="mb-3">
+                <label
+                  for="exampleInputEmail1"
+                  class="form-label"
+                  style="color: #fcd34d"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  minlength="10"
+                  maxlength="50"
+                  required
+                />
+                <div id="emailHelp" class="" style="color: #9ca3af">
+                  <p>
+                    Nunca compartiremos tu correo electrónico con nadie más.
+                  </p>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label
+                  for="exampleInputPassword1"
+                  class="form-label"
+                  style="color: #fcd34d"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  minlength="6"
+                  maxlength="30"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label
+                  class="form-check-label"
+                  for="exampleCheck1"
+                  style="color: #fcd34d"
+                  >¿Quieres recibir notificaciones de nuestras futuras
+                  novedades?</label
+                >
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                  required
+                />
+                <label
+                  class="form-check-label"
+                  for="exampleCheck1"
+                  style="color: #fcd34d"
+                  >¿Aceptas nuestros términos y condiciones?</label
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn btn-amarillo"
+                style="background-color: #fbbf24"
+              >
+                Iniciar Sesión
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
